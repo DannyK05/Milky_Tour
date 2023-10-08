@@ -9,7 +9,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('./src/assets/iva_suit.png') ; 
+        background-image: url('./assets/Layout/hero-bg.jpg') ; 
     }
     .header {
         display: flex;

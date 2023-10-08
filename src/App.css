@@ -19,11 +19,12 @@
 
 
 .fact, section{
-  width: 90vh
+  width: 90%;
+  margin: 20px 0px;
 }
 
 .fact img{
-  width: 100%;
+  width: 80%;
 }
 .fact p{
   width: 100%
@@ -37,11 +38,13 @@ section h1{
 }
 section img{
   width: 80%;
+  max-width: 700px;
+
 }
 .planet{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
