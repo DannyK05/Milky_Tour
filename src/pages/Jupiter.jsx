@@ -1,6 +1,6 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
-
+import { Link } from "react-router-dom";
 const Jupiter = () => {
 
     return(
@@ -16,7 +16,7 @@ const Jupiter = () => {
             <Fact image="./src/assets/Jupiter/jovian_atmosphere.webp" content = "Jupiter's atmosphere is a mesmerizing blend of colorful bands and swirling clouds. It's a living canvas of atmospheric art. "/>
             <p>Hang tight as we slingshot around Jupiter, using its mighty gravity to propel us toward the ringed beauty - Saturn!</p>
         </section>
-        <button>Our cosmic dance continues</button>
+       <Link to="/saturn" > <button className="my-6 bg-blue-900 text-white">Our cosmic dance continues</button> </Link>
     </Planets>
     )
     

@@ -1,6 +1,6 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
-
+import { Link } from "react-router-dom";
 
 const Saturn = () => {
     return(
@@ -17,7 +17,7 @@ const Saturn = () => {
             <Fact image="./src/assets/Saturn/Cassini.jpg" content = "Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "/>
             <p>As we glide past Saturn, think of it as a cosmic slingshot, propelling us to the next destination – Uranus!</p>
         </section>
-        <button>Keep gliding</button>
+     <Link to="/uranus" ><button className="bg-blue-900 text-white my-6">Keep gliding</button></Link>   
     </Planets>
     )
     
