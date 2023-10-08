@@ -1,6 +1,6 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
-
+import { Link } from "react-router-dom";
 const Uranus = () => {
     return(
         <Planets>
@@ -16,7 +16,7 @@ const Uranus = () => {
             <Fact image="./src/assets/Uranus/Uranus_Montage.jpg" content = " Admire the ensemble of Uranian moons, each with its own peculiar charm. They're like the supporting cast in Uranus's cosmic ballet. "/>
             <p>Hold on tight as we utilize Uranus's gravitational pull for a boost. Our next cosmic stop is the distant and mysterious Neptune!</p>
         </section>
-        <button>Next stop, Neptune</button>
+    <Link to="/neptune">   <button className="my-6 bg-blue-900 text-white">Next stop, Neptune</button> </Link> 
     </Planets>
     )
     

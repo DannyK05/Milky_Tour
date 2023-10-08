@@ -1,5 +1,6 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
+import { Link } from "react-router-dom";
 
 const Neptune = () => {
     return(
@@ -16,7 +17,7 @@ const Neptune = () => {
             <Fact image={Spot} content = "Observe the Great Dark Spot, a storm system akin to Jupiter's Great Red Spot. It's like Neptune's mysterious eye staring into the depths of space. "/>
             <p>We're catching Neptune's gravitational waves for another boost, propelling us toward the edge of our solar system - the dwarf planet Pluto!</p>
         </section>
-        <button> Propel to Pluto</button>
+     <Link to="/pluto"> <button className="bg-blue-900 text-white my-6"> Propel to Pluto</button></Link>   
     </Planets>
     )
 }
