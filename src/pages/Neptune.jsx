@@ -1,5 +1,6 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
+import { Link } from "react-router-dom";
 
 const Neptune = () => {
     return(
