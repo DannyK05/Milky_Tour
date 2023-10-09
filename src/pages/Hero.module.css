@@ -84,7 +84,7 @@ font-size: 15px;
         
     }
 .carouselImgs img{
-    width: 80%;
+    width: 100%;
 }
     .planetImg {
         flex: 25%;
