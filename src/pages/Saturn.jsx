@@ -9,10 +9,10 @@ const Saturn = () => {
     return(
         <Planets>
         <section>
-            <p>Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
+            <p className="animate__animated animate__bounceInRight">Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
             <div className="planet_profile">
-                    <img src={saturn} alt="Saturn" />
-                    <h1 className="">Saturn - The Ringed Majesty</h1>
+                    <img className="animate__animated animate__bounce" src={saturn} alt="Saturn" />
+                    <h1 className="animate__animated animate__bounceInLeft">Saturn - The Ringed Majesty</h1>
             </div>
     
             <Fact image= {saturn_ring} content = "Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "/>

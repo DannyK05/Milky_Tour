@@ -9,10 +9,10 @@ const Mars = () => {
     return(
         <Planets >
             <section>
-                <p> Our next cosmic pitstop is the Red Planet,  </p>
+                <p className="animate__animated animate__bounceInRight"> Our next cosmic pitstop is the Red Planet,  </p>
                 <div className="planet_profile">
-                        <img src= {planet_mars} alt="Mars" />
-                        <h1 className="">Mars</h1>
+                        <img className="animate__animated animate__bounce" src= {planet_mars} alt="Mars" />
+                        <h1 className="animate__animated animate__bounceInLeft">Mars</h1>
                 </div>
                 
                 <Fact image={olympus_mons} content = "Behold Olympus Mons, the tallest volcano in the solar system! It's so massive you could host the ultimate interplanetary ski competition on its slopes. "/>

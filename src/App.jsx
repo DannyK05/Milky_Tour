@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements} from "react-router-dom";
+import "animate.css";
 import Hero from "./pages/Hero";
-
 import Explore from "./pages/Explore";
 import Venus from "./pages/Venus";
 import Mars from "./pages/Mars";

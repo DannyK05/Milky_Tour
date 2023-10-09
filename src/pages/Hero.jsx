@@ -25,7 +25,7 @@ const Hero =() => {
                 <h1 className=''> Transition through Planets</h1>
                 <p> Journey into the Universe: Epic planetary awaits your Journey</p>
 
-            <Link to="/explore"> <button className='bg-blue-900 text-white'> Start Exploring 🚀</button></Link>   
+            <Link to="/explore"> <button className='bg-blue-900 m-10 text-white'> Start Exploring 🚀</button></Link>   
             
             </div>
             <div className='carousel flex bg-black'>

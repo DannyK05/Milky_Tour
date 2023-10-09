@@ -7,10 +7,10 @@ const Neptune = () => {
     return(
         <Planets>
         <section>
-            <p>We've now arrived at Neptune, the mystic ice giant at the edge of our solar system. Brace yourselves for the deep blue wonders of this distant beauty. </p>
+            <p className="animate__animated animate__bounceInRight">We've now arrived at Neptune, the mystic ice giant at the edge of our solar system. Brace yourselves for the deep blue wonders of this distant beauty. </p>
             <div className="planet_profile">
-                    <img src={neptune} alt="Neptune" />
-                    <h1 className="">Neptune - The Mystic Ice Giant</h1>
+                    <img className="animate__animated animate__bounce" src={neptune} alt="Neptune" />
+                    <h1 className="animate__animated animate__bounceInLeft">Neptune - The Mystic Ice Giant</h1>
             </div>
         
             <Fact image={neptune_storm} content = "Dive into Neptune's dynamic atmosphere, adorned with fast-moving storms and swirling clouds. It's like a celestial ballet of atmospheric dynamics. "/>

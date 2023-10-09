@@ -41,6 +41,12 @@
   align-items: center;
   flex-direction: column;
 }
+.planet_profile h1{
+  font-family: 'Holtwood One SC', serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #7490df;
+}
 .planet_profile img{
   width: 60%;
 }
@@ -51,8 +57,12 @@
 .fact p{
   width: 100%
 }
+.greet{
+  font-family: 'Englebert', sans-serif;
+}
 section p{
-  width: 100%
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 section h1{
   color: white;

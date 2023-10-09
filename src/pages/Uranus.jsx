@@ -6,10 +6,10 @@ const Uranus = () => {
     return(
         <Planets>
         <section>
-            <p>Our celestial tour now takes us to Uranus, the quirky and tilted ice giant of the solar system. Get ready to witness a planet that's doing its own funky dance in space.</p>
+            <p className="animate__animated animate__bounceInRight">Our celestial tour now takes us to Uranus, the quirky and tilted ice giant of the solar system. Get ready to witness a planet that's doing its own funky dance in space.</p>
             <div className="planet_profile">
-                    <img src={uranus} alt="Uranus" />
-                    <h1 className="">Uranus - The Tilted Ice Giant</h1>
+                    <img className="animate__animated animate__bounce" src={uranus} alt="Uranus" />
+                    <h1 className="animate__animated animate__bounceInLeft">Uranus - The Tilted Ice Giant</h1>
             </div>
         
             <Fact image="" content = "Uranus is a rebel in our planetary lineup, spinning on its side like a space somersault artist. It's the solar system's coolest acrobat! "/>
