@@ -1,6 +1,9 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+import { saturn_ring } from "../assets";
+import { titan } from "../assets";
+import { cassini } from "../assets";
 
 const Saturn = () => {
     return(
@@ -12,9 +15,9 @@ const Saturn = () => {
                     <h1 className="">Saturn - The Ringed Majesty</h1>
             </div>
     
-            <Fact image="./src/assets/Saturn/saturn_ring.jpeg" content = "Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "/>
-            <Fact image="./src/assets/Saturn/titan.png" content = "Say hello to Titan, Saturn's largest moon, shrouded in a thick atmosphere. It's like a misty moon dream waiting to be explored. "/>
-            <Fact image="./src/assets/Saturn/Cassini.jpg" content = "Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "/>
+            <Fact image= {saturn_ring} content = "Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "/>
+            <Fact image={titan} content = "Say hello to Titan, Saturn's largest moon, shrouded in a thick atmosphere. It's like a misty moon dream waiting to be explored. "/>
+            <Fact image= {cassini} content = "Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "/>
             <p>As we glide past Saturn, think of it as a cosmic slingshot, propelling us to the next destination – Uranus!</p>
         </section>
      <Link to="/uranus" ><button className="bg-blue-900 text-white my-6">Keep gliding</button></Link>   
