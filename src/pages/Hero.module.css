@@ -79,13 +79,13 @@ font-size: 15px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        position: fixed;
         justify-content: space-between;
        overflow-x: scroll;
-       
-       
         
     }
+. carouselImgs img{
+    width: 50%;
+}
     .planetImg {
         flex: 25%;
         display: flex;
