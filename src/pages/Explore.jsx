@@ -5,7 +5,7 @@ import { iva_suit } from '../assets'
 const Explore = () => {
   return (
     <div className='bg-[#000026] p-8 h-full text-white' >
-      <Link to="/" > <button className='bg-blue-600 block px-6 py-2 mb-12'>
+      <Link to="/" > <button className='bg-blue-600 block px-6 py-2 mb-12 text-white'>
             Exit Tour
         </button> </Link>
         <div className='text-xl mb-12'>
