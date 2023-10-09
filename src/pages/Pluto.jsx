@@ -17,7 +17,7 @@ const Pluto = () => {
             <Fact image="./src/assets/Pluto/horizon.webp" content = "Remember the New Horizons mission? It made a historic flyby of Pluto, giving us our first up-close look at this distant world. It's like unlocking the secrets of a cosmic time capsule. "/>
             <p>As we bid farewell to Pluto, we're gearing up for the return journey to Earth. But fear not, fellow explorers! On our way back, you'll have the special opportunity to revisit your favorite celestial destinations. So, fasten your seat belts once more, and let's make our way home with memories of a Milky Tour that's truly out of this world! 🌌🌍🚀</p>
         </section>
-        <button>Back to earth</button>
+       <Link path="/" ></Link><button>Back to earth</button></Link>
     </Planets>
     )
     
