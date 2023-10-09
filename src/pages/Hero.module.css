@@ -8,7 +8,7 @@
       
         background-size: cover;
         background-position: center;
-        background-image: url('./assets/Layout/hero-bg.jpg') ; 
+        background-image: url('./assets/Layout/planet-bg.jpg') ; 
     }
     .header {
         display: flex;
