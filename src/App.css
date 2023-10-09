@@ -1,6 +1,14 @@
 
 
-
+::-webkit-scrollbar{
+  position: static;
+  background-color: whitesmoke  ;
+}
+::-webkit-scrollbar-thumb{
+  height: 100px;
+  background-color: #7490df;
+  border-radius: 50px;
+}
 
 #root {
   max-width: 100%;
