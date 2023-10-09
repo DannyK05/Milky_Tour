@@ -8,7 +8,7 @@
       
         background-size: cover;
         background-position: center;
-        background-image: url('./assets/Layout/planet-bg.jpg') ; 
+        background-color: black; 
     }
     .header {
         display: flex;
@@ -84,7 +84,7 @@ font-size: 15px;
         
     }
 .carouselImgs img{
-    width: 50%;
+    width: 80%;
 }
     .planetImg {
         flex: 25%;
