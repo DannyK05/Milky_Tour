@@ -6,7 +6,7 @@ const Explore = () => {
     <div className='bg-[#000026] p-8 h-full' >
       <Link to="/" > <button className='bg-blue-600 block px-6 py-2 mb-12'>
             Exit Tour
-        </button> <\Link>
+        </button> </Link>
         <div className='text-xl mb-12'>
            <span className='pr-6'> Explore,</span>    Guidelines
         </div>
