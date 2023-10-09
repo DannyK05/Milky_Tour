@@ -2,6 +2,7 @@ import orion3 from './orion3.png';
 import iva_suit from './iva_suit.png';
 import venus from "./Venus/planet_venus.png";
 import venus_volanoes from './Venus/venus_volcanoes.jpg'
+import spin from "./Venus/spin.jpeg";
 import mercury from "./Mercury/planet_mercury.png"
 import caloris from './Mercury/Caloris.webp'
 import planet_mars from './Mars/planet_mars.png'
@@ -34,6 +35,7 @@ export {
     venus,
     mercury,
     venus_volanoes,
+    spin,
     caloris,
     planet_mars,
     olympus_mons,
