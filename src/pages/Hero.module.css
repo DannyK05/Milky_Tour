@@ -83,7 +83,7 @@ font-size: 15px;
        overflow-x: scroll;
         
     }
-. carouselImgs > img{
+.carouselImgs img{
     width: 50%;
 }
     .planetImg {
