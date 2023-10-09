@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { orion3 } from '../assets'
+import { iva_suit } from '../assets'
 const Explore = () => {
   return (
     <div className='bg-[#000026] p-8 h-full text-white' >
@@ -19,7 +20,7 @@ const Explore = () => {
      and back aboard our state-of-the-art spacecraft, the Orion 3.
     
     <div className='flex justify-center items-center pt-4 pb-8 '>
-    <img src="./src/assets/orion3.png" alt="" className=''/>
+    <img src={orion3} alt="" className=''/>
     </div>
 
     Enhanced Features of the Orion 3:
@@ -42,7 +43,7 @@ Customize your space adventure with personalized itineraries. Choose specific pl
 
     <div>
         <div className='flex justify-center'>
-    <img src="./src/assets/iva_suit.png" alt="" className=''/>
+    <img src={iva_suit} alt="" className=''/>
 
     
     </div>
