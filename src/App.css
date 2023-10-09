@@ -16,7 +16,11 @@
 .planet p{
   color:white;
 }
-
+. fact{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center ;
+} 
 
 .fact, section{
   width: 90%;
