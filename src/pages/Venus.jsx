@@ -2,6 +2,7 @@ import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
 import { venus_volanoes } from "../assets";
+import {venus} from "../assets";
 
 const Venus = () => {
     return(
@@ -9,7 +10,7 @@ const Venus = () => {
             <section>
                 <p>Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
                 <div className="planet_profile">
-                    <img src=".\src\assets\Venus\planet_venus.png" alt="Venus" />
+                    <img src={venus} alt="Venus" />
                     <h1 className="pt-2">Venus - also known as the 'fiery diva' of the solar system</h1>
                 </div>
                 <p className="special">Venus is a cooking pot with a runaway greenhouse effect, trapping heat in its thick atmosphere. No need to break out the sunscreen; you'd turn into a toasty astronaut nugget in seconds!</p>

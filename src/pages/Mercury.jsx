@@ -1,7 +1,7 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { caloris } from "../assets";
+import { caloris, mercury } from "../assets";
 
 const Mercury = () => {
     return(
@@ -9,7 +9,7 @@ const Mercury = () => {
         <section>
             <p> Our Milky Tour now brings us to the sweltering domain of Mercury, the swift messenger of the solar system. Get ready to witness the scorched beauty of the closest planet to the Sun.</p>
             <div className="planet_profile">
-                    <img src="./src/assets/Mercury/planet_mercury.png" alt="Mercury" />
+                    <img src={mercury} alt="Mercury" />
                     <h1 className="">Mercury - The Swift Messenger</h1>
             </div>
             

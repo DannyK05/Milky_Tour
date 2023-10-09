@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Hero.module.css'
+import  './Hero.css';
 import { Link } from "react-router-dom";
 
 
@@ -12,74 +12,62 @@ import Saturn from  '../assets/Saturn/planet_saturn.png'
 import Uranus from  '../assets/Uranus/planet_uranus.png'
 import Neptune from  '../assets/Neptune/planet_neptune.png'
 const Hero =() => {
-const planets = [
-    {
-        img: Jupiter,
-        text: "Jupiter"
-    },
-    {
-        img: Pluto,
-        text: "Pluto"
-    }, {
-        img: Mercury,
-        text: "Mercury"
-    }, {
-        img: Mars,
-        text: "Mars"
-    }, {
-        img: Saturn,
-        text: "Saturn"
-    }, {
-        img: Uranus,
-        text: "Uranus"
-    }, {
-        img: Venus,
-        text: "Venus"
-    }, {
-        img: Neptune,
-        text: "Neptune"
-    },
-    
-]
+
     return (
 
-        <>
-        <div className={styles.heroSection}>
-<div className={styles.header}>
-    <p>Milky Tour </p>
-    <div className={styles.Main}>
-        <h2> Transition through Planets</h2>
-        <p> Journey into the Universe: Epic planetary awaits your Journey</p>
+        <section className='heroSection '>
+        
+            <header>
+            <p className=''>Milky Tour </p>
+            </header>
+        
+            <div className=' content text-white'>
+                <h1 className=''> Transition through Planets</h1>
+                <p> Journey into the Universe: Epic planetary awaits your Journey</p>
 
-     <Link to="/explore"> <button className='bg-blue-900 text-white'> Start Exploring 🚀</button></Link>   
-    
-</div>
-<div className={styles.carousel}>
-<div className={styles.carouselHeader}>
-    <h4> Explore the Milky Way</h4>
-</div>
-<div className={styles.carouselImgs}>
+            <Link to="/explore"> <button className='bg-blue-900 text-white'> Start Exploring 🚀</button></Link>   
+            
+            </div>
+            <div className='carousel flex bg-black'>
+                <Link to="/mercury"><figure>
+                    <img src={Mercury} alt="Mercury" />
+                    <figcaption>Mercury</figcaption>
+                </figure></Link>
+                <Link to="/venus"><figure>
+                    <img src={Venus} alt="Venus" />
+                    <figcaption>Venus</figcaption>
+                </figure></Link>
+                <Link to="/mars"><figure>
+                    <img src={Mars} alt="" />
+                    <figcaption>Mars</figcaption>
+                </figure></Link>
+                <Link to="/jupiter"><figure>
+                    <img src={Jupiter} alt="" />
+                    <figcaption>Jupiter</figcaption>
+                </figure></Link>
+                <Link to="/saturn"><figure>
+                    <img src={Saturn} alt="" />
+                    <figcaption>Saturn</figcaption>
+                </figure></Link>
+                <Link to="/uranus"><figure>
+                    <img src={Uranus} alt="" />
+                    <figcaption>Uranus</figcaption>
+                </figure></Link>
+                <Link to="/neptune"><figure>
+                    <img src={Neptune} alt="" />
+                    <figcaption>Neptune</figcaption>
+                </figure></Link>
+                <Link to="/pluto"><figure>
+                    <img src={Pluto} alt="" />
+                    <figcaption>Pluto</figcaption>
+                </figure></Link>
+            </div>
 
 
-        {planets.map((e) => (
-               <div className={styles.planetImg}>
-        <img src={e.img} />
-        <p>{e.text}</p>
-    </div>
-        ))}
-         
-    
-    
-   
-    
-  
-</div>
-</div>
-</div>
 
 
-        </div>
-        </>
+        
+        </section>
 
     )
 }

@@ -16,10 +16,11 @@
 .planet p{
   color:white;
 }
-. fact{
+.fact{
   display: flex ;
   justify-content: space-between;
   align-items: center ;
+  flex-direction: column;
 } 
 
 .fact, section{
@@ -27,8 +28,17 @@
   margin: 20px 0px;
 }
 
+.planet_profile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.planet_profile img{
+  width: 60%;
+}
 .fact img{
-  width: 80%;
+  width: 60%;
+  height: 50%;
 }
 .fact p{
   width: 100%

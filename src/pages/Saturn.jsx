@@ -1,7 +1,7 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { saturn_ring } from "../assets";
+import { saturn, saturn_ring } from "../assets";
 import { titan } from "../assets";
 import { cassini } from "../assets";
 
@@ -11,7 +11,7 @@ const Saturn = () => {
         <section>
             <p>Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
             <div className="planet_profile">
-                    <img src="./src/assets/Saturn/planet_saturn.png" alt="Saturn" />
+                    <img src={saturn} alt="Saturn" />
                     <h1 className="">Saturn - The Ringed Majesty</h1>
             </div>
     
