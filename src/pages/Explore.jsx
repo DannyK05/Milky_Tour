@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Explore = () => {
   return (
     <div className='bg-[#000026] p-8 h-full color-white' >
-      <Link> <button className='bg-blue-600 block px-6 py-2 mb-12'>
+      <Link to="/" > <button className='bg-blue-600 block px-6 py-2 mb-12'>
             Exit Tour
         </button> <\Link>
         <div className='text-xl mb-12'>
