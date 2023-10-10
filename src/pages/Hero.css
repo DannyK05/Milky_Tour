@@ -41,38 +41,57 @@ header > p{
         overflow-x: scroll;
         overflow-y: hidden;
     }
-    
+    .carousel::-webkit-scrollbar{
+        position: static;
+        background-color: black ;
+        height: 5px;
+      }
+      .carousel::-webkit-scrollbar-thumb{
+        height: 10px;
+        width: 20px;
+        background-color: #7490df;
+        border-radius: 50px;
+      }
     .carousel figure{
         margin-left: 5px;
     }
+    .carousel figure:hover,.carousel figure:active {
+        border: 1px solid #AD79EC;
+        
+    }
     .carousel img{
         display: inline-block;
-        height: 20vh;
-        width: 15vh;
+        height: 15vh;
+        width: 25vh;
     }
     content p{
         margin: 25px 0px;
     }
     .content h1{
         font-size: 48px;
+        font-family: 'Holtwood One SC', serif;
         margin-bottom: 10px;
     }
     .content{
-        margin: 100px auto  0;
+        margin: 10px auto  0;
     }
     
     
     @media(min-width: 1024px ){
+        .content{
+            margin: 100px auto  0;
+        }
         .carousel {
             overflow: hidden;
         }
         .carousel img{
             display: inline-block;
-            width: 50%;
-            aspect-ratio: 20/5;
+            width: 80%;
+            height: 80%;
         }
         .carousel figure{
             margin-left: 0px;
+            
         }
     }
    

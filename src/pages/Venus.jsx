@@ -12,7 +12,7 @@ const Venus = () => {
                 <p className="animate__animated animate__bounceInRight">Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
                 <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={venus} alt="Venus" />
-                    <h1 className="pt-2 animate__animated animate__bounceInLeft">Venus - also known as the 'fiery diva' of the solar system</h1>
+                    <h1 className="text-#e3af41 animate__animated animate__bounceInLeft">Venus - the 'fiery diva'</h1>
                 </div>
                 <p className="special">Venus is a cooking pot with a runaway greenhouse effect, trapping heat in its thick atmosphere. No need to break out the sunscreen; you'd turn into a toasty astronaut nugget in seconds!</p>
                 <Fact image={spin} content = "Venus has a peculiar retrograde rotation, meaning it spins backward compared to most planets. It's like the ultimate cosmic dance move! "/>

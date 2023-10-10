@@ -44,28 +44,33 @@
 .planet_profile h1{
   font-family: 'Holtwood One SC', serif;
   font-weight: 800;
-  font-size: 36px;
-  color: #7490df;
+  font-size: 24px;
+  color: #AD79EC;
+  margin-bottom: 20px;
 }
 .planet_profile img{
   width: 60%;
+  margin-bottom: 10px;
 }
 .fact img{
   width: 60%;
   height: 50%;
+  margin: 10px 0 20px;
 }
 .fact p{
   width: 100%
 }
-.greet{
+section .greet{
   font-family: 'Englebert', sans-serif;
 }
-section p{
-  width: 100%;
+.planet section p{
+  width: 80%;
   font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  font-size: large;
+ 
 }
 section h1{
-  color: white;
   font-size: large;
 }
 section img{
@@ -86,5 +91,15 @@ section img{
   }
   section{
     text-align: center;
+  }
+  .planet_profile img{
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  .fact img{
+    width: 50%;
+  }
+  .planet_profile h1{
+    font-size: 36px;
   }
 }
