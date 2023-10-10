@@ -9,7 +9,8 @@ const Saturn = () => {
     return(
         <Planets>
         <section>
-            <p className=" greet animate__animated animate__bounceInRight">Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
+            {/* animating elements from the left overflows the website */}
+            <p className=" greet animate__animated animate__bounceInLeft">Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={saturn} alt="Saturn" />
                     <h1 className="animate__animated animate__bounceInLeft">Saturn - The Ringed Majesty</h1>

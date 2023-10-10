@@ -7,7 +7,8 @@ const Pluto = () => {
     return(
         <Planets>
         <section>
-            <p className=" greet animate__animated animate__bounceInRight">Our final celestial rendezvous brings us to the charming dwarf planet, Pluto, at the outskirts of our solar system. Get ready to witness the enigmatic beauty of this small world.</p>
+            {/* animating elements from the left overflows the website */}
+            <p className=" greet animate__animated animate__bounceInLeft">Our final celestial rendezvous brings us to the charming dwarf planet, Pluto, at the outskirts of our solar system. Get ready to witness the enigmatic beauty of this small world.</p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={pluto} alt="Pluto" />
                     <h1 className="animate__animated animate__bounceInLeft">Pluto - The Charming Dwarf</h1>

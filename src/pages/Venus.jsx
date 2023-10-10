@@ -9,7 +9,8 @@ const Venus = () => {
     return(
         <Planets >
             <section>
-                <p className="animate__animated animate__bounceInRight">Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
+                {/* animating elements from the left overflows the website */}
+                <p className="animate__animated animate__bounceInLeft">Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
                 <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={venus} alt="Venus" />
                     <h1 className="text-#e3af41 animate__animated animate__bounceInLeft">Venus - the 'fiery diva'</h1>

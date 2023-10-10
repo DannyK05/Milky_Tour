@@ -64,8 +64,9 @@ header > p{
         height: 15vh;
         width: 25vh;
     }
-    content p{
-        margin: 25px 0px;
+    .content p{
+        margin: 10px 0px;
+        font-size: 18px;
     }
     .content h1{
         font-size: 48px;
@@ -75,7 +76,14 @@ header > p{
     .content{
         margin: 10px auto  0;
     }
-    
+    @keyframes float {
+        from{
+            transform: translateY(20px);
+        }
+        to{
+            transform: translateY(-20px);
+        }
+    }
     
     @media(min-width: 1024px ){
         .content{

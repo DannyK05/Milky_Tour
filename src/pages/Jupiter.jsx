@@ -10,7 +10,8 @@ const Jupiter = () => {
     return(
         <Planets>
         <section>
-            <p className="greet animate__animated animate__bounceInRight">Our celestial journey brings us to the grandeur of Jupiter, the largest planet in our solar system. Brace yourselves for a spectacle of swirling storms and colossal beauty.</p>
+            {/* animating elements from the left overflows the website */}{/* animating elements from the left overflows the website */}
+            <p className="greet animate__animated animate__bounceInLeft">Our celestial journey brings us to the grandeur of Jupiter, the largest planet in our solar system. Brace yourselves for a spectacle of swirling storms and colossal beauty.</p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={planet_jupiter} alt="Jupiter" />
                     <h1 className="animate__animated animate__bounceInLeft">Jupiter - The Giant Stormy Sphere </h1>

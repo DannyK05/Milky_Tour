@@ -7,7 +7,8 @@ const Neptune = () => {
     return(
         <Planets>
         <section>
-            <p className="greet animate__animated animate__bounceInRight">We've now arrived at Neptune, the mystic ice giant at the edge of our solar system. Brace yourselves for the deep blue wonders of this distant beauty. </p>
+            {/* animating elements from the left overflows the website */}
+            <p className="greet animate__animated animate__bounceInLeft">We've now arrived at Neptune, the mystic ice giant at the edge of our solar system. Brace yourselves for the deep blue wonders of this distant beauty. </p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={neptune} alt="Neptune" />
                     <h1 className="animate__animated animate__bounceInLeft">Neptune - The Mystic Ice Giant</h1>

@@ -7,10 +7,11 @@ const Mercury = () => {
     return(
         <Planets>
         <section>
-            <p className="greet animate__animated animate__bounceInRight"> Our Milky Tour now brings us to the sweltering domain of Mercury, the swift messenger of the solar system. Get ready to witness the scorched beauty of the closest planet to the Sun.</p>
+            {/* animating elements from the left overflows the website */}
+            <p className="greet animate__animated animate__bounceInLeft"> Our Milky Tour now brings us to the sweltering domain of Mercury, the swift messenger of the solar system. Get ready to witness the scorched beauty of the closest planet to the Sun.</p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={mercury} alt="Mercury" />
-                    <h1 className="animate__animated animate__bounceInRight">Mercury - The Swift Messenger</h1>
+                    <h1 className="animate__animated animate__bounceInLeft">Mercury - The Swift Messenger</h1>
             </div>
             
             <p>Brace yourselves for extreme temperatures on Mercury, ranging from scorching hot to freezing cold. It's like a planet of weather extremes, where you could experience summer and winter in the same day!</p>

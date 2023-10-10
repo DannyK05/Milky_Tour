@@ -6,7 +6,8 @@ const Uranus = () => {
     return(
         <Planets>
         <section>
-            <p className="greet animate__animated animate__bounceInRight">Our celestial tour now takes us to Uranus, the quirky and tilted ice giant of the solar system. Get ready to witness a planet that's doing its own funky dance in space.</p>
+            {/* animating elements from the left overflows the website */}
+            <p className="greet animate__animated animate__bounceInLeft">Our celestial tour now takes us to Uranus, the quirky and tilted ice giant of the solar system. Get ready to witness a planet that's doing its own funky dance in space.</p>
             <div className="planet_profile">
                     <img className="animate__animated animate__bounce" src={uranus} alt="Uranus" />
                     <h1 className="animate__animated animate__bounceInLeft">Uranus - The Tilted Ice Giant</h1>
