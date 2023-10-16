@@ -33,7 +33,7 @@
 
 .fact, section{
   width: 90%;
-  margin: 20px 0px;
+  margin: 20px auto;
 }
 
 .planet_profile{
@@ -57,16 +57,16 @@
   height: 50%;
   margin: 10px 0 20px;
 }
-.fact p{
-  width: 100%
+div.fact p{
+  width: 30ch;
 }
 section .greet{
   font-family: 'Englebert', sans-serif;
 }
 .planet section p{
-  width: 80%;
+  width: 20ch;
+  margin: 10px auto;
   font-family: 'Roboto', sans-serif;
-  display: inline-block;
   font-size: large;
  
 }
@@ -84,10 +84,27 @@ section img{
   justify-content: space-between;
   flex-direction: column;
 }
+.astronaut{
+  animation: float 3s infinite;
+  transition: ease-in ;
+  z-index: -0.9;
+}
+
+@keyframes float {
+  0%{
+    transform:translateY(0px)
+  }
+  50%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 
 @media(min-width: 1024px ){
-  .fact p{
-    width: 70ch;
+  div.fact p{
+    width: 60ch;
   }
   section{
     text-align: center;
@@ -101,5 +118,12 @@ section img{
   }
   .planet_profile h1{
     font-size: 36px;
+  }
+  .planet section p{
+    width: 50ch;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+   
   }
 }

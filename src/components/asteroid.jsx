@@ -1,13 +1,12 @@
-import '../App.css';
 import { Link } from "react-router-dom";
-// import {Sidenav} from './sidenav';
 
-export  const Planets = (props) =>{
+export  const Asteroid = (props) =>{
     return(
-        <main className='planet'>
+        <main className='asteroid'>
           <Link to="/">  <button className="exit_button">Exit Tour</button></Link>
+           
             {props.children}
-            {/* <Sidenav/> */}
+    
         </main>
     )
 }

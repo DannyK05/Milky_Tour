@@ -5,6 +5,7 @@
         background-position: center;
         background-image: url("../assets/Layout/hero_bg.jpg");
         margin: 0;
+        z-index: 1;
     }
     header {
         display: flex;
@@ -29,15 +30,19 @@ header > p{
 
     .carousel {
         display: flex;
-        position: static;
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        z-index: 5;
         bottom: 0px;
         height: 30vh;
         width: 100%;
         padding: 20px 0;
-        background-color: black;
+        box-shadow: 0px 2px 4px 1px  rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         overflow-x: scroll;
         overflow-y: hidden;
     }
@@ -75,14 +80,8 @@ header > p{
     }
     .content{
         margin: 10px auto  0;
-    }
-    @keyframes float {
-        from{
-            transform: translateY(20px);
-        }
-        to{
-            transform: translateY(-20px);
-        }
+        position: relative;
+        z-index: 5;
     }
     
     @media(min-width: 1024px ){

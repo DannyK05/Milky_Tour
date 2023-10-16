@@ -2,7 +2,7 @@ import React from 'react';
 import  './Hero.css';
 import { Link } from "react-router-dom";
 
-
+import Astronaut from "../assets/astronaut.png"
 import Jupiter from  '../assets/Jupiter/planet_jupiter.png'
 import Mars from  '../assets/Mars/planet_mars.png'
 import Pluto from  '../assets/Pluto/planet_pluto.jpg'
@@ -16,7 +16,7 @@ const Hero =() => {
     return (
 
         <section className='heroSection '>
-        
+            <img src={Astronaut} className='astronaut  absolute bottom-[30%] md:left-[20%] w-[100%]' alt=""/>
             <header>
             <p className=''>Milky Tour </p>
             </header>
@@ -24,11 +24,10 @@ const Hero =() => {
             <div className=' content text-white'>
                 <h1 className=''> Transition through Planets</h1>
                 <p> Journey into the Universe: Epic planetary awaits your Journey</p>
-
             <Link to="/explore"> <button className='bg-blue-900 m-10 text-white'> Start Exploring 🚀</button></Link>   
             
             </div>
-            <div className='carousel flex bg-black'>
+            <div className='carousel flex '>
                 <Link to="/mercury"><figure>
                     <img src={Mercury} alt="Mercury" />
                     <figcaption>Mercury</figcaption>

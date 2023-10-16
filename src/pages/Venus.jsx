@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { venus_volanoes,spin } from "../assets";
 import {venus} from "../assets";
 import "animate.css";
+import { Visor } from "../components/visor";
 
 const Venus = () => {
     return(
         <Planets >
             <section>
+                <Visor id='1'/>
                 {/* animating elements from the left overflows the website */}
                 <p className="animate__animated animate__bounceInLeft">Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
                 <div className="planet_profile">
