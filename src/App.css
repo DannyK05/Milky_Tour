@@ -89,7 +89,44 @@ section img{
   transition: ease-in ;
   z-index: -0.9;
 }
-
+.mercury,.venus, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto{
+  animation: float 4s infinite;
+  transition: ease-in ;
+}
+.venus{
+  animation-duration: 3.5s;
+}
+.mars{
+  animation-duration: 3.6s;
+}
+.jupiter{
+  animation-duration: 3.7s;
+}
+.saturn{
+  animation-duration: 3.8s;
+}
+.uranus{
+  animation-duration: 3.4s;
+}
+.neptune{
+  animation-duration: 3.2s;
+}
+.pluto{
+  animation-duration: 3s;
+}
+section.visor{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  border-radius: 50px;
+}
+section.visor p{
+  width: auto;
+}
+section.visor span{
+  text-align: center;
+}
 @keyframes float {
   0%{
     transform:translateY(0px)
@@ -125,5 +162,8 @@ section img{
     font-family: 'Roboto', sans-serif;
     font-size: large;
    
+  }
+  section.visor p{
+    width: auto;
   }
 }

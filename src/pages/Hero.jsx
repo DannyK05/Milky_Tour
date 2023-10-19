@@ -1,11 +1,11 @@
 import React from 'react';
 import  './Hero.css';
 import { Link } from "react-router-dom";
-
+import "animate.css";
 import Astronaut from "../assets/astronaut.png"
 import Jupiter from  '../assets/Jupiter/planet_jupiter.png'
 import Mars from  '../assets/Mars/planet_mars.png'
-import Pluto from  '../assets/Pluto/planet_pluto.jpg'
+import Pluto from  '../assets/Pluto/planet_pluto.png'
 import Venus from  '../assets/Venus/planet_venus.png'
 import Mercury from  '../assets/Mercury/planet_mercury.png'
 import Saturn from  '../assets/Saturn/planet_saturn.png'
@@ -17,6 +17,14 @@ const Hero =() => {
 
         <section className='heroSection '>
             <img src={Astronaut} className='astronaut  absolute bottom-[30%] md:left-[20%] w-[100%]' alt=""/>
+            <img src={Mercury} className='mercury absolute fadeInRight w-[20%] top-[10%] right-[15%] md:top[10%] md:w-[10%]' alt="Mercury" />
+            <img src={Venus} className='venus absolute fadeInRight w-[20%] top-[30%] right-[13%] md:top[30%] md:w-[10%]' alt="Venus" />
+            <img src={Mars} className='mars absolute fadeInRight w-[20%] top-[50%] right-[10%] md:top[50%] md:w-[10%]' alt="Mars" />
+            <img src={Jupiter} className=' jupiter absolute fadeInRight w-[20%] top-[70%] right-[15%] md:top[70%] md:w-[10%]' alt="Jupiter" />
+            <img src={Saturn} className='saturn absolute fadeInLeft w-[20%] top-[70%] left-[15%] md:top[90%] md:w-[10%]' alt="" />
+            <img src={Uranus} className='uranus absolute fadeInLeft w-[20%] top-[50%] left-[13%] md:top[50%] md:w-[10%]' alt="" />
+            <img src={Neptune} className='neptune absolute fadeInLeft w-[20%] top-[30%] left-[10%] md:top[30%] md:w-[10%]' alt="" />
+            <img src={Pluto} className='pluto absolute fadeInLeft w-[20%] top-[10%] left-[15%] md:top[10%] md:w-[10%]' alt="" />
             <header>
             <p className=''>Milky Tour </p>
             </header>

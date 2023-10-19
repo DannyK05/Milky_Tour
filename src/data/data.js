@@ -3,29 +3,21 @@
         name: 'Mercury',
         position: 1,
         temp: 127,
-        size: 3,
-        time: '22days',
+        size: 12104,
+        time: '88days',
         caution: 'hh'
     },
     {
         name: 'Venus',
-        position: 1,
+        position: 2,
         temp: 127,
-        size: 3,
-        time: '22days',
-        caution: 'hh'
-    },
-    {
-        name: 'Earth',
-        position: 1,
-        temp: 127,
-        size: 3,
-        time: '22days',
+        size: 12104 ,
+        time: '243days',
         caution: 'hh'
     },
     {
         name: 'Mars',
-        position: 1,
+        position: 4,
         temp: 127,
         size: 3,
         time: '22days',

@@ -1,15 +1,15 @@
 
 const Sidenav = () => {
-    function Open (idName) {
-       let visor = document.getElementById(idName)
-       visor.classlist.remove('hidden')
-    }
+    // function Open (idName) {
+    //    let visor = document.getElementById(idName)
+    //    visor.classlist.remove('hidden')
+    // }
     return(
-        <aside>
+        <nav className="hidden">
             <ul>
-                <li onClick={Open(visor)}>Visor</li>
+                <li>Visor</li>
             </ul>
-        </aside>
+        </nav>
     )
 }
 export default Sidenav;
