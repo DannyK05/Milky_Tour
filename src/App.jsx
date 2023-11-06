@@ -11,8 +11,9 @@ import Jupiter from './pages/Jupiter';
 import Neptune from './pages/Neptune';
 import Pluto from './pages/Pluto';
 import Saturn from './pages/Saturn';
-
-
+import Kupier from "./pages/Kupier";
+import Asteroid from "./pages/Asteroid";
+import Return from "./pages/Return";
 
 
 
@@ -41,7 +42,12 @@ function App() {
 
       <Route path = "/explore" element = {<Explore/>} />
 
+      <Route path ="/kupier" element ={<Kupier/>}/>
 
+      <Route path ="/asteroid" element ={<Asteroid/>}/>
+
+      <Route path = "/return" element ={<Return/>}/>
+      
 
 
       </>

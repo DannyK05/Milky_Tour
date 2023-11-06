@@ -7,7 +7,6 @@ export  const Planets = (props) =>{
         <main className='planet'>
           <Link to="/">  <button className="exit_button">Exit Tour</button></Link>
             {props.children}
-            <Sidenav/> 
         </main>
     )
 }

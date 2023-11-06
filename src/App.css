@@ -84,6 +84,15 @@ section img{
   justify-content: space-between;
   flex-direction: column;
 }
+.belt{
+  background-image: url("./assets/Layout/interlude_bg.jpg");
+}
+.belt p{
+  color: white;
+}
+.return li{
+  list-style-type: circle;
+}
 .astronaut{
   animation: float 3s infinite;
   transition: ease-in ;
@@ -94,28 +103,28 @@ section img{
   transition: ease-in ;
 }
 .venus{
-  animation-duration: 3.5s;
+  animation-duration: 6s;
 }
 .mars{
-  animation-duration: 3.6s;
+  animation-duration: 5.5s;
 }
 .jupiter{
-  animation-duration: 3.7s;
+  animation-duration: 5s;
 }
 .saturn{
-  animation-duration: 3.8s;
+  animation-duration: 4.5s;
 }
 .uranus{
-  animation-duration: 3.4s;
+  animation-duration: 4s;
 }
 .neptune{
-  animation-duration: 3.2s;
+  animation-duration: 3.5s;
 }
 .pluto{
   animation-duration: 3s;
 }
 section.visor{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(173,121,236, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   color: white;
@@ -123,6 +132,7 @@ section.visor{
 }
 section.visor p{
   width: auto;
+  font-family: 'Sometype Mono', monospace;
 }
 section.visor span{
   text-align: center;
