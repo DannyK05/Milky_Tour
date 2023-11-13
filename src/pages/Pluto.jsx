@@ -2,11 +2,12 @@ import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
 import { heart, horizon, kupier_belt, pluto } from "../assets";
-
+import Visor from "../components/visor";
 const Pluto = () => {
     return(
         <Planets>
         <section>
+        <Visor id="7"/>
             {/* animating elements from the left overflows the website */}
             <p className=" greet animate__animated animate__bounceInLeft">Our final celestial rendezvous brings us to the charming dwarf planet, Pluto, at the outskirts of our solar system. Get ready to witness the enigmatic beauty of this small world.</p>
             <div className="planet_profile">

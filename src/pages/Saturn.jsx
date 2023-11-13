@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { saturn, saturn_ring } from "../assets";
 import { titan } from "../assets";
 import { cassini } from "../assets";
+import Visor from "../components/visor"
 
 const Saturn = () => {
     return(
         <Planets>
         <section>
+            <Visor id="4"/>
             {/* animating elements from the left overflows the website */}
             <p className=" greet animate__animated animate__bounceInLeft">Our next cosmic rendezvous is with the majestic Saturn, adorned with the most stunning ring system in the solar system. Get ready for a ringside seat to celestial elegance.</p>
             <div className="planet_profile">

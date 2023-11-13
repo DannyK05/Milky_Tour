@@ -5,10 +5,12 @@ import { planet_mars } from "../assets";
 import { olympus_mons } from "../assets";
 import { mars_valleries } from "../assets";
 import { curiosity_rover } from "../assets";
+import Visor from "../components/visor";
 const Mars = () => {
     return(
         <Planets >
             <section>
+            <Visor id="2"/>
                 {/* animating elements from the left overflows the website */}
                 <p className="greet animate__animated animate__bounceInLeft"> Our next cosmic pitstop is the Red Planet,  </p>
                 <div className="planet_profile">

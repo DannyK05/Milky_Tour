@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { venus_volanoes,spin } from "../assets";
 import {venus} from "../assets";
 import "animate.css";
-import { Visor } from "../components/visor";
+import  Visor  from "../components/visor";
 
 const Venus = () => {
     return(

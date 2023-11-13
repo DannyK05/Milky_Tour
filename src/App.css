@@ -83,12 +83,19 @@ section img{
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  padding: 10px;
 }
 .belt{
   background-image: url("./assets/Layout/interlude_bg.jpg");
+  padding: 10px;
 }
 .belt p{
   color: white;
+}
+.return{
+  width: 100%;
+  margin: 0;
+  height: 100%;
 }
 .return li{
   list-style-type: circle;

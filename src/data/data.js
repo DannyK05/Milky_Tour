@@ -56,11 +56,11 @@
         caution: 'hh'
     },
     {
-        name: 'Venus',
+        name: 'Pluto',
         position: 9,
-        temp: 127,
-        size: 3,
-        time: '22days',
+        temp: -223,
+        size:   1151,
+        time: '153hrs',
         caution: 'hh'
     },
     {

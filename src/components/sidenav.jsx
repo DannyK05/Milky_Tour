@@ -5,9 +5,9 @@ const Sidenav = () => {
        visor.classlist.remove('hidden')
     }
     return(
-        <nav className="side-nav absolute top-40 left-40 bg-[#ad79ec] hidden">
+        <nav className="side-nav  top-40 right-0 bg-[#ad79ec]">
             <ul>
-                <li onClick={Open}>Visor</li>
+                <li onClick={Open} className="text-white">Visor</li>
             </ul>
         </nav>
     )

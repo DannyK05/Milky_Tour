@@ -14,6 +14,7 @@ import Saturn from './pages/Saturn';
 import Kupier from "./pages/Kupier";
 import Asteroid from "./pages/Asteroid";
 import Return from "./pages/Return";
+import Sun from "./pages/Sun";
 
 
 
@@ -48,6 +49,7 @@ function App() {
 
       <Route path = "/return" element ={<Return/>}/>
       
+      <Route path ="/sun" element ={<Sun/>}/>
 
 
       </>

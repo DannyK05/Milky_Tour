@@ -1,5 +1,5 @@
 import { planetData } from "../data/data"
-export const Visor = (props) => {
+const Visor = (props) => {
     <planetData/>
    let body = planetData[props.id]
     return(
@@ -36,3 +36,4 @@ export const Visor = (props) => {
         </section>
     )
 }
+export default Visor

@@ -2,10 +2,12 @@ import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
 import { uranus, tilt, montage } from "../assets";
+import  Visor  from "../components/visor";
 const Uranus = () => {
     return(
         <Planets>
         <section>
+            <Visor id="5"/>
             {/* animating elements from the left overflows the website */}
             <p className="greet animate__animated animate__bounceInLeft">Our celestial tour now takes us to Uranus, the quirky and tilted ice giant of the solar system. Get ready to witness a planet that's doing its own funky dance in space.</p>
             <div className="planet_profile">
