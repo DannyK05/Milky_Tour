@@ -16,7 +16,7 @@ const Hero =() => {
     return (
 
         <section className='heroSection '>
-            <img src={Astronaut} className='astronaut  absolute bottom-[30%] md:left-[20%] w-[100%]' alt=""/>
+            <img src={Astronaut} className='astronaut  absolute bottom-[20%] md:left-[22%] w-[100%]' alt=""/>
             <img src={Mercury} className='mercury absolute fadeInRight w-[20%] top-[10%] right-[15%] md:top[10%] md:w-[10%]' alt="Mercury" />
             <img src={Venus} className='venus absolute fadeInRight w-[20%] top-[30%] right-[13%] md:top[30%] md:w-[10%]' alt="Venus" />
             <img src={Mars} className='mars absolute fadeInRight w-[20%] top-[50%] right-[10%] md:top[50%] md:w-[10%]' alt="Mars" />

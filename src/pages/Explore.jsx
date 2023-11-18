@@ -9,7 +9,7 @@ const Explore = () => {
             Exit Tour
         </button> </Link>
         <div className='text-xl mb-12'>
-           <span className='pr-6'> Explore</span>    
+           <h1 className='pr-6'> Explore</h1>    
         </div>
 
     <div className='sm:px-24 '>
@@ -36,7 +36,9 @@ const Explore = () => {
       <img src={iva_suit} alt="" />
     </div>
      <p className='md:w-[70ch] m-auto'>These suits are designed for comfort and safety during our journey. Their features include:
+     <br />
       Embedded Haptic Feedback: Feel the subtle vibrations and sensations that correspond to the celestial bodies we visit.
+      <br />
       Augmented Reality Visor: Get real-time information about each planet and enjoy augmented reality features, making the tour both informative and captivating.
     </p>
       <p className='md:w-[70ch] m-auto'>Now that we're suited up, fasten your seat belts as we prepare to launch into the cosmos.

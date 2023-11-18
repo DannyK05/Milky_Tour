@@ -78,6 +78,9 @@ section img{
   max-width: 700px;
 
 }
+.info{
+  flex-wrap: wrap;
+}
 .planet{
   display: flex;
   align-items: center;
@@ -144,6 +147,9 @@ section.visor p{
 section.visor span{
   text-align: center;
 }
+section.visor h2{
+  font-size: 0.8rem;
+}
 @keyframes float {
   0%{
     transform:translateY(0px)
@@ -182,5 +188,8 @@ section.visor span{
   }
   section.visor p{
     width: auto;
+  }
+  section.visor h2{
+    font-size: 1.2rem;
   }
 }

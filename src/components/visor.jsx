@@ -9,7 +9,7 @@ const Visor = (props) => {
             </div>
             <div className="info flex  align-center justify-between">
             <span className="position flex flex-col align-center w-[20%]  ">
-            <h2 className="inline">Positon in solar system:</h2>
+            <h2 className="inline">Positon:</h2>
             <p >{body.position}/8</p>
             </span>
             
@@ -19,12 +19,12 @@ const Visor = (props) => {
             </span>
 
             <span className="size  flex flex-col align-center w-[20%] ">
-            <h2 className="inline">Size of {body.name}:</h2>
+            <h2 className="inline">Size:</h2>
             <p>{body.size}km</p>
             </span>
 
             <span className="time flex flex-col align-center w-[25%] ">
-            <h2 className="inline">Time it takes to complete one revolution:</h2>
+            <h2 className="inline">Duration of one rotation:</h2>
             <p>{body.time}</p>
             </span>
 

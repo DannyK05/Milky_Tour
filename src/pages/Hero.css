@@ -30,12 +30,12 @@ header > p{
 
     .carousel {
         display: flex;
-        position: relative;
+        position: fixed;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         z-index: 5;
-        bottom: 0px;
+        bottom: 5px;
         height: 30vh;
         width: 100%;
         padding: 20px 0;
