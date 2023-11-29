@@ -1,9 +1,12 @@
 import { planetData } from "../data/data"
 const Visor = (props) => {
-    <planetData/>
+    // Check the URL for the visibility parameter
+    const isVisible = new URLSearchParams(window.location.search).get('visible') === 'true';
+    console.log('Is Visible:', isVisible);
+    <planetData/> //Planent information
    let body = planetData[props.id]
     return(
-        <section id="visor" className="visor hidden fixed py-[20px] px-[20px] top-[30%] h-auto md:left-[20%] z-10 w-[90%] md:w-[70%] md:h-[40%] flex justify-between align-center flex-col">
+        <section id="visor" className={`visor ${isVisible ? 'visible' : 'hidden'} fixed py-[20px] px-[20px] top-[30%] h-auto md:left-[20%] z-10 w-[90%] md:w-[70%] md:h-[40%] flex justify-between align-center flex-col`}>
             <div className=" name">
                 <h2>{body.name}</h2>
             </div>

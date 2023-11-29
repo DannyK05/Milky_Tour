@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Solarflare from "../assets/Sun/solar_flare.webp"
 import Solarwind from "../assets/Sun/solar_wind.jpeg";
 import Solarspot from "../assets/Sun/solar_spot.webp"
+import sun from "../assets/Sun/sun.webp";
 const Sun = () => {
     return(
         <Belt>
@@ -11,7 +12,7 @@ const Sun = () => {
                    {/* animating elements from the left overflows the website */}{/* animating elements from the left overflows the website */}
             <p className="greet animate__animated animate__bounceInLeft">Prepare yourselves for the most awe-inspiring moment of our Milky Tour as we approach the mighty Sun, the blazing heart of our solar system. Brace for a spectacle of solar grandeur!</p>
             <div className="planet_profile">
-                <img className="animate__animated animate__bounce" src={""} alt="Sun" />
+                <img className="animate__animated animate__bounce" src={sun} alt="Sun" />
                 <h1 className="animate__animated animate__bounceInLeft">Sun - The Cosmic Inferno </h1>
             </div>
             <Fact image={Solarflare} content = "Marvel at the solar flares, eruptions of energy dancing across the Sun's surface. It's like a mesmerizing display of cosmic fireworks in the vast theater of space. "/>
