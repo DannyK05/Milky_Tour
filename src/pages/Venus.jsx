@@ -9,9 +9,9 @@ import  Visor  from "../components/visor";
 
 const Venus = () => {
     return(
-        <Planets >
+        <Planets id='1'>
             <section>
-                <Visor id='1'/>
+                
                 {/* animating elements from the left overflows the website */}
                 <p className="animate__animated animate__bounceInLeft">Welcome, space travelers! Look out your windows, and you'll catch a glimpse of our sizzling neighbor, </p>
                 <div className="planet_profile">
