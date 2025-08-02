@@ -1,17 +1,16 @@
-import React from "react";
-import "./Hero.css";
 import { Link } from "react-router-dom";
 import "animate.css";
-import Astronaut from "../assets/astronaut.png";
-import Jupiter from "../assets/Jupiter/planet_jupiter.png";
-import Mars from "../assets/Mars/planet_mars.png";
-import Pluto from "../assets/Pluto/planet_pluto.png";
-import Venus from "../assets/Venus/planet_venus.png";
-import Mercury from "../assets/Mercury/planet_mercury.png";
-import Saturn from "../assets/Saturn/planet_saturn.png";
-import Uranus from "../assets/Uranus/planet_uranus.png";
-import Neptune from "../assets/Neptune/planet_neptune.png";
-const Hero = () => {
+import Astronaut from "../assets/images/astronaut.png";
+import Jupiter from "../assets/images/Jupiter/planet_jupiter.png";
+import Mars from "../assets/images/Mars/planet_mars.png";
+import Pluto from "../assets/images/Pluto/planet_pluto.png";
+import Venus from "../assets/images/Venus/planet_venus.png";
+import Mercury from "../assets/images/Mercury/planet_mercury.png";
+import Saturn from "../assets/images/Saturn/planet_saturn.png";
+import Uranus from "../assets/images/Uranus/planet_uranus.png";
+import Neptune from "../assets/images/Neptune/planet_neptune.png";
+
+const HeroPage = () => {
   return (
     <section className="heroSection ">
       <img
@@ -67,9 +66,7 @@ const Hero = () => {
         <h1 className=""> Transition through Planets</h1>
         <p> Journey into the Universe: Epic planetary awaits your Journey</p>
         <Link to="/explore">
-          {" "}
           <button className="bg-blue-900 m-10 text-white">
-            {" "}
             Start Exploring 🚀
           </button>
         </Link>
@@ -127,4 +124,4 @@ const Hero = () => {
     </section>
   );
 };
-export default Hero;
+export default HeroPage;

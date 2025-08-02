@@ -1,72 +1,61 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements} from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
 import "animate.css";
-import Hero from "./pages/Hero";
-import Explore from "./pages/Explore";
-import Venus from "./pages/Venus";
-import Mars from "./pages/Mars";
-import Uranus from './pages/Uranus';
-import Mercury from './pages/Mercury';
-import Jupiter from './pages/Jupiter';
-import Neptune from './pages/Neptune';
-import Pluto from './pages/Pluto';
-import Saturn from './pages/Saturn';
-import Kupier from "./pages/Kupier";
-import Asteroid from "./pages/Asteroid";
-import Return from "./pages/Return";
-import Sun from "./pages/Sun";
-
-
-
-
-
+import HeroPage from "./pages/Hero";
+import ExplorePage from "./pages/Explore";
+import VenusPage from "./pages/Venus";
+import MarsPage from "./pages/Mars";
+import UranusPage from "./pages/Uranus";
+import MercuryPage from "./pages/Mercury";
+import JupiterPage from "./pages/Jupiter";
+import NeptunePage from "./pages/Neptune";
+import PlutoPage from "./pages/Pluto";
+import SaturnPage from "./pages/Saturn";
+import KupierPage from "./pages/Kupier";
+import AsteroidPage from "./pages/Asteroid";
+import ReturnPage from "./pages/Return";
+import SunPage from "./pages/Sun";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-     
-      <Route index element = {<Hero/>} />
-      <Route path = "/venus" element = {<Venus/>} />
-      <Route path = "/mercury" element = {<Mercury/>} />
-      <Route path = "/mars" element = {<Mars/>} />
+        <Route index element={<HeroPage />} />
 
-      <Route path = "/jupiter" element = {<Jupiter/>} />
+        <Route path="/venus" element={<VenusPage />} />
 
-      <Route path = "/saturn" element = {<Saturn/>} />
+        <Route path="/mercury" element={<MercuryPage />} />
 
-      <Route path = "/uranus" element = {<Uranus/>} />
+        <Route path="/mars" element={<MarsPage />} />
 
-      <Route path = "/neptune" element = {<Neptune/>} />
+        <Route path="/jupiter" element={<JupiterPage />} />
 
-      <Route path = "/pluto" element = {<Pluto/>} />
+        <Route path="/saturn" element={<SaturnPage />} />
 
-      <Route path = "/explore" element = {<Explore/>} />
+        <Route path="/uranus" element={<UranusPage />} />
 
-      <Route path ="/kupier" element ={<Kupier/>}/>
+        <Route path="/neptune" element={<NeptunePage />} />
 
-      <Route path ="/asteroid" element ={<Asteroid/>}/>
+        <Route path="/pluto" element={<PlutoPage />} />
 
-      <Route path = "/return" element ={<Return/>}/>
-      
-      <Route path ="/sun" element ={<Sun/>}/>
+        <Route path="/explore" element={<ExplorePage />} />
 
+        <Route path="/kupier" element={<KupierPage />} />
 
+        <Route path="/asteroid" element={<AsteroidPage />} />
+
+        <Route path="/return" element={<ReturnPage />} />
+
+        <Route path="/sun" element={<SunPage />} />
       </>
     )
   );
-  return (
-    <>
-    <RouterProvider router={router}/>
-    
-    </>
-
-
-
-
-  );
+  return <RouterProvider router={router} />;
 }
-
-
 
 export default App;

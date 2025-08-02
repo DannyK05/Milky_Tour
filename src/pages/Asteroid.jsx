@@ -1,10 +1,10 @@
 import { Belt } from "../components/belt";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import AsteroidBelt from "../assets/Asteroid/asteroid_belt.webp";
-import Ceres from "../assets/Asteroid/ceres.jpeg";
-import Trojan from "../assets/Asteroid/trojan.webp";
-const Asteroid = () => {
+import AsteroidBelt from "../assets/images/asteroid/asteroid_belt.webp";
+import Ceres from "../assets/images/asteroid/ceres.jpeg";
+import Trojan from "../assets/images/asteroid/trojan.webp";
+const AsteroidPage = () => {
   return (
     <Belt>
       <section>
@@ -22,7 +22,7 @@ const Asteroid = () => {
             alt="Asteroid belt"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Asteroid Belt - Celestial Dodgeball{" "}
+            Asteroid Belt - Celestial Dodgeball
           </h1>
         </div>
         <Fact
@@ -44,12 +44,11 @@ const Asteroid = () => {
         </p>
       </section>
       <Link to="/jupiter">
-        {" "}
         <button className="my-6 bg-blue-900 text-white">
           Next stop: the mighty gas giant, Jupiter!
-        </button>{" "}
+        </button>
       </Link>
     </Belt>
   );
 };
-export default Asteroid;
+export default AsteroidPage;

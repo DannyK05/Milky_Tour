@@ -1,11 +1,12 @@
 import { Belt } from "../components/belt";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import Solarflare from "../assets/Sun/solar_flare.webp";
-import Solarwind from "../assets/Sun/solar_wind.jpeg";
-import Solarspot from "../assets/Sun/solar_spot.webp";
-import sun from "../assets/Sun/sun.webp";
-const Sun = () => {
+import Solarflare from "../assets/images/sun/solar_flare.webp";
+import Solarwind from "../assets/images/sun/solar_wind.jpeg";
+import Solarspot from "../assets/images/sun/solar_spot.webp";
+import sun from "../assets/images/sun/sun.webp";
+
+const SunPage = () => {
   return (
     <Belt>
       <section>
@@ -23,7 +24,7 @@ const Sun = () => {
             alt="Sun"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Sun - The Cosmic Inferno{" "}
+            Sun - The Cosmic Inferno
           </h1>
         </div>
         <Fact
@@ -47,12 +48,11 @@ const Sun = () => {
         </p>
       </section>
       <Link to="/mars">
-        {" "}
         <button className="my-6 bg-blue-900 text-white">
           Next stop: the red planet, Mars!
-        </button>{" "}
+        </button>
       </Link>
     </Belt>
   );
 };
-export default Sun;
+export default SunPage;

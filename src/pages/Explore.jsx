@@ -1,15 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { orion3 } from "../assets";
-import { iva_suit } from "../assets";
-const Explore = () => {
+import { Orion, IvaSuit } from "../assets";
+const ExplorePage = () => {
   return (
     <div className="bg-[#000026] p-8 h-full text-white">
       <Link to="/">
-        {" "}
         <button className="bg-blue-600 block px-6 py-2 mb-12 text-white">
           Exit Tour
-        </button>{" "}
+        </button>
       </Link>
       <div className="text-xl mb-12">
         <h1 className="pr-6"> Explore</h1>
@@ -17,7 +14,7 @@ const Explore = () => {
 
       <div className="sm:px-24 ">
         <p className="md:w-[70ch] m-auto">
-          Welcome, space enthusiasts, to NASA's Milky Tour!{" "}
+          Welcome, space enthusiasts, to NASA's Milky Tour!
         </p>
         <p className="md:w-[70ch] m-auto">
           I'm your virtual tour guide, and I'm thrilled to take you on an
@@ -27,7 +24,7 @@ const Explore = () => {
         </p>
 
         <div className="flex justify-center items-center pt-4 pb-8 ">
-          <img src={orion3} alt="" className="" />
+          <img src={Orion} alt="" className="" />
         </div>
         <p className="md:w-[70ch] m-auto">
           This new version of Orion comes with more features than it's
@@ -55,7 +52,7 @@ const Explore = () => {
         (IVA) suits.
       </p>
       <div className="flex justify-center">
-        <img src={iva_suit} alt="" />
+        <img src={IvaSuit} alt="" />
       </div>
       <p className="md:w-[70ch] m-auto">
         These suits are designed for comfort and safety during our journey.
@@ -83,4 +80,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default ExplorePage;

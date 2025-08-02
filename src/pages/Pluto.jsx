@@ -1,8 +1,8 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { heart, horizon, kupier_belt, pluto } from "../assets";
-const Pluto = () => {
+import { PlutoHeartShape, PlutoHorizon, KupierBelt, Pluto } from "../assets";
+const PlutoPage = () => {
   return (
     <Planets id="7">
       <section>
@@ -15,7 +15,7 @@ const Pluto = () => {
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
-            src={pluto}
+            src={Pluto}
             alt="Pluto"
           />
           <h1 className="animate__animated animate__bounceInLeft">
@@ -24,15 +24,15 @@ const Pluto = () => {
         </div>
 
         <Fact
-          image={heart}
+          image={PlutoHeartShape}
           content="Zoom in on the heart-shaped feature on Pluto's surface, appropriately named Tombaugh Regio. It's like Pluto's cosmic love letter to the universe. "
         />
         <Fact
-          image={kupier_belt}
+          image={KupierBelt}
           content="Explore the dynamics of dwarf planets and their place in the Kuiper Belt, a distant region beyond Neptune. It's a realm of icy wonders and celestial oddities. "
         />
         <Fact
-          image={horizon}
+          image={PlutoHorizon}
           content="Remember the New Horizons mission? It made a historic flyby of Pluto, giving us our first up-close look at this distant world. It's like unlocking the secrets of a cosmic time capsule. "
         />
         <p className="greet">
@@ -51,4 +51,4 @@ const Pluto = () => {
   );
 };
 
-export default Pluto;
+export default PlutoPage;

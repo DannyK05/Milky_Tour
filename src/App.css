@@ -1,10 +1,8 @@
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   position: static;
-  background-color: whitesmoke  ;
+  background-color: whitesmoke;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   height: 100px;
   background-color: #7490df;
   border-radius: 50px;
@@ -12,184 +10,289 @@
 
 #root {
   max-width: 100%;
-  margin: 0 ;
+  margin: 0;
   text-align: center;
 }
 
-.planet{
-  background-image:url("./assets/Layout/planet_bg.webp")  ;
+.heroSection {
   width: 100%;
-  
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/images/layout/hero_bg.jpg");
+  margin: 0;
+  z-index: 1;
 }
-.planet p{
-  color:white;
-}
-.fact{
-  display: flex ;
-  justify-content: space-between;
-  align-items: center ;
-  flex-direction: column;
-} 
 
-.fact, section{
+header {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+header > p {
+  display: flex;
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  font-family: "Englebert", sans-serif;
+  color: #ad79ec;
+}
+
+.carousel {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  bottom: 5px;
+  height: 30vh;
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0px 2px 4px 1px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.carousel::-webkit-scrollbar {
+  position: static;
+  background-color: black;
+  height: 5px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  height: 10px;
+  width: 20px;
+  background-color: #7490df;
+  border-radius: 50px;
+}
+.carousel figure {
+  margin-left: 5px;
+}
+.carousel figure:hover,
+.carousel figure:active {
+  border: 1px solid #ad79ec;
+}
+.carousel img {
+  display: inline-block;
+  height: 15vh;
+  width: 25vh;
+}
+.content p {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+.content h1 {
+  font-size: 36px;
+  font-family: "Holtwood One SC", serif;
+  margin-bottom: 10px;
+}
+.content {
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 5;
+}
+
+.planet {
+  background-image: url("./assets/images/layout/planet_bg.webp");
+  width: 100%;
+}
+.planet p {
+  color: white;
+}
+.fact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fact,
+section {
   width: 90%;
   margin: 20px auto;
 }
 
-.planet_profile{
+.planet_profile {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.planet_profile h1{
-  font-family: 'Holtwood One SC', serif;
+.planet_profile h1 {
+  font-family: "Holtwood One SC", serif;
   font-weight: 800;
   font-size: 24px;
-  color: #AD79EC;
+  color: #ad79ec;
   margin-bottom: 20px;
 }
-.planet_profile img{
+.planet_profile img {
   width: 60%;
   margin-bottom: 10px;
 }
-.fact img{
+.fact img {
   width: 60%;
   height: 50%;
   margin: 10px 0 20px;
 }
-div.fact p{
+div.fact p {
   width: 30ch;
 }
-section .greet{
-  font-family: 'Englebert', sans-serif;
+section .greet {
+  font-family: "Englebert", sans-serif;
 }
-.planet section p{
+.planet section p {
   width: 20ch;
   margin: 10px auto;
-  font-family: 'Roboto', sans-serif;
-  font-size: large;
- 
-}
-section h1{
+  font-family: "Roboto", sans-serif;
   font-size: large;
 }
-section img{
+section h1 {
+  font-size: large;
+}
+section img {
   width: 80%;
   max-width: 700px;
-
 }
-.info{
+.info {
   flex-wrap: wrap;
 }
-.planet{
+.planet {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
 }
-.belt{
-  background-image: url("./assets/Layout/interlude_bg.jpg");
+.belt {
+  background-image: url("./assets/images/layout/interlude_bg.jpg");
   padding: 10px;
 }
-.belt p{
+.belt p {
   color: white;
 }
-.return{
+.return {
   width: 100%;
   margin: 0;
   height: 100%;
 }
-.return li{
+.return li {
   list-style-type: circle;
 }
-.astronaut{
+.astronaut {
   animation: float 3s infinite;
-  transition: ease-in ;
+  transition: ease-in;
   z-index: -0.9;
 }
-.mercury,.venus, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto{
+.mercury,
+.venus,
+.mars,
+.jupiter,
+.saturn,
+.uranus,
+.neptune,
+.pluto {
   animation: float 4s infinite;
-  transition: ease-in ;
+  transition: ease-in;
 }
-.venus{
+.venus {
   animation-duration: 6s;
 }
-.mars{
+.mars {
   animation-duration: 5.5s;
 }
-.jupiter{
+.jupiter {
   animation-duration: 5s;
 }
-.saturn{
+.saturn {
   animation-duration: 4.5s;
 }
-.uranus{
+.uranus {
   animation-duration: 4s;
 }
-.neptune{
+.neptune {
   animation-duration: 3.5s;
 }
-.pluto{
+.pluto {
   animation-duration: 3s;
 }
-section.visor{
-  background-color: rgba(173,121,236, 0.2);
-  backdrop-filter: blur(5px);
+section.visor {
+  background-color: rgba(173, 121, 236, 0.2);
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   color: white;
   border-radius: 50px;
 }
-section.visor p{
+section.visor p {
   width: auto;
-  font-family: 'Sometype Mono', monospace;
+  font-family: "Sometype Mono", monospace;
 }
-section.visor span{
+section.visor span {
   text-align: center;
 }
-section.visor h2{
+section.visor h2 {
   font-size: 0.8rem;
 }
 @keyframes float {
-  0%{
-    transform:translateY(0px)
+  0% {
+    transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(1rem);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 
-@media(min-width: 1024px ){
-  div.fact p{
+@media (min-width: 1024px) {
+  div.fact p {
     width: 60ch;
   }
-  section{
+  section {
     text-align: center;
   }
-  .planet_profile img{
+  .planet_profile img {
     width: 40%;
     margin-bottom: 10px;
   }
-  .fact img{
+  .fact img {
     width: 50%;
   }
-  .planet_profile h1{
+  .planet_profile h1 {
     font-size: 36px;
   }
-  .planet section p{
+  .planet section p {
     width: 50ch;
     margin: 10px auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: large;
-   
   }
-  section.visor p{
+  section.visor p {
     width: auto;
   }
-  section.visor h2{
+  section.visor h2 {
     font-size: 1.2rem;
+  }
+  .content {
+    margin: 100px auto 0;
+  }
+  .carousel {
+    overflow: hidden;
+  }
+  .carousel img {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+  }
+  .carousel figure {
+    margin-left: 0px;
   }
 }

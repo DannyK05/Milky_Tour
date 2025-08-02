@@ -1,11 +1,9 @@
+import { Link } from "react-router-dom";
+import { Jupiter, RedSpot, JupiterMoons, JovainAtmosphere } from "../assets";
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
-import { Link } from "react-router-dom";
-import { planet_jupiter } from "../assets";
-import { red_spot } from "../assets";
-import { jupiter_moons } from "../assets";
-import { jovain_atmosphere } from "../assets";
-const Jupiter = () => {
+
+const JupiterPage = () => {
   return (
     <Planets id="3">
       <section>
@@ -19,23 +17,23 @@ const Jupiter = () => {
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
-            src={planet_jupiter}
+            src={Jupiter}
             alt="Jupiter"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Jupiter - The Giant Stormy Sphere{" "}
+            Jupiter - The Giant Stormy Sphere
           </h1>
         </div>
         <Fact
-          image={red_spot}
+          image={RedSpot}
           content="Feast your eyes on the Great Red Spot, a storm that has been raging for centuries. It's like the solar system's eternal masterpiece of chaos. "
         />
         <Fact
-          image={jupiter_moons}
+          image={JupiterMoons}
           content="Look closely, and you'll witness the dance of Jupiter's four largest moons - Io, Europa, Ganymede, and Callisto. It's like a celestial ballet in our very own cosmic theater. "
         />
         <Fact
-          image={jovain_atmosphere}
+          image={JovainAtmosphere}
           content="Jupiter's atmosphere is a mesmerizing blend of colorful bands and swirling clouds. It's a living canvas of atmospheric art. "
         />
         <p className="greet">
@@ -44,12 +42,11 @@ const Jupiter = () => {
         </p>
       </section>
       <Link to="/saturn">
-        {" "}
         <button className="my-6 bg-blue-900 text-white">
           Our cosmic dance continues
-        </button>{" "}
+        </button>
       </Link>
     </Planets>
   );
 };
-export default Jupiter;
+export default JupiterPage;

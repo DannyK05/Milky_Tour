@@ -1,11 +1,9 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { saturn, saturn_ring } from "../assets";
-import { titan } from "../assets";
-import { cassini } from "../assets";
+import { Saturn, SaturnRing, Titan, Cassini } from "../assets";
 
-const Saturn = () => {
+const SaturnPage = () => {
   return (
     <Planets id="4">
       <section>
@@ -18,7 +16,7 @@ const Saturn = () => {
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
-            src={saturn}
+            src={Saturn}
             alt="Saturn"
           />
           <h1 className="animate__animated animate__bounceInLeft">
@@ -27,20 +25,20 @@ const Saturn = () => {
         </div>
 
         <Fact
-          image={saturn_ring}
+          image={SaturnRing}
           content="Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "
         />
         <Fact
-          image={titan}
+          image={Titan}
           content="Say hello to Titan, Saturn's largest moon, shrouded in a thick atmosphere. It's like a misty moon dream waiting to be explored. "
         />
         <Fact
-          image={cassini}
+          image={Cassini}
           content="Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "
         />
         <p className="greet">
           As we glide past Saturn, think of it as a cosmic slingshot, propelling
-          us to the next destination – Uranus!
+          us to the next destination - Uranus!
         </p>
       </section>
       <Link to="/uranus">
@@ -50,4 +48,4 @@ const Saturn = () => {
   );
 };
 
-export default Saturn;
+export default SaturnPage;

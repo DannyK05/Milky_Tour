@@ -1,9 +1,9 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { darkspot, neptune, neptune_storm, triton } from "../assets";
+import { NeptuneDarkSpot, Neptune, NeptuneStorm, Triton } from "../assets";
 
-const Neptune = () => {
+const NeptunePage = () => {
   return (
     <Planets id="6">
       <section>
@@ -11,12 +11,12 @@ const Neptune = () => {
         <p className="greet animate__animated animate__bounceInLeft">
           We've now arrived at Neptune, the mystic ice giant at the edge of our
           solar system. Brace yourselves for the deep blue wonders of this
-          distant beauty.{" "}
+          distant beauty.
         </p>
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
-            src={neptune}
+            src={Neptune}
             alt="Neptune"
           />
           <h1 className="animate__animated animate__bounceInLeft">
@@ -25,15 +25,15 @@ const Neptune = () => {
         </div>
 
         <Fact
-          image={neptune_storm}
+          image={NeptuneStorm}
           content="Dive into Neptune's dynamic atmosphere, adorned with fast-moving storms and swirling clouds. It's like a celestial ballet of atmospheric dynamics. "
         />
         <Fact
-          image={triton}
+          image={Triton}
           content="Say hello to Triton, Neptune's moon with a rebellious spirit - it orbits the planet backward. Now that's one moon with its own cosmic groove! "
         />
         <Fact
-          image={darkspot}
+          image={NeptuneDarkSpot}
           content="Observe the Great Dark Spot, a storm system akin to Jupiter's Great Red Spot. It's like Neptune's mysterious eye staring into the depths of space. "
         />
         <p className="greet">
@@ -43,11 +43,10 @@ const Neptune = () => {
         </p>
       </section>
       <Link to="/kupier">
-        {" "}
         <button className="bg-blue-900 text-white my-6"> Zooming off </button>
       </Link>
     </Planets>
   );
 };
 
-export default Neptune;
+export default NeptunePage;

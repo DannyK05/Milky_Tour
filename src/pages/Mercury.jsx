@@ -1,16 +1,15 @@
 import { Planets } from "../components/planet";
 import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { caloris, mercury } from "../assets";
-import Rotation from "../assets/Mercury/mercury_rotation.jpeg";
+import { Caloris, Mercury } from "../assets";
+import Rotation from "../assets/images/mercury/mercury_rotation.jpeg";
 
-const Mercury = () => {
+const MercuryPage = () => {
   return (
     <Planets id="0">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
-          {" "}
           Our Milky Tour now brings us to the sweltering domain of Mercury, the
           swift messenger of the solar system. Get ready to witness the scorched
           beauty of the closest planet to the Sun.
@@ -18,7 +17,7 @@ const Mercury = () => {
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
-            src={mercury}
+            src={Mercury}
             alt="Mercury"
           />
           <h1 className="animate__animated animate__bounceInLeft">
@@ -33,7 +32,7 @@ const Mercury = () => {
           day!
         </p>
         <Fact
-          image={caloris}
+          image={Caloris}
           content="Observe the Caloris Basin, a colossal impact site that could fit Texas within its borders. It's like a cosmic scar from a colossal collision. "
         />
         <Fact
@@ -49,13 +48,12 @@ const Mercury = () => {
         </p>
       </section>
       <Link to="/sun">
-        {" "}
         <button className="my-6 bg-blue-900 text-white">
           Our cosmic dance continues
-        </button>{" "}
+        </button>
       </Link>
     </Planets>
   );
 };
 
-export default Mercury;
+export default MercuryPage;

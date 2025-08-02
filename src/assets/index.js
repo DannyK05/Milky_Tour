@@ -1,63 +1,63 @@
-import orion3 from './orion3.png';
-import iva_suit from './iva_suit.png';
-import venus from "./Venus/planet_venus.png";
-import venus_volanoes from './Venus/venus_volcanoes.jpg'
-import spin from "./Venus/spin.jpeg";
-import mercury from "./Mercury/planet_mercury.png"
-import caloris from './Mercury/Caloris.webp'
-import planet_mars from './Mars/planet_mars.png'
-import olympus_mons from './Mars/olympus_mons.jpg'
-import mars_valleries from './Mars/mars-valleries.jpg'
-import curiosity_rover from './Mars/curiosity_rover.jpg'
-import planet_jupiter from './Jupiter/planet_jupiter.png'
-import red_spot from './Jupiter/red_spot.webp'
-import jupiter_moons from './Jupiter/jupiter_moons.jpg'
-import jovain_atmosphere from './Jupiter/jovian_atmosphere.webp'
-import saturn from "./Saturn/planet_saturn.png"
-import saturn_ring from './Saturn/saturn_ring.jpeg'
-import titan from './Saturn/titan.png'
-import cassini from './Saturn/Cassini.jpg'
-import uranus from "./Uranus/planet_uranus.png"
-import tilt from "./Uranus/tilt.avif"
-import montage from "./Uranus/Uranus_Montage.jpg"
-import neptune from "./Neptune/planet_neptune.png"
-import neptune_storm from "./Neptune/neptune_atmosphere.jpg"
-import triton from "./Neptune/triton.jpg"
-import darkspot from "./Neptune/dark_spot.jpg"
-import pluto from "./Pluto/planet_pluto.png"
-import heart from "./Pluto/heart_shape.png"
-import kupier_belt from "./Pluto/kuiper_belt.jpg"
-import horizon from "./Pluto/horizon.webp"
+import Orion from "./images/orion3.png";
+import IvaSuit from "./images/iva_suit.png";
+import Venus from "./images/venus/planet_venus.png";
+import VenusVolcanoes from "./images/venus/venus_volcanoes.jpg";
+import VenusSpin from "./images/venus/spin.jpeg";
+import Mercury from "./images/mercury/planet_mercury.png";
+import Caloris from "./images/mercury/Caloris.webp";
+import Mars from "./images/mars/planet_mars.png";
+import OlympusMons from "./images/mars/olympus_mons.jpg";
+import MarsValleries from "./images/mars/mars-valleries.jpg";
+import CuriosityRover from "./images/mars/curiosity_rover.jpg";
+import Jupiter from "./images/jupiter/planet_jupiter.png";
+import RedSpot from "./images/jupiter/red_spot.webp";
+import JupiterMoons from "./images/jupiter/jupiter_moons.jpg";
+import JovainAtmosphere from "./images/jupiter/jovian_atmosphere.webp";
+import Saturn from "./images/saturn/planet_saturn.png";
+import SaturnRing from "./images/saturn/saturn_ring.jpeg";
+import Titan from "./images/saturn/titan.png";
+import Cassini from "./images/saturn/Cassini.jpg";
+import Uranus from "./images/uranus/planet_uranus.png";
+import UranusTilt from "./images/uranus/tilt.avif";
+import UranusMontage from "./images/uranus/uranus_montage.jpg";
+import Neptune from "./images/neptune/planet_neptune.png";
+import NeptuneStorm from "./images/neptune/neptune_atmosphere.jpg";
+import Triton from "./images/neptune/triton.jpg";
+import NeptuneDarkSpot from "./images/neptune/dark_spot.jpg";
+import Pluto from "./images/pluto/planet_pluto.png";
+import PlutoHeartShape from "./images/pluto/heart_shape.png";
+import KupierBelt from "./images/pluto/kuiper_belt.jpg";
+import PlutoHorizon from "./images/pluto/horizon.webp";
 
 export {
-    orion3,
-    iva_suit,
-    venus,
-    mercury,
-    venus_volanoes,
-    spin,
-    caloris,
-    planet_mars,
-    olympus_mons,
-    mars_valleries,
-    curiosity_rover,
-    planet_jupiter,
-    red_spot,
-    jupiter_moons,
-    jovain_atmosphere,
-    saturn,
-    saturn_ring,
-    titan,
-    cassini, 
-    uranus,
-    tilt,
-    montage,
-    neptune,
-    neptune_storm,
-    triton, 
-    darkspot,
-    pluto,
-    heart,
-    kupier_belt,
-    horizon
-}
+  Orion,
+  IvaSuit,
+  Venus,
+  Mercury,
+  VenusVolcanoes,
+  VenusSpin,
+  Caloris,
+  Mars,
+  OlympusMons,
+  MarsValleries,
+  CuriosityRover,
+  Jupiter,
+  RedSpot,
+  JupiterMoons,
+  JovainAtmosphere,
+  Saturn,
+  SaturnRing,
+  Titan,
+  Cassini,
+  Uranus,
+  UranusTilt,
+  UranusMontage,
+  Neptune,
+  NeptuneStorm,
+  Triton,
+  NeptuneDarkSpot,
+  Pluto,
+  PlutoHeartShape,
+  KupierBelt,
+  PlutoHorizon,
+};

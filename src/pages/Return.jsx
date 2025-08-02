@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-const Return = () => {
+
+const ReturnPage = () => {
   return (
     <section className=" return bg-[#000026] p-4  h-full text-white">
       <div className="sm:px-24 ">
@@ -69,4 +70,4 @@ const Return = () => {
     </section>
   );
 };
-export default Return;
+export default ReturnPage;
