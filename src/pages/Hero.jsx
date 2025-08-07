@@ -16,47 +16,47 @@ const HeroPage = () => {
       <img
         src={Astronaut}
         className="astronaut  absolute bottom-[20%] md:left-[22%] w-[100%]"
-        alt=""
+        alt="an image of Saturn"
       />
       <img
         src={Mercury}
         className="mercury absolute fadeInRight w-[20%] top-[10%] right-[15%] md:top[10%] md:w-[10%]"
-        alt="Mercury"
+        alt="an image of Mercury"
       />
       <img
         src={Venus}
         className="venus absolute fadeInRight w-[20%] top-[30%] right-[13%] md:top[30%] md:w-[10%]"
-        alt="Venus"
+        alt="an image of Venus"
       />
       <img
         src={Mars}
         className="mars absolute fadeInRight w-[20%] top-[50%] right-[10%] md:top[50%] md:w-[10%]"
-        alt="Mars"
+        alt="an image of Mars"
       />
       <img
         src={Jupiter}
         className=" jupiter absolute fadeInRight w-[20%] top-[70%] right-[15%] md:top[70%] md:w-[10%]"
-        alt="Jupiter"
+        alt="an image of Jupiter"
       />
       <img
         src={Saturn}
         className="saturn absolute fadeInLeft w-[20%] top-[70%] left-[15%] md:top[90%] md:w-[10%]"
-        alt=""
+        alt="an image of Saturn"
       />
       <img
         src={Uranus}
         className="uranus absolute fadeInLeft w-[20%] top-[50%] left-[13%] md:top[50%] md:w-[10%]"
-        alt=""
+        alt="an image of Uranus"
       />
       <img
         src={Neptune}
         className="neptune absolute fadeInLeft w-[20%] top-[30%] left-[10%] md:top[30%] md:w-[10%]"
-        alt=""
+        alt="an image of Neptune"
       />
       <img
         src={Pluto}
         className="pluto absolute fadeInLeft w-[20%] top-[10%] left-[15%] md:top[10%] md:w-[10%]"
-        alt=""
+        alt="an image of Pluto"
       />
       <header>
         <p className="">Milky Tour </p>
@@ -74,49 +74,89 @@ const HeroPage = () => {
       <div className="carousel flex ">
         <Link to="/mercury">
           <figure>
-            <img src={Mercury} alt="Mercury" />
+            <img
+              width="192px"
+              height="108px"
+              src={Mercury}
+              alt="Image of Mercury"
+            />
             <figcaption>Mercury</figcaption>
           </figure>
         </Link>
         <Link to="/venus">
           <figure>
-            <img src={Venus} alt="Venus" />
+            <img
+              width="192px"
+              height="108px"
+              src={Venus}
+              alt="image of Venus"
+            />
             <figcaption>Venus</figcaption>
           </figure>
         </Link>
         <Link to="/mars">
           <figure>
-            <img src={Mars} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Mars}
+              alt="an image of Mars"
+            />
             <figcaption>Mars</figcaption>
           </figure>
         </Link>
         <Link to="/jupiter">
           <figure>
-            <img src={Jupiter} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Jupiter}
+              alt="an image of Jupiter"
+            />
             <figcaption>Jupiter</figcaption>
           </figure>
         </Link>
         <Link to="/saturn">
           <figure>
-            <img src={Saturn} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Saturn}
+              alt="an image of Saturn"
+            />
             <figcaption>Saturn</figcaption>
           </figure>
         </Link>
         <Link to="/uranus">
           <figure>
-            <img src={Uranus} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Uranus}
+              alt="an image of Uranus"
+            />
             <figcaption>Uranus</figcaption>
           </figure>
         </Link>
         <Link to="/neptune">
           <figure>
-            <img src={Neptune} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Neptune}
+              alt="an image of Neptune"
+            />
             <figcaption>Neptune</figcaption>
           </figure>
         </Link>
         <Link to="/pluto">
           <figure>
-            <img src={Pluto} alt="" />
+            <img
+              width="192px"
+              height="108px"
+              src={Pluto}
+              alt="an image of Pluto"
+            />
             <figcaption>Pluto</figcaption>
           </figure>
         </Link>
