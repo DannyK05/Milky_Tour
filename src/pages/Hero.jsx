@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+
 import "animate.css";
+
 import Astronaut from "../assets/images/astronaut.png";
 import Jupiter from "../assets/images/jupiter/planet_jupiter.png";
 import Mars from "../assets/images/mars/planet_mars.png";

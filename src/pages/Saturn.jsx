@@ -1,11 +1,13 @@
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { Saturn, SaturnRing, Titan, Cassini } from "../assets";
 
 const SaturnPage = () => {
   return (
-    <Planets id="4">
+    <PlanetLayout id="4">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className=" greet animate__animated animate__bounceInLeft">
@@ -24,15 +26,15 @@ const SaturnPage = () => {
           </h1>
         </div>
 
-        <Fact
+        <FactLayout
           image={SaturnRing}
           content="Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "
         />
-        <Fact
+        <FactLayout
           image={Titan}
           content="Say hello to Titan, Saturn's largest moon, shrouded in a thick atmosphere. It's like a misty moon dream waiting to be explored. "
         />
-        <Fact
+        <FactLayout
           image={Cassini}
           content="Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "
         />
@@ -44,7 +46,7 @@ const SaturnPage = () => {
       <Link to="/uranus">
         <button className="bg-blue-900 text-white my-6">Keep gliding</button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 

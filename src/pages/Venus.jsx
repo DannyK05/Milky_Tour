@@ -1,12 +1,15 @@
-import "animate.css";
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import "animate.css";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { Venus, VenusVolcanoes, VenusSpin } from "../assets";
 
 const VenusPage = () => {
   return (
-    <Planets id="1">
+    <PlanetLayout id="1">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="animate__animated animate__bounceInLeft">
@@ -28,11 +31,11 @@ const VenusPage = () => {
           in its thick atmosphere. No need to break out the sunscreen; you'd
           turn into a toasty astronaut nugget in seconds!
         </p>
-        <Fact
+        <FactLayout
           image={VenusSpin}
           content="Venus has a peculiar retrograde rotation, meaning it spins backward compared to most planets. It's like the ultimate cosmic dance move! "
         />
-        <Fact
+        <FactLayout
           image={VenusVolcanoes}
           content="If we could see through those thick clouds, you'd spot towering volcanoes and vast plains. Venus is like the solar system's mysterious beauty hiding behind a veil. "
         />
@@ -55,7 +58,7 @@ const VenusPage = () => {
         </button>
       </Link>
       .
-    </Planets>
+    </PlanetLayout>
   );
 };
 

@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import { Belt } from "../components/belt";
-import { Fact } from "../components/fact";
-import { KupierBelt } from "../assets";
+
+import { BeltLayout } from "../components/layouts/BeltLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import KupierObject from "../assets/images/kupier/kupier_objects.webp";
 import Wave from "../assets/images/kupier/Kupier_belt.jpg";
+import { KupierBelt } from "../assets";
+
 const KupierPage = () => {
   return (
-    <Belt>
+    <BeltLayout>
       <section>
         {/* animating elements from the left overflows the website */}
         {/* animating elements from the left overflows the website */}
@@ -25,15 +28,15 @@ const KupierPage = () => {
             Kuiper Belt - Icy Realms Beyond
           </h1>
         </div>
-        <Fact
+        <FactLayout
           image={Wave}
           content="Wave hello to Pluto and other dwarf planets, the ambassadors of the Kuiper Belt. It's like a cosmic gathering of distant cousins, each with its own unique charm. "
         />
-        <Fact
+        <FactLayout
           image={KupierObject}
           content="Encounter Kuiper Belt objects, icy remnants from the early solar system. These are like time capsules, preserving the secrets of our cosmic origins. "
         />
-        <Fact
+        <FactLayout
           image={Horizon}
           content="Follow in the footsteps of the New Horizons spacecraft, which continues its journey into the Kuiper Belt after its historic Pluto flyby. It's like a cosmic explorer venturing into uncharted territory. "
         />
@@ -44,7 +47,7 @@ const KupierPage = () => {
       <Link to="/pluto">
         <button className="my-6 bg-blue-900 text-white">Propel to pluto</button>
       </Link>
-    </Belt>
+    </BeltLayout>
   );
 };
 export default KupierPage;

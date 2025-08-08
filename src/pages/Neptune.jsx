@@ -1,11 +1,13 @@
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { NeptuneDarkSpot, Neptune, NeptuneStorm, Triton } from "../assets";
 
 const NeptunePage = () => {
   return (
-    <Planets id="6">
+    <PlanetLayout id="6">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
@@ -24,15 +26,15 @@ const NeptunePage = () => {
           </h1>
         </div>
 
-        <Fact
+        <FactLayout
           image={NeptuneStorm}
           content="Dive into Neptune's dynamic atmosphere, adorned with fast-moving storms and swirling clouds. It's like a celestial ballet of atmospheric dynamics. "
         />
-        <Fact
+        <FactLayout
           image={Triton}
           content="Say hello to Triton, Neptune's moon with a rebellious spirit - it orbits the planet backward. Now that's one moon with its own cosmic groove! "
         />
-        <Fact
+        <FactLayout
           image={NeptuneDarkSpot}
           content="Observe the Great Dark Spot, a storm system akin to Jupiter's Great Red Spot. It's like Neptune's mysterious eye staring into the depths of space. "
         />
@@ -45,7 +47,7 @@ const NeptunePage = () => {
       <Link to="/kupier">
         <button className="bg-blue-900 text-white my-6"> Zooming off </button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 

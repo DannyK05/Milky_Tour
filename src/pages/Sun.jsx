@@ -1,6 +1,8 @@
-import { Belt } from "../components/belt";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { BeltLayout } from "../components/layouts/BeltLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import Solarflare from "../assets/images/sun/solar_flare.webp";
 import Solarwind from "../assets/images/sun/solar_wind.jpeg";
 import Solarspot from "../assets/images/sun/solar_spot.webp";
@@ -8,7 +10,7 @@ import sun from "../assets/images/sun/sun.webp";
 
 const SunPage = () => {
   return (
-    <Belt>
+    <BeltLayout>
       <section>
         {/* animating elements from the left overflows the website */}
         {/* animating elements from the left overflows the website */}
@@ -27,15 +29,15 @@ const SunPage = () => {
             Sun - The Cosmic Inferno
           </h1>
         </div>
-        <Fact
+        <FactLayout
           image={Solarflare}
           content="Marvel at the solar flares, eruptions of energy dancing across the Sun's surface. It's like a mesmerizing display of cosmic fireworks in the vast theater of space. "
         />
-        <Fact
+        <FactLayout
           image={Solarspot}
           content="Observe sunspots, mysterious dark spots on the Sun caused by intense magnetic activity. They're like puzzles in the solar puzzle book, constantly changing and shifting. "
         />
-        <Fact
+        <FactLayout
           image={Solarwind}
           content="Feel the solar wind, a stream of charged particles flowing outward from the Sun. It's like a gentle cosmic breeze brushing against our spacecraft."
         />
@@ -52,7 +54,7 @@ const SunPage = () => {
           Next stop: the red planet, Mars!
         </button>
       </Link>
-    </Belt>
+    </BeltLayout>
   );
 };
 export default SunPage;

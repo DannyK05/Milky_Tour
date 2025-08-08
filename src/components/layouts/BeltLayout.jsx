@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Belt = (props) => {
+export const BeltLayout = (props) => {
   return (
     <main className="belt">
       <Link to="/">

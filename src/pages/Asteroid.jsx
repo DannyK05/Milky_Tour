@@ -1,12 +1,14 @@
-import { Belt } from "../components/belt";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { BeltLayout } from "../components/layouts/BeltLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import AsteroidBelt from "../assets/images/asteroid/asteroid_belt.webp";
 import Ceres from "../assets/images/asteroid/ceres.jpeg";
 import Trojan from "../assets/images/asteroid/trojan.webp";
 const AsteroidPage = () => {
   return (
-    <Belt>
+    <BeltLayout>
       <section>
         {/* animating elements from the left overflows the website */}
         {/* animating elements from the left overflows the website */}
@@ -25,15 +27,15 @@ const AsteroidPage = () => {
             Asteroid Belt - Celestial Dodgeball
           </h1>
         </div>
-        <Fact
+        <FactLayout
           image={AsteroidBelt}
           content="Peer out your windows and witness the rocky neighbors of the solar system. These asteroids are like ancient travelers, remnants from the early days of our cosmic neighborhood. "
         />
-        <Fact
+        <FactLayout
           image={Ceres}
           content="Spot Ceres, the largest object in the asteroid belt and a dwarf planet in its own right. It's like an oasis in this cosmic desert, standing out amidst the asteroid crowd. "
         />
-        <Fact
+        <FactLayout
           image={Trojan}
           content="Learn about the Trojan asteroids, loyal companions that share orbits with Jupiter. It's like a celestial convoy, traveling in harmony with the mighty gas giant. "
         />
@@ -48,7 +50,7 @@ const AsteroidPage = () => {
           Next stop: the mighty gas giant, Jupiter!
         </button>
       </Link>
-    </Belt>
+    </BeltLayout>
   );
 };
 export default AsteroidPage;

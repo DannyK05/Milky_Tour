@@ -1,12 +1,14 @@
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
-import { Caloris, Mercury } from "../assets";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import Rotation from "../assets/images/mercury/mercury_rotation.jpeg";
+import { Caloris, Mercury } from "../assets";
 
 const MercuryPage = () => {
   return (
-    <Planets id="0">
+    <PlanetLayout id="0">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
@@ -31,11 +33,11 @@ const MercuryPage = () => {
           extremes, where you could experience summer and winter in the same
           day!
         </p>
-        <Fact
+        <FactLayout
           image={Caloris}
           content="Observe the Caloris Basin, a colossal impact site that could fit Texas within its borders. It's like a cosmic scar from a colossal collision. "
         />
-        <Fact
+        <FactLayout
           image={Rotation}
           content="Learn about Mercury's slow rotation, which means it experiences incredibly long days and nights. It's like a planet caught in a cosmic slow dance with the Sun. "
         />
@@ -52,7 +54,7 @@ const MercuryPage = () => {
           Our cosmic dance continues
         </button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 

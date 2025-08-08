@@ -1,9 +1,11 @@
-import "../App.css";
-import { Link } from "react-router-dom";
-import Visor from "../components/visor";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export const Planets = (props) => {
+import "../../App.css";
+
+import Visor from "../Visor";
+
+export const PlanetLayout = (props) => {
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {
     setIsVisible(!isVisible);

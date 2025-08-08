@@ -1,11 +1,13 @@
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { Uranus, UranusTilt, UranusMontage } from "../assets";
 
 const UranusPage = () => {
   return (
-    <Planets id="5">
+    <PlanetLayout id="5">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
@@ -24,15 +26,15 @@ const UranusPage = () => {
           </h1>
         </div>
 
-        <Fact
+        <FactLayout
           image=""
           content="Uranus is a rebel in our planetary lineup, spinning on its side like a space somersault artist. It's the solar system's coolest acrobat! "
         />
-        <Fact
+        <FactLayout
           image={UranusTilt}
           content=" Dive into the mysteries of Uranus's magnetic field, which is tilted at a crazy angle. It's like the planet has its own magnetic dance routine."
         />
-        <Fact
+        <FactLayout
           image={UranusMontage}
           content=" Admire the ensemble of Uranian moons, each with its own peculiar charm. They're like the supporting cast in Uranus's cosmic ballet. "
         />
@@ -46,7 +48,7 @@ const UranusPage = () => {
           Next stop, Neptune
         </button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 

@@ -1,10 +1,12 @@
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 import { Link } from "react-router-dom";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { PlutoHeartShape, PlutoHorizon, KupierBelt, Pluto } from "../assets";
 const PlutoPage = () => {
   return (
-    <Planets id="7">
+    <PlanetLayout id="7">
       <section>
         {/* animating elements from the left overflows the website */}
         <p className=" greet animate__animated animate__bounceInLeft">
@@ -23,15 +25,15 @@ const PlutoPage = () => {
           </h1>
         </div>
 
-        <Fact
+        <FactLayout
           image={PlutoHeartShape}
           content="Zoom in on the heart-shaped feature on Pluto's surface, appropriately named Tombaugh Regio. It's like Pluto's cosmic love letter to the universe. "
         />
-        <Fact
+        <FactLayout
           image={KupierBelt}
           content="Explore the dynamics of dwarf planets and their place in the Kuiper Belt, a distant region beyond Neptune. It's a realm of icy wonders and celestial oddities. "
         />
-        <Fact
+        <FactLayout
           image={PlutoHorizon}
           content="Remember the New Horizons mission? It made a historic flyby of Pluto, giving us our first up-close look at this distant world. It's like unlocking the secrets of a cosmic time capsule. "
         />
@@ -47,7 +49,7 @@ const PlutoPage = () => {
       <Link to="/return">
         <button>Back to earth</button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 

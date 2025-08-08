@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+
+import { PlanetLayout } from "../components/layouts/PlanetLayout";
+import { FactLayout } from "../components/layouts/FactLayout";
+
 import { Jupiter, RedSpot, JupiterMoons, JovainAtmosphere } from "../assets";
-import { Planets } from "../components/planet";
-import { Fact } from "../components/fact";
 
 const JupiterPage = () => {
   return (
-    <Planets id="3">
+    <PlanetLayout id="3">
       <section>
         {/* animating elements from the left overflows the website */}
         {/* animating elements from the left overflows the website */}
@@ -24,15 +26,15 @@ const JupiterPage = () => {
             Jupiter - The Giant Stormy Sphere
           </h1>
         </div>
-        <Fact
+        <FactLayout
           image={RedSpot}
           content="Feast your eyes on the Great Red Spot, a storm that has been raging for centuries. It's like the solar system's eternal masterpiece of chaos. "
         />
-        <Fact
+        <FactLayout
           image={JupiterMoons}
           content="Look closely, and you'll witness the dance of Jupiter's four largest moons - Io, Europa, Ganymede, and Callisto. It's like a celestial ballet in our very own cosmic theater. "
         />
-        <Fact
+        <FactLayout
           image={JovainAtmosphere}
           content="Jupiter's atmosphere is a mesmerizing blend of colorful bands and swirling clouds. It's a living canvas of atmospheric art. "
         />
@@ -46,7 +48,7 @@ const JupiterPage = () => {
           Our cosmic dance continues
         </button>
       </Link>
-    </Planets>
+    </PlanetLayout>
   );
 };
 export default JupiterPage;
