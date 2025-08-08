@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import { PlanetLayout } from "../components/layouts/PlanetLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import { NeptuneDarkSpot, Neptune, NeptuneStorm, Triton } from "../assets";
+import {
+  NeptuneDarkSpot,
+  Neptune,
+  NeptuneStorm,
+  Triton,
+} from "../components/image-exports";
 
 const NeptunePage = () => {
   return (

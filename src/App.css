@@ -20,7 +20,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-image: url("./assets/images/layout/hero_bg.jpg");
+  background-image: url("/assets/images/layout/hero_bg.jpg");
   margin: 0;
   z-index: 1;
 }
@@ -177,7 +177,7 @@ section img {
   padding: 10px;
 }
 .belt {
-  background-image: url("./assets/images/layout/interlude_bg.jpg");
+  background-image: url("/assets/images/layout/interlude_bg.jpg");
   padding: 10px;
 }
 .belt p {

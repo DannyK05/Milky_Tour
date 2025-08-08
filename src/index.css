@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "IBM";
-  src: url("./assets/fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf");
+  src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf");
 }
 
 @font-face {
   font-family: "Vipna";
-  src: url("./assets/fonts/Vipnagorgialla/vipnagorgialla.bold-italic.otf");
+  src: url("/assets/fonts/Vipnagorgialla/vipnagorgialla.bold-italic.otf");
 }
 
 :root {

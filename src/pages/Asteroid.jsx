@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { BeltLayout } from "../components/layouts/BeltLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import AsteroidBelt from "../assets/images/asteroid/asteroid_belt.webp";
-import Ceres from "../assets/images/asteroid/ceres.jpeg";
-import Trojan from "../assets/images/asteroid/trojan.webp";
+import AsteroidBelt from "/assets/images/asteroid/asteroid_belt.webp";
+import Ceres from "/assets/images/asteroid/ceres.jpeg";
+import Trojan from "/assets/images/asteroid/trojan.webp";
 const AsteroidPage = () => {
   return (
     <BeltLayout>

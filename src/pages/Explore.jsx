@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { Orion, IvaSuit } from "../assets";
+import { Orion, IvaSuit } from "../components/image-exports";
 const ExplorePage = () => {
   return (
     <div className="bg-[#000026] p-8 h-full text-white">

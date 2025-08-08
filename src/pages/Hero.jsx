@@ -2,22 +2,22 @@ import { Link } from "react-router-dom";
 
 import "animate.css";
 
-import Astronaut from "../assets/images/astronaut.png";
-import Jupiter from "../assets/images/jupiter/planet_jupiter.png";
-import Mars from "../assets/images/mars/planet_mars.png";
-import Pluto from "../assets/images/pluto/planet_pluto.png";
-import Venus from "../assets/images/venus/planet_venus.png";
-import Mercury from "../assets/images/mercury/planet_mercury.png";
-import Saturn from "../assets/images/saturn/planet_saturn.png";
-import Uranus from "../assets/images/uranus/planet_uranus.png";
-import Neptune from "../assets/images/neptune/planet_neptune.png";
+import Astronaut from "/assets/images/astronaut.png";
+import Jupiter from "/assets/images/jupiter/planet_jupiter.png";
+import Mars from "/assets/images/mars/planet_mars.png";
+import Pluto from "/assets/images/pluto/planet_pluto.png";
+import Venus from "/assets/images/venus/planet_venus.png";
+import Mercury from "/assets/images/mercury/planet_mercury.png";
+import Saturn from "/assets/images/saturn/planet_saturn.png";
+import Uranus from "/assets/images/uranus/planet_uranus.png";
+import Neptune from "/assets/images/neptune/planet_neptune.png";
 
 const HeroPage = () => {
   return (
     <section className="heroSection ">
       <img
         src={Astronaut}
-        className="astronaut  absolute bottom-[20%] md:left-[22%] w-[100%]"
+        className="astronaut w-full absolute bottom-[20%] md:left-[22%]m lg:left-[30%]"
         alt="an image of Saturn"
       />
       <img

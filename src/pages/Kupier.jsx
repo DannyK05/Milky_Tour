@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { BeltLayout } from "../components/layouts/BeltLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import KupierObject from "../assets/images/kupier/kupier_objects.webp";
-import Wave from "../assets/images/kupier/Kupier_belt.jpg";
-import { KupierBelt } from "../assets";
+import KupierObject from "/assets/images/kupier/kupier_objects.webp";
+import Wave from "/assets/images/kupier/Kupier_belt.jpg";
+import { KupierBelt } from "../components/image-exports";
 
 const KupierPage = () => {
   return (

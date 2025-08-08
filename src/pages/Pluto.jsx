@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import { PlanetLayout } from "../components/layouts/PlanetLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import { PlutoHeartShape, PlutoHorizon, KupierBelt, Pluto } from "../assets";
+import {
+  PlutoHeartShape,
+  PlutoHorizon,
+  KupierBelt,
+  Pluto,
+} from "../components/image-exports";
 const PlutoPage = () => {
   return (
     <PlanetLayout id="7">

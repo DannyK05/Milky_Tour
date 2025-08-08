@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { BeltLayout } from "../components/layouts/BeltLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import Solarflare from "../assets/images/sun/solar_flare.webp";
-import Solarwind from "../assets/images/sun/solar_wind.jpeg";
-import Solarspot from "../assets/images/sun/solar_spot.webp";
-import sun from "../assets/images/sun/sun.webp";
+import Solarflare from "/assets/images/sun/solar_flare.webp";
+import Solarwind from "/assets/images/sun/solar_wind.jpeg";
+import Solarspot from "/assets/images/sun/solar_spot.webp";
+import sun from "/assets/images/sun/sun.webp";
 
 const SunPage = () => {
   return (

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import { PlanetLayout } from "../components/layouts/PlanetLayout";
 import { FactLayout } from "../components/layouts/FactLayout";
 
-import { Saturn, SaturnRing, Titan, Cassini } from "../assets";
+import {
+  Saturn,
+  SaturnRing,
+  Titan,
+  Cassini,
+} from "../components/image-exports";
 
 const SaturnPage = () => {
   return (
