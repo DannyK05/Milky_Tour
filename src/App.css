@@ -245,6 +245,17 @@ section.visor span {
 section.visor h2 {
   font-size: 0.8rem;
 }
+.alien-popup div {
+  background-color: rgba(173, 121, 236, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 2px 2px 20px #ad79ec;
+}
+
+.alien-popup h2 {
+  font-family: "IBM", monospace;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);
