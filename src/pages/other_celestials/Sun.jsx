@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import { BeltLayout } from "../components/layouts/BeltLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { BeltLayout } from "../../components/layouts/BeltLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
 import Solarflare from "/assets/images/sun/solar_flare.webp";
 import Solarwind from "/assets/images/sun/solar_wind.jpeg";

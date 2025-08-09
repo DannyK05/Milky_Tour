@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import { PlanetLayout } from "../components/layouts/PlanetLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { PlanetLayout } from "../../components/layouts/PlanetLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
 import Rotation from "/assets/images/mercury/mercury_rotation.jpeg";
-import { Caloris, Mercury } from "../components/image-exports";
+import { Caloris, Mercury } from "../../components/image-exports";
 
 const MercuryPage = () => {
   return (

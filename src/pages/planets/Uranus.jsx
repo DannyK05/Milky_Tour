@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 
-import { PlanetLayout } from "../components/layouts/PlanetLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { PlanetLayout } from "../../components/layouts/PlanetLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
-import { Uranus, UranusTilt, UranusMontage } from "../components/image-exports";
+import {
+  Uranus,
+  UranusTilt,
+  UranusMontage,
+} from "../../components/image-exports";
 
 const UranusPage = () => {
   return (

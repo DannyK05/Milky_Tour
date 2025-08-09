@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "animate.css";
 
@@ -60,8 +60,12 @@ const HeroPage = () => {
         className="pluto absolute fadeInLeft w-[20%] top-[10%] left-[15%] md:top[10%] md:w-[10%]"
         alt="an image of Pluto"
       />
-      <header>
+      <header className="w-full flex items-center justify-between px-4">
         <p className="">Milky Tour </p>
+        <nav className="space-x-8 text-lg">
+          <NavLink to={"/render"}>3D Render</NavLink>
+          <NavLink to={"/news"}>News</NavLink>
+        </nav>
       </header>
 
       <div className=" content text-white">

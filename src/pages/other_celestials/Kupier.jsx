@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-import { BeltLayout } from "../components/layouts/BeltLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { BeltLayout } from "../../components/layouts/BeltLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
 import KupierObject from "/assets/images/kupier/kupier_objects.webp";
 import Wave from "/assets/images/kupier/Kupier_belt.jpg";
-import { KupierBelt } from "../components/image-exports";
+import Horizon from "/assets/images/kupier/horizon.webp";
+import { KupierBelt } from "../../components/image-exports";
 
 const KupierPage = () => {
   return (

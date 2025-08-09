@@ -8,11 +8,11 @@ const AlienPop = ({ className }) => {
 
   return (
     <div
-      className={`${className} alien-popup z-10 flex items-center fixed top-10 space-x-1`}
+      className={`${className} alien-popup flex items-center fixed top-20 lg:top-40 space-x-1`}
     >
       <div className="px-2 py-4 ">
         <h2 className="text-2xl font-semibold border-b pb-1">
-          👽 Bzorp - hunted fugitive
+          👽 Bzorp - wAnTeD fugitive
         </h2>
         <p className="font-bold text-xl">{chosenFact.encryptedText}</p>
         <span>translating...</span>

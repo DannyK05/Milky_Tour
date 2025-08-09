@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 
 import "animate.css";
 
-import { PlanetLayout } from "../components/layouts/PlanetLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { PlanetLayout } from "../../components/layouts/PlanetLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
-import { Venus, VenusVolcanoes, VenusSpin } from "../components/image-exports";
+import {
+  Venus,
+  VenusVolcanoes,
+  VenusSpin,
+} from "../../components/image-exports";
 
 const VenusPage = () => {
   return (

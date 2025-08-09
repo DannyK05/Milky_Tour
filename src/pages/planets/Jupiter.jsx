@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-import { PlanetLayout } from "../components/layouts/PlanetLayout";
-import { FactLayout } from "../components/layouts/FactLayout";
+import { PlanetLayout } from "../../components/layouts/PlanetLayout";
+import { FactLayout } from "../../components/layouts/FactLayout";
 
 import {
   Jupiter,
   RedSpot,
   JupiterMoons,
   JovainAtmosphere,
-} from "../components/image-exports";
+} from "../../components/image-exports";
 
 const JupiterPage = () => {
   return (
