@@ -1,9 +1,13 @@
+import Layout from "../components/layouts/Layout";
+
 const Render = () => {
   return (
-    <div>
-      <h1>Render</h1>
-      <p>Coming soon ....</p>
-    </div>
+    <Layout>
+      <div className="pt-10">
+        <h1>Render</h1>
+        <p>Coming soon ....</p>
+      </div>
+    </Layout>
   );
 };
 

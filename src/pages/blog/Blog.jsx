@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
+
 import CrashingUfo from "../../components/icons/CrashingUfo";
 
 const Blog = () => {
@@ -62,6 +64,7 @@ const Blog = () => {
 
   return (
     <div>
+      <Link to={"/news"}>Back</Link>
       {isLoadingBlogData ? (
         <div className="flex flex-col p-1 items-center">
           <p>Contacting Bzorp....</p>
