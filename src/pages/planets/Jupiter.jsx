@@ -15,12 +15,15 @@ const JupiterPage = () => {
     <PlanetLayout id="3">
       <section>
         {/* animating elements from the left overflows the website */}
-        {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
-          Our celestial journey brings us to the grandeur of Jupiter, the
-          largest planet in our solar system. Brace yourselves for a spectacle
-          of swirling storms and colossal beauty.
+          Fasten your harness, crew — we’ve arrived at the mighty ruler of the
+          outer solar system: Jupiter. This colossal gas giant is so massive it
+          could swallow more than 1,300 Earths, yet it spins with dizzying
+          speed, completing a day in less than 10 hours. Ahead of us stretches a
+          horizon of swirling storms, dazzling cloud bands, and gravitational
+          power unmatched in our planetary neighborhood.
         </p>
+
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
@@ -28,31 +31,38 @@ const JupiterPage = () => {
             alt="Jupiter"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Jupiter - The Giant Stormy Sphere
+            Jupiter — The Giant Stormy Sphere
           </h1>
         </div>
+
         <FactLayout
           image={RedSpot}
-          content="Feast your eyes on the Great Red Spot, a storm that has been raging for centuries. It's like the solar system's eternal masterpiece of chaos. "
+          content="There it is — the Great Red Spot, a legendary storm that has been raging for at least 350 years, possibly much longer. It’s so vast that Earth could fit inside it… twice. Winds whip through this swirling vortex at speeds up to 680 km/h (425 mph), and though it has slowly been shrinking in modern times, its crimson eye still stares defiantly across the planet’s face — a monument to nature’s fury on a truly planetary scale."
         />
+
         <FactLayout
           image={JupiterMoons}
-          content="Look closely, and you'll witness the dance of Jupiter's four largest moons - Io, Europa, Ganymede, and Callisto. It's like a celestial ballet in our very own cosmic theater. "
+          content="Orbiting nearby are the Galilean moons — Io, Europa, Ganymede, and Callisto — each a world in its own right. Io is alive with hundreds of volcanoes, Europa hides a deep, global ocean beneath its icy crust (a possible home for alien life), Ganymede is the largest moon in the solar system with its own magnetic field, and Callisto wears a surface scarred by ancient impacts. They dance in perfect rhythm, locked in gravitational harmony, like a four-part symphony that has played for billions of years."
         />
+
         <FactLayout
           image={JovainAtmosphere}
-          content="Jupiter's atmosphere is a mesmerizing blend of colorful bands and swirling clouds. It's a living canvas of atmospheric art. "
+          content="Jupiter’s atmosphere is a masterpiece of motion — thick belts of ammonia clouds, hydrogen, and helium, carved into bands by relentless jet streams. Some stretch for thousands of kilometers, hosting storms so large they could engulf continents. Here, there is no calm day; only an endless churn of energy, color, and chaos."
         />
+
         <p className="greet">
-          Hang tight as we slingshot around Jupiter, using its mighty gravity to
-          propel us toward the ringed beauty - Saturn!
+          Our navigators have locked in a gravity-assist maneuver — Jupiter’s
+          immense pull will sling us toward the next destination at breathtaking
+          speed. Hold on as we leave the roaring heart of the gas giant and set
+          our sights on the shimmering jewel of the solar system: Saturn.
         </p>
+
+        <Link to="/saturn">
+          <button className="my-6 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+            🚀 To Saturn — Rings, Moons & Mysteries Await!
+          </button>
+        </Link>
       </section>
-      <Link to="/saturn">
-        <button className="my-6 bg-blue-900 text-white">
-          Our cosmic dance continues
-        </button>
-      </Link>
     </PlanetLayout>
   );
 };

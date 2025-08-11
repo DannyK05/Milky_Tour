@@ -11,12 +11,16 @@ const AsteroidPage = () => {
     <BeltLayout>
       <section>
         {/* animating elements from the left overflows the website */}
-        {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
-          Our Milky Tour now takes us through the asteroid belt, a vast expanse
-          of rocky debris between Mars and Jupiter. Brace yourselves for a
-          celestial game of dodgeball!
+          Hold on tight, travelers — our Milky Tour now carries us into the
+          mysterious expanse between Mars and Jupiter: the Asteroid Belt.
+          Imagine a region where countless rocky bodies, from pebble-sized
+          shards to mountain-sized giants, drift in an endless ballet around the
+          Sun. Contrary to the wild scenes in sci-fi movies, the asteroids here
+          are spaced far apart… but trust me, you still wouldn’t want to take
+          your helmet off.
         </p>
+
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
@@ -24,32 +28,40 @@ const AsteroidPage = () => {
             alt="Asteroid belt"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Asteroid Belt - Celestial Dodgeball
+            Asteroid Belt — Celestial Dodgeball
           </h1>
         </div>
+
         <FactLayout
           image={AsteroidBelt}
-          content="Peer out your windows and witness the rocky neighbors of the solar system. These asteroids are like ancient travelers, remnants from the early days of our cosmic neighborhood. "
+          content="Gaze out the observation deck and you’ll see our rocky neighbors — ancient fragments left over from the dawn of the solar system, over 4.5 billion years old. They’re like cosmic time capsules, preserving clues about how the planets formed."
         />
+
         <FactLayout
           image={Ceres}
-          content="Spot Ceres, the largest object in the asteroid belt and a dwarf planet in its own right. It's like an oasis in this cosmic desert, standing out amidst the asteroid crowd. "
+          content="There’s Ceres, the largest object in the belt and officially a dwarf planet. Spanning about 940 km (584 miles) across, it’s big enough to hold water ice beneath its surface — a shimmering treasure in the midst of a dusty wasteland."
         />
+
         <FactLayout
           image={Trojan}
-          content="Learn about the Trojan asteroids, loyal companions that share orbits with Jupiter. It's like a celestial convoy, traveling in harmony with the mighty gas giant. "
+          content="And look far ahead — the Trojan asteroids, loyal followers of Jupiter, sharing its orbit like a cosmic caravan. These clusters are locked in a delicate gravitational dance, proving that not all space travelers wander alone."
         />
+
         <p className="greet">
-          Maneuvering through the asteroid belt requires precision and finesse.
-          Thanks to Orion 3's advanced navigation systems, we'll gracefully
-          weave through this rocky cosmic dance without a scratch.
+          Steering through the belt requires the precision of a master pilot.
+          Fortunately, Orion 3’s navigation systems are charting a safe, elegant
+          path — weaving between tumbling boulders and silent monoliths. The
+          ride is smooth, but keep your cameras ready: you never know when a
+          tumbling asteroid might glide past, silhouetted against the distant
+          Sun.
         </p>
+
+        <Link to="/jupiter">
+          <button className="my-6 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+            Next stop: the mighty gas giant, Jupiter!
+          </button>
+        </Link>
       </section>
-      <Link to="/jupiter">
-        <button className="my-6 bg-blue-900 text-white">
-          Next stop: the mighty gas giant, Jupiter!
-        </button>
-      </Link>
     </BeltLayout>
   );
 };

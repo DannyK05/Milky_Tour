@@ -14,11 +14,14 @@ const PlutoPage = () => {
     <PlanetLayout id="7">
       <section>
         {/* animating elements from the left overflows the website */}
-        <p className=" greet animate__animated animate__bounceInLeft">
-          Our final celestial rendezvous brings us to the charming dwarf planet,
-          Pluto, at the outskirts of our solar system. Get ready to witness the
-          enigmatic beauty of this small world.
+        <p className="greet animate__animated animate__bounceInLeft">
+          Our final celestial rendezvous brings us to Pluto — the tiny wanderer
+          at the frozen edge of our solar system. Out here, sunlight takes more
+          than five hours to arrive, the air is whisper-thin, and ice mountains
+          rise under an endless starry sky. Welcome to a world small in size,
+          yet vast in mystery.
         </p>
+
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
@@ -26,34 +29,49 @@ const PlutoPage = () => {
             alt="Pluto"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Pluto - The Charming Dwarf
+            Pluto — The Charming Dwarf
           </h1>
         </div>
 
         <FactLayout
           image={PlutoHeartShape}
-          content="Zoom in on the heart-shaped feature on Pluto's surface, appropriately named Tombaugh Regio. It's like Pluto's cosmic love letter to the universe. "
+          content="On Pluto’s surface lies a vast, bright expanse shaped like a heart — 
+    Tombaugh Regio, named after Pluto’s discoverer, Clyde Tombaugh. This icy plain 
+    is made of frozen nitrogen and carbon monoxide, and it stretches for over a 
+    thousand kilometers. It’s as if Pluto itself is sending a silent, shimmering 
+    love letter to the cosmos."
         />
+
         <FactLayout
           image={KupierBelt}
-          content="Explore the dynamics of dwarf planets and their place in the Kuiper Belt, a distant region beyond Neptune. It's a realm of icy wonders and celestial oddities. "
+          content="Pluto isn’t alone — it’s one of thousands of icy bodies drifting in 
+    the Kuiper Belt, a vast ring of frozen remnants left over from the birth of 
+    the solar system. This is a realm of dwarf planets, comets, and strange worlds 
+    that have barely changed in over 4 billion years — a time capsule of cosmic history."
         />
+
         <FactLayout
           image={PlutoHorizon}
-          content="Remember the New Horizons mission? It made a historic flyby of Pluto, giving us our first up-close look at this distant world. It's like unlocking the secrets of a cosmic time capsule. "
+          content="In 2015, NASA’s New Horizons spacecraft made a daring flyby of Pluto, 
+    traveling over 4.8 billion kilometers to reveal it in breathtaking detail for 
+    the first time. Mountains of ice, valleys carved by glaciers, and hazy blue skies 
+    transformed Pluto from a faint dot into a vibrant, living world."
         />
+
         <p className="greet">
-          As we bid farewell to Pluto, we're gearing up for the return journey
-          to Earth. But fear not, fellow explorers! On our way back, you'll have
-          the special opportunity to revisit your favorite celestial
-          destinations. So, fasten your seat belts once more, and let's make our
-          way home with memories of a Milky Tour that's truly out of this world!
-          🌌🌍🚀
+          As we bid farewell to Pluto, we prepare for the long journey back to
+          Earth. Keep your eyes open — on the way home, you can revisit any of
+          your favorite stops from our grand tour. Together, we’ve explored
+          giants, dwarfs, storms, rings, and moons, and brought back a story
+          written across the stars. 🌌🌍🚀
         </p>
+
+        <Link to="/return">
+          <button className="bg-blue-900 text-white my-6 px-4 py-2 rounded hover:bg-blue-700 transition">
+            🚀 Back to Earth
+          </button>
+        </Link>
       </section>
-      <Link to="/return">
-        <button>Back to earth</button>
-      </Link>
     </PlanetLayout>
   );
 };

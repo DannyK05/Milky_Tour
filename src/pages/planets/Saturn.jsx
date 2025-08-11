@@ -16,10 +16,13 @@ const SaturnPage = () => {
       <section>
         {/* animating elements from the left overflows the website */}
         <p className=" greet animate__animated animate__bounceInLeft">
-          Our next cosmic rendezvous is with the majestic Saturn, adorned with
-          the most stunning ring system in the solar system. Get ready for a
-          ringside seat to celestial elegance.
+          We’ve arrived at the crown jewel of the solar system — Saturn. Even
+          from here, its shimmering halo of rings glitters against the darkness,
+          like a royal diadem worn by the most elegant monarch in space. At over
+          120,000 kilometers wide, Saturn’s rings make it impossible to mistake
+          for any other planet.
         </p>
+
         <div className="planet_profile">
           <img
             className="animate__animated animate__bounce"
@@ -27,30 +30,49 @@ const SaturnPage = () => {
             alt="Saturn"
           />
           <h1 className="animate__animated animate__bounceInLeft">
-            Saturn - The Ringed Majesty
+            Saturn — The Ringed Majesty
           </h1>
         </div>
 
         <FactLayout
           image={SaturnRing}
-          content="Marvel at Saturn's breathtaking rings, a cosmic jewelry collection that would make any space fashionista jealous. These aren't just rings; they're a symphony of icy elegance. "
+          content="These are not just rings — they’re millions of icy shards,  
+    from dust-sized grains to chunks as big as mountains, all orbiting in delicate balance.  
+    Some scientists believe they may be the remains of a shattered moon,  
+    others think they’ve been here since the dawn of the solar system.  
+    Whatever their origin, they form a cosmic symphony of ice and light."
         />
+
         <FactLayout
           image={Titan}
-          content="Say hello to Titan, Saturn's largest moon, shrouded in a thick atmosphere. It's like a misty moon dream waiting to be explored. "
+          content="Meet Titan, Saturn’s largest moon and one of the most intriguing worlds we know.  
+    Beneath its thick, orange atmosphere of nitrogen lies a landscape carved by rivers and lakes —  
+    not of water, but of liquid methane and ethane.  
+    It’s a frozen realm with weather, seasons, and the tantalizing possibility of exotic life."
         />
+
         <FactLayout
           image={Cassini}
-          content="Remember the Cassini spacecraft? It performed a grand finale by diving into Saturn's atmosphere. Talk about a cosmic swan song! "
+          content="And here’s a tribute to one of humanity’s boldest explorers — the Cassini spacecraft.  
+    For 13 years it orbited Saturn, revealing its storms, moons, and hidden secrets.  
+    In 2017, it made a final, breathtaking dive into Saturn’s atmosphere —  
+    a deliberate plunge to avoid contaminating Titan or Enceladus,  
+    ending its mission with a blaze of data and glory."
         />
+
         <p className="greet">
-          As we glide past Saturn, think of it as a cosmic slingshot, propelling
-          us to the next destination - Uranus!
+          We’ll ride Saturn’s gravitational pull as our next cosmic slingshot,
+          hurling us toward the pale-blue enigma of Uranus. Keep your eyes on
+          those rings as they fade into the distance — beauty like that deserves
+          a long, last look.
         </p>
+
+        <Link to="/uranus">
+          <button className="bg-blue-900 text-white my-6 px-4 py-2 rounded-md hover:bg-blue-700 transition">
+            🌌 Keep Gliding to Uranus
+          </button>
+        </Link>
       </section>
-      <Link to="/uranus">
-        <button className="bg-blue-900 text-white my-6">Keep gliding</button>
-      </Link>
     </PlanetLayout>
   );
 };
