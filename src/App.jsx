@@ -22,7 +22,8 @@ import KupierPage from "./pages/other_celestials/Kupier";
 import AsteroidPage from "./pages/other_celestials/Asteroid";
 import SunPage from "./pages/other_celestials/Sun";
 import Render from "./pages/Render";
-import News from "./pages/News";
+import News from "./pages/blog/News";
+import Blog from "./pages/blog/Blog";
 
 function App() {
   const router = createBrowserRouter(
@@ -59,6 +60,8 @@ function App() {
         <Route path="/render" element={<Render />} />
 
         <Route path="/news" element={<News />} />
+
+        <Route path="/blogs/:blogId" element={<Blog />} />
       </>
     )
   );

@@ -2,14 +2,14 @@ const CrashingUfo = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#ad79ec"
       height="80px"
       width="80px"
       version="1.1"
       id="Capa_1"
       viewBox="0 0 612 612"
-      xml:space="preserve"
+      xmlSpace="preserve"
     >
       <g>
         <g>
