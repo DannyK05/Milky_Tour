@@ -36,7 +36,7 @@ const SunPage = () => {
 
         <FactLayout
           image={Solarflare}
-          content="Witness the raw power of solar flares — titanic bursts of energy and radiation that erupt from the Sun’s surface. Each flare can release energy equivalent to millions of nuclear bombs in just minutes. These fiery arcs dance across the corona, sending shockwaves that can ripple all the way to Earth."
+          content="Witness the raw power of solar flares — titanic bursts of energy and radiation that erupt from the Sun's surface. Each flare can release energy equivalent to millions of nuclear bombs in just minutes. These fiery arcs dance across the corona, sending shockwaves that can ripple all the way to Earth."
         />
 
         <FactLayout
@@ -46,20 +46,20 @@ const SunPage = () => {
 
         <FactLayout
           image={Solarwind}
-          content="Now feel the solar wind — a constant stream of charged particles flowing outward from the Sun at up to 900 km/s (about 2 million mph). This invisible gale shapes the space weather across our solar system, paints Earth’s skies with auroras, and can even disrupt satellites and power grids."
+          content="Now feel the solar wind — a constant stream of charged particles flowing outward from the Sun at up to 900 km/s (about 2 million mph). This invisible gale shapes the space weather across our solar system, paints Earth's skies with auroras, and can even disrupt satellites and power grids."
         />
 
         <p>
-          From this vantage point, you can see the Sun’s outer atmosphere, the
+          From this vantage point, you can see the Sun's outer atmosphere, the
           corona, shimmering like a ghostly crown. It burns hotter than the
           surface itself — a scientific mystery still puzzling astronomers.
-          NASA’s Parker Solar Probe is currently diving closer to the Sun than
+          NASA's Parker Solar Probe is currently diving closer to the Sun than
           any spacecraft in history to uncover its secrets.
         </p>
 
         <p className="greet">
           The Sun is both our life-giver and a cosmic force to be reckoned with.
-          As our ship’s shields absorb its blinding light and searing heat, we
+          As our ship's shields absorb its blinding light and searing heat, we
           carry that energy forward, leaving the golden giant behind. Our next
           destination awaits — a small, dusty world with a big reputation: Mars,
           the red planet. 🌞🚀✨

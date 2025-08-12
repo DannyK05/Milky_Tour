@@ -45,7 +45,7 @@ const UranusPage = () => {
         <FactLayout
           image={UranusTilt}
           content="Its magnetic field is just as strange — tilted 59 degrees away from its spin axis  
-    and offset from the planet’s center. This creates a lopsided magnetic bubble that  
+    and offset from the planet's center. This creates a lopsided magnetic bubble that  
     wobbles wildly as Uranus rotates, unlike anything else in the solar system."
         />
 
@@ -54,11 +54,11 @@ const UranusPage = () => {
           content="Uranus is orbited by 27 known moons, most named after Shakespearean and  
     Alexander Pope characters. Titania, Oberon, Miranda, Ariel, and Umbriel each offer  
     landscapes of icy cliffs, deep canyons, and mysterious ridges — a frozen, theatrical  
-    ensemble in Uranus’s cosmic drama."
+    ensemble in Uranus's cosmic drama."
         />
 
         <p className="greet">
-          Hold on tight as we harness Uranus’s gravitational pull for a final
+          Hold on tight as we harness Uranus's gravitational pull for a final
           boost. Our next destination lies at the edge of the solar system —
           Neptune, the deep blue giant with the fastest winds in the cosmos.
         </p>

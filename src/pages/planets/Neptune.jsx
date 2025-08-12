@@ -35,21 +35,21 @@ const NeptunePage = () => {
 
         <FactLayout
           image={NeptuneStorm}
-          content="Neptune's atmosphere is a masterpiece of motion, home to the fastest winds in the solar system, reaching over 2,100 km/h (1,300 mph). Vast, swirling storms race across its face, reshaping the planet’s cloudy bands in a constant dance of chaos and beauty."
+          content="Neptune's atmosphere is a masterpiece of motion, home to the fastest winds in the solar system, reaching over 2,100 km/h (1,300 mph). Vast, swirling storms race across its face, reshaping the planet's cloudy bands in a constant dance of chaos and beauty."
         />
 
         <FactLayout
           image={Triton}
-          content="Meet Triton, Neptune's largest moon — and a cosmic rebel. It’s the only large moon in the solar system that orbits backward, defying Neptune’s spin. Beneath its frozen crust, scientists suspect a hidden ocean, and its geysers spew icy plumes high into space."
+          content="Meet Triton, Neptune's largest moon — and a cosmic rebel. It's the only large moon in the solar system that orbits backward, defying Neptune's spin. Beneath its frozen crust, scientists suspect a hidden ocean, and its geysers spew icy plumes high into space."
         />
 
         <FactLayout
           image={NeptuneDarkSpot}
-          content="Behold the Great Dark Spot, a massive storm system the size of Earth. First spotted by Voyager 2 in 1989, it appears and vanishes like a cosmic phantom, hinting at the turbulent forces shaping Neptune’s ever-changing skies."
+          content="Behold the Great Dark Spot, a massive storm system the size of Earth. First spotted by Voyager 2 in 1989, it appears and vanishes like a cosmic phantom, hinting at the turbulent forces shaping Neptune's ever-changing skies."
         />
 
         <p className="greet">
-          With Neptune’s gravitational pull at our backs, we slingshot deeper
+          With Neptune's gravitational pull at our backs, we slingshot deeper
           into the unknown, toward the frozen frontier and the small but
           fascinating world of Pluto.
         </p>

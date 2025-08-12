@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Layout = (props) => {
   return (
     <>
-      <header className="w-full bg-white fixed flex items-center justify-between px-4">
+      <header className="w-full bg-[#4E2A9B] text-white fixed flex items-center justify-between px-4">
         <p className="">
           <Link to={"/"}>Milky Tour</Link>{" "}
         </p>

@@ -5,6 +5,7 @@ import "../../App.css";
 
 import Visor from "../Visor";
 import AlienPop from "../AlienPopup";
+import ScrollToTop from "../../utils/ScrollToTop";
 
 export const PlanetLayout = (props) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,16 +37,15 @@ export const PlanetLayout = (props) => {
 
   return (
     <main className="planet">
+      <ScrollToTop />
       <Link to="/">
         <button className="exit_button">Exit Tour</button>
       </Link>
 
-      <nav className="side-nav fixed px-2 top-60 right-0 bg-[#ad79ec]">
-        <ul>
-          <li onClick={toggleVisibility} className="text-white">
-            <ion-icon size="large" name="glasses-outline"></ion-icon>
-          </li>
-        </ul>
+      <nav className="side-nav fixed flex items-center justify-center py-1 px-2 top-60 rounded-l-md cursor-pointer right-0 bg-[#ad79ec] hover:px-4 active:px-3">
+        <span onClick={toggleVisibility} className="text-white">
+          <ion-icon size="large" name="glasses-outline"></ion-icon>
+        </span>
       </nav>
 
       {props.children}

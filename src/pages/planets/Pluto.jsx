@@ -35,16 +35,16 @@ const PlutoPage = () => {
 
         <FactLayout
           image={PlutoHeartShape}
-          content="On Pluto’s surface lies a vast, bright expanse shaped like a heart — 
-    Tombaugh Regio, named after Pluto’s discoverer, Clyde Tombaugh. This icy plain 
+          content="On Pluto's surface lies a vast, bright expanse shaped like a heart — 
+    Tombaugh Regio, named after Pluto's discoverer, Clyde Tombaugh. This icy plain 
     is made of frozen nitrogen and carbon monoxide, and it stretches for over a 
-    thousand kilometers. It’s as if Pluto itself is sending a silent, shimmering 
+    thousand kilometers. It's as if Pluto itself is sending a silent, shimmering 
     love letter to the cosmos."
         />
 
         <FactLayout
           image={KupierBelt}
-          content="Pluto isn’t alone — it’s one of thousands of icy bodies drifting in 
+          content="Pluto isn't alone — it's one of thousands of icy bodies drifting in 
     the Kuiper Belt, a vast ring of frozen remnants left over from the birth of 
     the solar system. This is a realm of dwarf planets, comets, and strange worlds 
     that have barely changed in over 4 billion years — a time capsule of cosmic history."
@@ -52,7 +52,7 @@ const PlutoPage = () => {
 
         <FactLayout
           image={PlutoHorizon}
-          content="In 2015, NASA’s New Horizons spacecraft made a daring flyby of Pluto, 
+          content="In 2015, NASA's New Horizons spacecraft made a daring flyby of Pluto, 
     traveling over 4.8 billion kilometers to reveal it in breathtaking detail for 
     the first time. Mountains of ice, valleys carved by glaciers, and hazy blue skies 
     transformed Pluto from a faint dot into a vibrant, living world."
@@ -61,7 +61,7 @@ const PlutoPage = () => {
         <p className="greet">
           As we bid farewell to Pluto, we prepare for the long journey back to
           Earth. Keep your eyes open — on the way home, you can revisit any of
-          your favorite stops from our grand tour. Together, we’ve explored
+          your favorite stops from our grand tour. Together, we've explored
           giants, dwarfs, storms, rings, and moons, and brought back a story
           written across the stars. 🌌🌍🚀
         </p>

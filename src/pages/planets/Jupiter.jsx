@@ -16,7 +16,7 @@ const JupiterPage = () => {
       <section>
         {/* animating elements from the left overflows the website */}
         <p className="greet animate__animated animate__bounceInLeft">
-          Fasten your harness, crew — we’ve arrived at the mighty ruler of the
+          Fasten your harness, crew — we've arrived at the mighty ruler of the
           outer solar system: Jupiter. This colossal gas giant is so massive it
           could swallow more than 1,300 Earths, yet it spins with dizzying
           speed, completing a day in less than 10 hours. Ahead of us stretches a
@@ -37,7 +37,7 @@ const JupiterPage = () => {
 
         <FactLayout
           image={RedSpot}
-          content="There it is — the Great Red Spot, a legendary storm that has been raging for at least 350 years, possibly much longer. It’s so vast that Earth could fit inside it… twice. Winds whip through this swirling vortex at speeds up to 680 km/h (425 mph), and though it has slowly been shrinking in modern times, its crimson eye still stares defiantly across the planet’s face — a monument to nature’s fury on a truly planetary scale."
+          content="There it is — the Great Red Spot, a legendary storm that has been raging for at least 350 years, possibly much longer. It's so vast that Earth could fit inside it… twice. Winds whip through this swirling vortex at speeds up to 680 km/h (425 mph), and though it has slowly been shrinking in modern times, its crimson eye still stares defiantly across the planet's face — a monument to nature's fury on a truly planetary scale."
         />
 
         <FactLayout
@@ -47,11 +47,11 @@ const JupiterPage = () => {
 
         <FactLayout
           image={JovainAtmosphere}
-          content="Jupiter’s atmosphere is a masterpiece of motion — thick belts of ammonia clouds, hydrogen, and helium, carved into bands by relentless jet streams. Some stretch for thousands of kilometers, hosting storms so large they could engulf continents. Here, there is no calm day; only an endless churn of energy, color, and chaos."
+          content="Jupiter's atmosphere is a masterpiece of motion — thick belts of ammonia clouds, hydrogen, and helium, carved into bands by relentless jet streams. Some stretch for thousands of kilometers, hosting storms so large they could engulf continents. Here, there is no calm day; only an endless churn of energy, color, and chaos."
         />
 
         <p className="greet">
-          Our navigators have locked in a gravity-assist maneuver — Jupiter’s
+          Our navigators have locked in a gravity-assist maneuver — Jupiter's
           immense pull will sling us toward the next destination at breathtaking
           speed. Hold on as we leave the roaring heart of the gas giant and set
           our sights on the shimmering jewel of the solar system: Saturn.

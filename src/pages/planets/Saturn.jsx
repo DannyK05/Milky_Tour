@@ -16,10 +16,10 @@ const SaturnPage = () => {
       <section>
         {/* animating elements from the left overflows the website */}
         <p className=" greet animate__animated animate__bounceInLeft">
-          We’ve arrived at the crown jewel of the solar system — Saturn. Even
+          We've arrived at the crown jewel of the solar system — Saturn. Even
           from here, its shimmering halo of rings glitters against the darkness,
           like a royal diadem worn by the most elegant monarch in space. At over
-          120,000 kilometers wide, Saturn’s rings make it impossible to mistake
+          120,000 kilometers wide, Saturn's rings make it impossible to mistake
           for any other planet.
         </p>
 
@@ -36,32 +36,32 @@ const SaturnPage = () => {
 
         <FactLayout
           image={SaturnRing}
-          content="These are not just rings — they’re millions of icy shards,  
+          content="These are not just rings — they're millions of icy shards,  
     from dust-sized grains to chunks as big as mountains, all orbiting in delicate balance.  
     Some scientists believe they may be the remains of a shattered moon,  
-    others think they’ve been here since the dawn of the solar system.  
+    others think they've been here since the dawn of the solar system.  
     Whatever their origin, they form a cosmic symphony of ice and light."
         />
 
         <FactLayout
           image={Titan}
-          content="Meet Titan, Saturn’s largest moon and one of the most intriguing worlds we know.  
+          content="Meet Titan, Saturn's largest moon and one of the most intriguing worlds we know.  
     Beneath its thick, orange atmosphere of nitrogen lies a landscape carved by rivers and lakes —  
     not of water, but of liquid methane and ethane.  
-    It’s a frozen realm with weather, seasons, and the tantalizing possibility of exotic life."
+    It's a frozen realm with weather, seasons, and the tantalizing possibility of exotic life."
         />
 
         <FactLayout
           image={Cassini}
-          content="And here’s a tribute to one of humanity’s boldest explorers — the Cassini spacecraft.  
+          content="And here's a tribute to one of humanity's boldest explorers — the Cassini spacecraft.  
     For 13 years it orbited Saturn, revealing its storms, moons, and hidden secrets.  
-    In 2017, it made a final, breathtaking dive into Saturn’s atmosphere —  
+    In 2017, it made a final, breathtaking dive into Saturn's atmosphere —  
     a deliberate plunge to avoid contaminating Titan or Enceladus,  
     ending its mission with a blaze of data and glory."
         />
 
         <p className="greet">
-          We’ll ride Saturn’s gravitational pull as our next cosmic slingshot,
+          We'll ride Saturn's gravitational pull as our next cosmic slingshot,
           hurling us toward the pale-blue enigma of Uranus. Keep your eyes on
           those rings as they fade into the distance — beauty like that deserves
           a long, last look.

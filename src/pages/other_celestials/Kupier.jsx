@@ -17,7 +17,7 @@ const KupierPage = () => {
           Our next phase of the Milky Tour brings us to the Kuiper Belt — a
           vast, icy frontier beyond Neptune. Here, sunlight is faint, and
           countless frozen worlds drift in slow orbits, unchanged for billions
-          of years. This is the solar system’s ancient archive, where each
+          of years. This is the solar system's ancient archive, where each
           object tells a chapter of our cosmic origin story.
         </p>
 
@@ -35,24 +35,24 @@ const KupierPage = () => {
         <FactLayout
           image={Wave}
           content="Wave to Pluto and its fellow dwarf planets — the charismatic ambassadors of the Kuiper Belt. 
-    They’re like distant cosmic relatives, each with their own landscapes, moons, and stories to tell."
+    They're like distant cosmic relatives, each with their own landscapes, moons, and stories to tell."
         />
 
         <FactLayout
           image={KupierObject}
-          content="Meet the Kuiper Belt objects, frozen time capsules left over from the solar system’s youth. 
+          content="Meet the Kuiper Belt objects, frozen time capsules left over from the solar system's youth. 
     Composed of rock, methane, and water ice, these relics preserve conditions from over 4 billion years ago."
         />
 
         <FactLayout
           image={Horizon}
-          content="Trace the path of NASA’s New Horizons spacecraft as it continues its voyage deeper into this 
-    icy expanse. After revealing Pluto’s hidden wonders, it now studies smaller Kuiper Belt objects — 
-    explorers meeting explorers at the edge of the Sun’s reach."
+          content="Trace the path of NASA's New Horizons spacecraft as it continues its voyage deeper into this 
+    icy expanse. After revealing Pluto's hidden wonders, it now studies smaller Kuiper Belt objects — 
+    explorers meeting explorers at the edge of the Sun's reach."
         />
 
         <p className="greet">
-          Now that we’ve crossed this frozen frontier, it’s time to take a
+          Now that we've crossed this frozen frontier, it's time to take a
           closer look at one of its most famous residents — the tiny yet
           captivating Pluto.
         </p>

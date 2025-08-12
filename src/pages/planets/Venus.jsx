@@ -29,7 +29,7 @@ const VenusPage = () => {
             alt="Venus"
           />
           <h1 className="text-#e3af41 animate__animated animate__bounceInLeft">
-            Venus – the fiery diva of the solar system
+            Venus - the fiery diva of the solar system
           </h1>
         </div>
 

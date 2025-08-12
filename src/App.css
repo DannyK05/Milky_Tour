@@ -12,7 +12,6 @@
   max-width: 100%;
   min-height: 100vh;
   margin: 0;
-  text-align: center;
   font-family: "IBM";
 }
 
@@ -23,7 +22,7 @@
   background-position: center;
   background-image: url("/assets/images/layout/hero_bg.jpg");
   margin: 0;
-  padding-top: 50px;
+  padding-top: 54px;
 }
 
 .swiper-wrapper {
@@ -34,11 +33,15 @@ header > p {
   padding: 0;
   padding-top: 5px;
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   margin: 0;
   font-family: "Vipna", sans-serif;
-  color: #ad79ec;
+}
+
+nav > a {
+  font-size: 18px;
+  font-family: "Vipna", sans-serif;
 }
 
 .carousel {
@@ -101,9 +104,18 @@ header > p {
 }
 
 .planet {
-  background-image: url("./assets/images/layout/planet_bg.webp");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4e2a9b;
+  background: linear-gradient(
+    311deg,
+    rgba(78, 42, 155, 1) 0%,
+    rgba(217, 153, 50, 1) 73%
+  );
   width: 100%;
 }
+
 .planet p {
   color: white;
 }
@@ -127,8 +139,8 @@ section {
 .planet_profile h1 {
   font-family: "Vipna", serif;
   font-weight: 800;
-  font-size: 24px;
-  color: #ad79ec;
+  font-size: 36px;
+  color: white;
   margin-bottom: 20px;
 }
 .planet_profile img {
@@ -170,7 +182,15 @@ section img {
   padding: 10px;
 }
 .belt {
-  background-image: url("/assets/images/layout/interlude_bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d99932;
+  background: radial-gradient(
+    circle,
+    rgba(217, 153, 50, 1) 20%,
+    rgba(78, 42, 155, 1) 95%
+  );
   padding: 10px;
 }
 .belt p {
@@ -261,7 +281,8 @@ section.visor h2 {
 
 @media (min-width: 1024px) {
   div.fact p {
-    width: 60ch;
+    width: 40%;
+    font-size: 24px;
   }
   section {
     text-align: center;
@@ -277,11 +298,17 @@ section.visor h2 {
     font-size: 36px;
   }
   .planet section p {
-    width: 50ch;
+    width: 80%;
     margin: 10px auto;
     font-family: "IBM", sans-serif;
-    font-size: large;
+    font-size: 20px;
   }
+
+  .belt p {
+    color: white;
+    font-size: 20px;
+  }
+
   section.visor p {
     width: auto;
   }

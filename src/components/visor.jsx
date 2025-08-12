@@ -38,7 +38,7 @@ const Visor = (props) => {
 
         <span className="size  flex flex-col items-center w-1/5 ">
           <h2 className="inline">Size:</h2>
-          <p>{body.size}km</p>
+          <p>{body.size.toLocaleString()}km</p>
         </span>
 
         <span className="time flex flex-col items-center w-1/4 ">

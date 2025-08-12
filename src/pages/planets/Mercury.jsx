@@ -40,24 +40,24 @@ const MercuryPage = () => {
 
         <FactLayout
           image={Caloris}
-          content="Behold the Caloris Basin, one of the largest impact craters in the solar system — so wide it could swallow the entire state of Texas. This massive scar was formed billions of years ago when a giant asteroid slammed into Mercury, sending shockwaves across the planet’s surface. Those ripples are still visible today in the form of twisted cliffs and ridges."
+          content="Behold the Caloris Basin, one of the largest impact craters in the solar system — so wide it could swallow the entire state of Texas. This massive scar was formed billions of years ago when a giant asteroid slammed into Mercury, sending shockwaves across the planet's surface. Those ripples are still visible today in the form of twisted cliffs and ridges."
         />
 
         <FactLayout
           image={Rotation}
-          content="Mercury rotates so slowly that a single day — from sunrise to sunrise — lasts 176 Earth days. Oddly enough, it spins exactly three times on its axis for every two trips around the Sun, a rare orbital dance known as a 3:2 spin–orbit resonance. This cosmic rhythm means if you stood in the same spot, you could watch the Sun appear to rise, reverse direction, and then set again."
+          content="Mercury rotates so slowly that a single day — from sunrise to sunrise — lasts 176 Earth days. Oddly enough, it spins exactly three times on its axis for every two trips around the Sun, a rare orbital dance known as a 3:2 spin-orbit resonance. This cosmic rhythm means if you stood in the same spot, you could watch the Sun appear to rise, reverse direction, and then set again."
         />
 
         <p>
           Despite its proximity to the Sun, Mercury holds water ice in
           permanently shadowed craters at its poles — a discovery confirmed by
-          NASA’s MESSENGER spacecraft. These deep pockets never see sunlight,
+          NASA's MESSENGER spacecraft. These deep pockets never see sunlight,
           making them some of the coldest spots in the solar system.
         </p>
 
         <p className="greet">
-          As we glide past Mercury, you can feel the Sun’s brilliance pouring
-          through the spacecraft’s protective shields. This close, the Sun’s
+          As we glide past Mercury, you can feel the Sun's brilliance pouring
+          through the spacecraft's protective shields. This close, the Sun's
           light is more than seven times stronger than on Earth. We carry this
           energy with us as we leave the swift messenger behind, our sights now
           set on the very heart of our solar system — the Sun itself. 🌞🚀✨

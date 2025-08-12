@@ -17,7 +17,7 @@ const AsteroidPage = () => {
           Imagine a region where countless rocky bodies, from pebble-sized
           shards to mountain-sized giants, drift in an endless ballet around the
           Sun. Contrary to the wild scenes in sci-fi movies, the asteroids here
-          are spaced far apart… but trust me, you still wouldn’t want to take
+          are spaced far apart… but trust me, you still wouldn't want to take
           your helmet off.
         </p>
 
@@ -34,12 +34,12 @@ const AsteroidPage = () => {
 
         <FactLayout
           image={AsteroidBelt}
-          content="Gaze out the observation deck and you’ll see our rocky neighbors — ancient fragments left over from the dawn of the solar system, over 4.5 billion years old. They’re like cosmic time capsules, preserving clues about how the planets formed."
+          content="Gaze out the observation deck and you'll see our rocky neighbors — ancient fragments left over from the dawn of the solar system, over 4.5 billion years old. They're like cosmic time capsules, preserving clues about how the planets formed."
         />
 
         <FactLayout
           image={Ceres}
-          content="There’s Ceres, the largest object in the belt and officially a dwarf planet. Spanning about 940 km (584 miles) across, it’s big enough to hold water ice beneath its surface — a shimmering treasure in the midst of a dusty wasteland."
+          content="There's Ceres, the largest object in the belt and officially a dwarf planet. Spanning about 940 km (584 miles) across, it's big enough to hold water ice beneath its surface — a shimmering treasure in the midst of a dusty wasteland."
         />
 
         <FactLayout
@@ -49,7 +49,7 @@ const AsteroidPage = () => {
 
         <p className="greet">
           Steering through the belt requires the precision of a master pilot.
-          Fortunately, Orion 3’s navigation systems are charting a safe, elegant
+          Fortunately, Orion 3's navigation systems are charting a safe, elegant
           path — weaving between tumbling boulders and silent monoliths. The
           ride is smooth, but keep your cameras ready: you never know when a
           tumbling asteroid might glide past, silhouetted against the distant
