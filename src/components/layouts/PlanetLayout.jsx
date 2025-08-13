@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../../App.css";
 
-import Visor from "../visor2";
+import Visor from "../Visor";
 import AlienPop from "../AlienPopup";
 import ScrollToTop from "../../utils/ScrollToTop";
 
