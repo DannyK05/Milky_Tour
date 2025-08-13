@@ -1,4 +1,5 @@
 import { planetData } from "../data/planets-data";
+
 const Visor = (props) => {
   let body = planetData[props.id];
   return (
