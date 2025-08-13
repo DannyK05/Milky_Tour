@@ -10,8 +10,26 @@
 
 #root {
   max-width: 100%;
+  min-height: 100vh;
   margin: 0;
-  text-align: center;
+}
+
+p {
+  font-family: "Patrick";
+}
+
+h1,
+h2 {
+  font-family: "Vipna";
+}
+
+h3,
+h4 {
+  font-family: "Grotesk";
+}
+
+.grotesk {
+  font-family: "Grotesk";
 }
 
 .heroSection {
@@ -19,15 +37,9 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-image: url("./assets/images/layout/hero_bg.jpg");
+  background-image: url("/assets/images/layout/hero_bg.jpg");
   margin: 0;
-  z-index: 1;
-}
-
-header {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
+  padding-top: 54px;
 }
 
 .swiper-wrapper {
@@ -38,11 +50,15 @@ header > p {
   padding: 0;
   padding-top: 5px;
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   margin: 0;
-  font-family: "Englebert", sans-serif;
-  color: #ad79ec;
+  font-family: "Vipna", sans-serif;
+}
+
+nav > a {
+  font-size: 18px;
+  font-family: "Grotesk", sans-serif;
 }
 
 .carousel {
@@ -55,7 +71,6 @@ header > p {
   bottom: 5px;
   height: 30vh;
   width: 100%;
-  padding: 20px 0;
   box-shadow: 0px 2px 4px 1px rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(5px);
@@ -74,37 +89,48 @@ header > p {
   background-color: #7490df;
   border-radius: 50px;
 }
+
 .carousel figure {
   margin-left: 5px;
 }
-.carousel figure:hover,
-.carousel figure:active {
-  border: 1px solid #ad79ec;
+
+.carousel img:hover,
+.carousel img:active {
+  -webkit-filter: drop-shadow(2px 2px 10px #ad79ec);
+  filter: drop-shadow(2px 2px 10px #ad79ec);
 }
-.carousel img {
-  display: inline-block;
-  height: 15vh;
-  width: 25vh;
-}
+
 .content p {
   margin: 10px 0px;
   font-size: 18px;
 }
 .content h1 {
   font-size: 36px;
-  font-family: "Holtwood One SC", serif;
+  font-family: "Vipna", serif;
   margin-bottom: 10px;
 }
 .content {
-  margin: 10px auto 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   z-index: 5;
 }
 
 .planet {
-  background-image: url("./assets/images/layout/planet_bg.webp");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4e2a9b;
+  background: linear-gradient(
+    311deg,
+    rgba(78, 42, 155, 1) 0%,
+    rgba(217, 153, 50, 1) 73%
+  );
   width: 100%;
 }
+
 .planet p {
   color: white;
 }
@@ -112,13 +138,10 @@ header > p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
 }
 
-.fact,
 section {
   width: 90%;
-  margin: 20px auto;
 }
 
 .planet_profile {
@@ -127,40 +150,21 @@ section {
   flex-direction: column;
 }
 .planet_profile h1 {
-  font-family: "Holtwood One SC", serif;
+  font-family: "Vipna", serif;
   font-weight: 800;
-  font-size: 24px;
-  color: #ad79ec;
+  font-size: 36px;
+  color: white;
   margin-bottom: 20px;
 }
 .planet_profile img {
-  width: 60%;
+  width: 100%;
   margin-bottom: 10px;
 }
-.fact img {
-  width: 60%;
-  height: 50%;
-  margin: 10px 0 20px;
-}
-div.fact p {
-  width: 30ch;
-}
-section .greet {
-  font-family: "Englebert", sans-serif;
-}
-.planet section p {
-  width: 20ch;
-  margin: 10px auto;
-  font-family: "Roboto", sans-serif;
-  font-size: large;
-}
+
 section h1 {
   font-size: large;
 }
-section img {
-  width: 80%;
-  max-width: 700px;
-}
+
 .info {
   flex-wrap: wrap;
 }
@@ -172,7 +176,15 @@ section img {
   padding: 10px;
 }
 .belt {
-  background-image: url("./assets/images/layout/interlude_bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d99932;
+  background: radial-gradient(
+    circle,
+    rgba(217, 153, 50, 1) 20%,
+    rgba(78, 42, 155, 1) 95%
+  );
   padding: 10px;
 }
 .belt p {
@@ -232,7 +244,7 @@ section.visor {
 }
 section.visor p {
   width: auto;
-  font-family: "Sometype Mono", monospace;
+  font-family: "IBM", monospace;
 }
 section.visor span {
   text-align: center;
@@ -240,6 +252,16 @@ section.visor span {
 section.visor h2 {
   font-size: 0.8rem;
 }
+
+.alien-popup div {
+  background-color: rgba(173, 121, 236, 1);
+  box-shadow: 2px 2px 20px #ad79ec;
+}
+
+.alien-popup h2 {
+  font-family: "IBM", monospace;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -253,46 +275,46 @@ section.visor h2 {
 }
 
 @media (min-width: 1024px) {
-  div.fact p {
-    width: 60ch;
-  }
   section {
     text-align: center;
   }
   .planet_profile img {
-    width: 40%;
+    width: 60%;
     margin-bottom: 10px;
   }
-  .fact img {
-    width: 50%;
-  }
+
   .planet_profile h1 {
     font-size: 36px;
   }
-  .planet section p {
-    width: 50ch;
-    margin: 10px auto;
-    font-family: "Roboto", sans-serif;
-    font-size: large;
+
+  .belt p {
+    color: white;
+    font-size: 20px;
   }
+
   section.visor p {
     width: auto;
   }
   section.visor h2 {
     font-size: 1.2rem;
+    font-family: "Vipna";
   }
-  .content {
-    margin: 100px auto 0;
-  }
+
   .carousel {
     overflow: hidden;
   }
-  .carousel img {
-    display: inline-block;
-    width: 80%;
-    height: 80%;
-  }
   .carousel figure {
     margin-left: 0px;
+  }
+
+  .carousel figcaption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel figure:hover figcaption,
+  .carousel figure:active figcaption {
+    opacity: 1;
+    font-family: "Patrick";
   }
 }
