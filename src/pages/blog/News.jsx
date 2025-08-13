@@ -48,6 +48,7 @@ const News = () => {
         setIsLoadingBlogData(false);
       } catch (error) {
         console.error("Error fetching NASA Blog:", error);
+        setIsLoadingBlogData(false);
       }
     };
 
