@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ReturnPage = () => {
   return (
-    <section className="text-xl return bg-[#000026] p-4 h-full text-white">
+    <section className="text-xl text-center flex flex-col items-center return bg-[#000026] px-2 py-5 h-full text-white">
       <div className="sm:px-24">
         <p>
           Dear fellow cosmic travelers, our Milky Tour has been an extraordinary
@@ -13,7 +13,7 @@ const ReturnPage = () => {
         </p>
       </div>
 
-      <ul className="md:w-[70ch] mx-auto my-4 sm:28">
+      <ul className=" mx-auto my-4 ">
         <h2 className="text-lg font-semibold mb-2">Memorable Highlights:</h2>
         <li className="my-2">
           🔥 Venus — the fiery diva with a runaway greenhouse effect.

@@ -105,7 +105,15 @@ const News = () => {
               <section className="text-xl w-[90%] lg:w-4/5 p-2 grid grid-cols-1 lg:grid-cols-2 rounded-lg lg:gap-x-4 gap-y-8">
                 {spaceBlog ? (
                   spaceBlog.map(
-                    ({ title, id, authors, summary, url, image_url }) => (
+                    ({
+                      title,
+                      id,
+                      authors,
+                      summary,
+                      url,
+                      published_at,
+                      image_url,
+                    }) => (
                       <Link key={id} to={`/blogs/${id}`}>
                         <div className="border-2 h-full border-[#4E2A9B] px-1 py-2 rounded-lg shadow-md flex flex-col items-center active:shadow-smx space-y-1">
                           <img
@@ -117,6 +125,17 @@ const News = () => {
                           <h3 className="text-xl font-bold text-[#4E2A9B]">
                             {title}
                           </h3>
+                          <p className="text-sm">
+                            Published on :{" "}
+                            {new Date(published_at).toLocaleDateString(
+                              ("en-US",
+                              {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                              })
+                            )}
+                          </p>
                           <p className="text-lg">{summary}</p>
                           <p className="w-auto font-semibold text-[#4E2A9B] hover:underline">
                             <a href={url}>

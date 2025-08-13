@@ -74,8 +74,9 @@ const HeroPage = () => {
         </div>
         <div className="carousel flex ">
           <Link to="/mercury">
-            <figure>
+            <figure className="text-center">
               <img
+                className="w-[192px] h-[108px] min-w-[192px] min-h-[108px]"
                 width="192px"
                 height="108px"
                 src={Mercury}
@@ -85,8 +86,9 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/venus">
-            <figure>
+            <figure className="text-center">
               <img
+                className="w-[192px] h-[108px] min-w-[192px] min-h-[108px]"
                 width="192px"
                 height="108px"
                 src={Venus}
@@ -96,10 +98,11 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/mars">
-            <figure>
+            <figure className="text-center">
               <img
-                width="192px"
-                height="108px"
+                className="w-[120px] h-[100px] min-w-[120px] min-h-[100px]"
+                width="120px"
+                height="100px"
                 src={Mars}
                 alt="an image of Mars"
               />
@@ -107,9 +110,10 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/jupiter">
-            <figure>
+            <figure className="text-center">
               <img
-                width="192px"
+                className="w-[168px] h-[108px] min-w-[168px] min-h-[108px]"
+                width="168px"
                 height="108px"
                 src={Jupiter}
                 alt="an image of Jupiter"
@@ -118,8 +122,9 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/saturn">
-            <figure>
+            <figure className="text-center">
               <img
+                className="w-[192px] h-[108px] min-w-[192px] min-h-[108px]"
                 width="192px"
                 height="108px"
                 src={Saturn}
@@ -129,9 +134,10 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/uranus">
-            <figure>
+            <figure className="text-center">
               <img
-                width="192px"
+                className="w-[162px] h-[108px] min-w-[162px] min-h-[108px]"
+                width="162px"
                 height="108px"
                 src={Uranus}
                 alt="an image of Uranus"
@@ -140,9 +146,10 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/neptune">
-            <figure>
+            <figure className="text-center">
               <img
-                width="192px"
+                className="w-[162px] h-[108px] min-w-[162px] min-h-[108px]"
+                width="162px"
                 height="108px"
                 src={Neptune}
                 alt="an image of Neptune"
@@ -151,8 +158,9 @@ const HeroPage = () => {
             </figure>
           </Link>
           <Link to="/pluto">
-            <figure>
+            <figure className="text-center">
               <img
+                className="w-[192px] h-[108px] min-w-[192px] min-h-[108px]"
                 width="192px"
                 height="108px"
                 src={Pluto}

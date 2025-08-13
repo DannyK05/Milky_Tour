@@ -64,7 +64,7 @@ const Blog = () => {
   }, [params.blogId]);
 
   return (
-    <div className="bg-white text-black flex items-center flex-col space-y-2 py-4">
+    <div className="bg-white text-black flex items-center min-h-[100vh] flex-col space-y-2 py-4">
       <Link to={"/news"}>
         <button className="text-white">Back</button>
       </Link>
@@ -73,6 +73,17 @@ const Blog = () => {
       ) : spaceBlog ? (
         <div className="w-full flex flex-col items-center p-1 space-y-4">
           <h2 className="text-justify text-[#4E2A9B]">{spaceBlog.title}</h2>
+          <p>
+            Published on :
+            {new Date(spaceBlog.published_at).toLocaleDateString(
+              ("en-US",
+              {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            )}
+          </p>
           <img
             className="lg:w-3/5"
             src={spaceBlog.image_url}
@@ -81,6 +92,16 @@ const Blog = () => {
             height={600}
           />
           <p className="w-[90%] text-lg lg:w-4/5 lg:text-xl">{fullArticle}</p>
+          <p className="w-[90%] text-lg text-start lg:w-4/5">
+            <a
+              href={spaceBlog.url}
+              rel="nopener"
+              target="_blank"
+              className="text-[#4E2A9B] active:underline lg:hover:underline"
+            >
+              Source: NASA's Blog
+            </a>
+          </p>
         </div>
       ) : (
         <div className="flex flex-col items-center">

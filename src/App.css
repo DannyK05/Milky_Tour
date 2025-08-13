@@ -71,7 +71,6 @@ nav > a {
   bottom: 5px;
   height: 30vh;
   width: 100%;
-  padding: 20px 0;
   box-shadow: 0px 2px 4px 1px rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(5px);
@@ -97,14 +96,10 @@ nav > a {
 
 .carousel img:hover,
 .carousel img:active {
-  -webkit-backdrop-filter: drop-shadow(2px 2px #ad79ec);
-  backdrop-filter: drop-shadow(2px 2px #ad79ec);
+  -webkit-filter: drop-shadow(2px 2px 10px #ad79ec);
+  filter: drop-shadow(2px 2px 10px #ad79ec);
 }
 
-.carousel img {
-  display: inline-block;
-  width: 100%;
-}
 .content p {
   margin: 10px 0px;
   font-size: 18px;
@@ -308,12 +303,18 @@ section.visor h2 {
   .carousel {
     overflow: hidden;
   }
-  .carousel img {
-    display: inline-block;
-    width: 80%;
-    height: 80%;
-  }
   .carousel figure {
     margin-left: 0px;
+  }
+
+  .carousel figcaption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel figure:hover figcaption,
+  .carousel figure:active figcaption {
+    opacity: 1;
+    font-family: "Patrick";
   }
 }
