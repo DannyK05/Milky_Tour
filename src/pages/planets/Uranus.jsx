@@ -12,9 +12,9 @@ import {
 const UranusPage = () => {
   return (
     <PlanetLayout id="5">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Our celestial journey brings us to Uranus — the mysterious,
           sideways-spinning ice giant. Unlike any other planet, Uranus is tilted
           so far that it practically rolls around the Sun, making it the

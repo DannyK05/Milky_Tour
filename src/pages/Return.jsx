@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ReturnPage = () => {
   return (
-    <section className="return bg-[#000026] p-4 h-full text-white">
+    <section className="text-xl return bg-[#000026] p-4 h-full text-white">
       <div className="sm:px-24">
         <p>
           Dear fellow cosmic travelers, our Milky Tour has been an extraordinary

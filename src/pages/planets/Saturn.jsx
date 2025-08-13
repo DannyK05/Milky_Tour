@@ -13,7 +13,7 @@ import {
 const SaturnPage = () => {
   return (
     <PlanetLayout id="4">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
         <p className=" greet animate__animated animate__bounceInLeft">
           We've arrived at the crown jewel of the solar system — Saturn. Even

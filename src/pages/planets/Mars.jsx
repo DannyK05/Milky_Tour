@@ -13,9 +13,9 @@ import {
 const MarsPage = () => {
   return (
     <PlanetLayout id="2">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full  animate__animated animate__bounceInLeft">
           Buckle up, travelers — our next cosmic pitstop is the fabled Red
           Planet: Mars! Known for its rust-colored deserts, paper-thin
           atmosphere, and tantalizing hints of ancient rivers, Mars has captured

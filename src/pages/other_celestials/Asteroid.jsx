@@ -9,9 +9,9 @@ import Trojan from "/assets/images/asteroid/trojan.webp";
 const AsteroidPage = () => {
   return (
     <BeltLayout>
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Hold on tight, travelers — our Milky Tour now carries us into the
           mysterious expanse between Mars and Jupiter: the Asteroid Belt.
           Imagine a region where countless rocky bodies, from pebble-sized

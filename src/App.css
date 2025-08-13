@@ -12,7 +12,24 @@
   max-width: 100%;
   min-height: 100vh;
   margin: 0;
-  font-family: "IBM";
+}
+
+p {
+  font-family: "Patrick";
+}
+
+h1,
+h2 {
+  font-family: "Vipna";
+}
+
+h3,
+h4 {
+  font-family: "Grotesk";
+}
+
+.grotesk {
+  font-family: "Grotesk";
 }
 
 .heroSection {
@@ -41,7 +58,7 @@ header > p {
 
 nav > a {
   font-size: 18px;
-  font-family: "Vipna", sans-serif;
+  font-family: "Grotesk", sans-serif;
 }
 
 .carousel {
@@ -86,8 +103,7 @@ nav > a {
 
 .carousel img {
   display: inline-block;
-  height: 15vh;
-  width: 25vh;
+  width: 100%;
 }
 .content p {
   margin: 10px 0px;
@@ -100,6 +116,10 @@ nav > a {
 }
 .content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   z-index: 5;
 }
 
@@ -125,10 +145,8 @@ nav > a {
   align-items: center;
 }
 
-.fact,
 section {
   width: 90%;
-  margin: 20px auto;
 }
 
 .planet_profile {
@@ -144,33 +162,14 @@ section {
   margin-bottom: 20px;
 }
 .planet_profile img {
-  width: 60%;
+  width: 100%;
   margin-bottom: 10px;
 }
-.fact img {
-  width: 60%;
-  height: 50%;
-  margin: 10px 0 20px;
-}
-div.fact p {
-  width: 30ch;
-}
-section .greet {
-  font-family: "IBM", sans-serif;
-}
-.planet section p {
-  width: 20ch;
-  margin: 10px auto;
-  font-family: "IBM", sans-serif;
-  font-size: large;
-}
+
 section h1 {
   font-size: large;
 }
-section img {
-  width: 80%;
-  max-width: 700px;
-}
+
 .info {
   flex-wrap: wrap;
 }
@@ -258,6 +257,7 @@ section.visor span {
 section.visor h2 {
   font-size: 0.8rem;
 }
+
 .alien-popup div {
   background-color: rgba(173, 121, 236, 1);
   box-shadow: 2px 2px 20px #ad79ec;
@@ -280,28 +280,16 @@ section.visor h2 {
 }
 
 @media (min-width: 1024px) {
-  div.fact p {
-    width: 40%;
-    font-size: 24px;
-  }
   section {
     text-align: center;
   }
   .planet_profile img {
-    width: 40%;
+    width: 60%;
     margin-bottom: 10px;
   }
-  .fact img {
-    width: 50%;
-  }
+
   .planet_profile h1 {
     font-size: 36px;
-  }
-  .planet section p {
-    width: 80%;
-    margin: 10px auto;
-    font-family: "IBM", sans-serif;
-    font-size: 20px;
   }
 
   .belt p {

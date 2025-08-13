@@ -13,9 +13,9 @@ import {
 const JupiterPage = () => {
   return (
     <PlanetLayout id="3">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-4">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Fasten your harness, crew — we've arrived at the mighty ruler of the
           outer solar system: Jupiter. This colossal gas giant is so massive it
           could swallow more than 1,300 Earths, yet it spins with dizzying

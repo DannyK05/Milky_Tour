@@ -12,9 +12,9 @@ import {
 const PlutoPage = () => {
   return (
     <PlanetLayout id="7">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Our final celestial rendezvous brings us to Pluto — the tiny wanderer
           at the frozen edge of our solar system. Out here, sunlight takes more
           than five hours to arrive, the air is whisper-thin, and ice mountains

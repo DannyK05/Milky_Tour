@@ -9,9 +9,9 @@ import { Caloris, Mercury } from "../../components/image-exports";
 const MercuryPage = () => {
   return (
     <PlanetLayout id="0">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Our Milky Tour now brings us to the scorched and mysterious realm of
           Mercury — the swift messenger of the solar system. Hugging closest to
           the Sun, this tiny world races around its orbit in just 88 Earth days.

@@ -13,9 +13,9 @@ import {
 const NeptunePage = () => {
   return (
     <PlanetLayout id="6">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           We've now reached Neptune, the enigmatic ice giant cloaked in
           sapphire-blue clouds, reigning at the fringes of our solar system. Out
           here, sunlight is faint, winds are fierce, and mysteries swirl in the

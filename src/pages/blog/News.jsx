@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Layout from "../../components/layouts/Layout";
 import CrashingUfo from "../../components/icons/CrashingUfo";
+import Loading from "../../components/Loading";
 
 const News = () => {
   const [apodData, setApodData] = useState(null);
@@ -55,68 +56,90 @@ const News = () => {
 
   return (
     <Layout>
-      <div className="bg-white w-full px-1 pt-10 flex items-center flex-col min-h-[100vh] text-black">
-        <h1>News</h1>
-        {isLoadingApodData ? (
-          <div className="flex flex-col p-1 items-center">
-            <p>Contacting Bzorp....</p>
-            <div className="loader"></div>
-          </div>
-        ) : apodData ? (
-          <div className="flex flex-col items-center space-y-2">
-            <h2 className="text-2xl">
-              👽Bzorp's Picture of the day: {apodData.title}
-            </h2>
-            <img
-              src={apodData.hdurl}
-              alt={`Image of ${apodData.title}`}
-              width={600}
-              height={500}
-            />
-            <p className="w-3/4 text-lg">{apodData.explanation}</p>
-          </div>
+      <div className="bg-white w-full px-1 pt-[60px] flex items-center flex-col min-h-[100vh] text-black">
+        <h1 className="text-[#4E2A9B] text-center">Milky Updates</h1>
+        {isLoadingApodData || isLoadingBlogData ? (
+          <Loading />
         ) : (
-          <div className="flex flex-col items-center">
-            <h2>Picture of the day</h2>
-            <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
-            <CrashingUfo />
-          </div>
-        )}
-
-        <div>
-          <h2 className="text-2xl">Blogs</h2>
-          <section className="w-full grid grid-cols-1 lg:grid-cols-2 rounded-lg gap-x-4 gap-y-8">
-            {isLoadingBlogData ? (
-              <div className="flex flex-col p-1 items-center">
-                <p>Contacting Bzorp....</p>
-                <div className="loader"></div>
-              </div>
-            ) : spaceBlog ? (
-              spaceBlog.map(({ title, id, authors, image_url }) => (
-                <Link to={`/blogs/${id}`}>
-                  <div
-                    className="border px-1 py-2 flex flex-col items-center space-y-1"
-                    key={id}
+          <>
+            {apodData ? (
+              <div className="flex flex-col items-center space-y-3 mt-4">
+                <h2 className="text-2xl text-center">
+                  <span className="text-xl grotesk font-bold">
+                    👽Bzorp's Picture of the day:
+                  </span>{" "}
+                  <br /> {apodData.title}
+                </h2>
+                <div className="relative border-2 p-3 border-[#4E2A9B]">
+                  <img
+                    src={apodData.hdurl}
+                    alt={`Image of ${apodData.title}`}
+                    width={800}
+                    height={500}
+                  />
+                </div>
+                <p className="w-[95%] lg:w-4/5 text-lg lg:text-xl">
+                  {apodData.explanation}
+                  <br />
+                  <a
+                    href="https://apod.nasa.gov/apod/astropix.html"
+                    rel="nopener"
+                    target="_blank"
+                    className="text-[#4E2A9B] active:underline lg:hover:underline"
                   >
-                    <img width={600} height={500} src={image_url} />
-                    <h3 className="text-lg">{title}</h3>
-                    <p className="w-auto font-semibold">
-                      {authors.length > 1
-                        ? `Authors : ${authors.map(({ name }) => name)}`
-                        : `Author : ${authors.map(({ name }) => name)}`}
-                    </p>
-                  </div>
-                </Link>
-              ))
+                    Source: NASA's APOD API
+                  </a>
+                </p>
+              </div>
             ) : (
               <div className="flex flex-col items-center">
-                <h2>Blogs</h2>
+                <h2>Picture of the day</h2>
                 <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
                 <CrashingUfo />
               </div>
             )}
-          </section>
-        </div>
+
+            <div className="flex items-center flex-col space-y-5">
+              <h2 className="text-3xl font-bold text-[#4E2A9B]">Blogs</h2>
+
+              <section className="text-xl w-[90%] lg:w-4/5 p-2 grid grid-cols-1 lg:grid-cols-2 rounded-lg lg:gap-x-4 gap-y-8">
+                {spaceBlog ? (
+                  spaceBlog.map(
+                    ({ title, id, authors, summary, url, image_url }) => (
+                      <Link key={id} to={`/blogs/${id}`}>
+                        <div className="border-2 h-full border-[#4E2A9B] px-1 py-2 rounded-lg shadow-md flex flex-col items-center active:shadow-smx space-y-1">
+                          <img
+                            className="w-full"
+                            width={600}
+                            height={500}
+                            src={image_url}
+                          />
+                          <h3 className="text-xl font-bold text-[#4E2A9B]">
+                            {title}
+                          </h3>
+                          <p className="text-lg">{summary}</p>
+                          <p className="w-auto font-semibold text-[#4E2A9B] hover:underline">
+                            <a href={url}>
+                              {authors.length > 1
+                                ? `Authors : ${authors.map(({ name }) => name)}`
+                                : `Author : ${authors.map(({ name }) => name)}`}
+                            </a>
+                          </p>
+                        </div>
+                      </Link>
+                    )
+                  )
+                ) : (
+                  <div className="flex flex-col items-center">
+                    <h3>Blogs</h3>
+                    <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
+                    <CrashingUfo />
+                  </div>
+                )}
+              </section>
+            </div>
+          </>
+        )}
       </div>
     </Layout>
   );

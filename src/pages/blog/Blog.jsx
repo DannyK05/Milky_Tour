@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 import CrashingUfo from "../../components/icons/CrashingUfo";
+import Loading from "../../components/Loading";
 
 const Blog = () => {
   const params = useParams();
@@ -63,24 +64,24 @@ const Blog = () => {
   }, [params.blogId]);
 
   return (
-    <div>
-      <Link to={"/news"}>Back</Link>
+    <div className="bg-white text-black flex items-center flex-col space-y-2 py-4">
+      <Link to={"/news"}>
+        <button className="text-white">Back</button>
+      </Link>
       {isLoadingBlogData ? (
-        <div className="flex flex-col p-1 items-center">
-          <p>Contacting Bzorp....</p>
-          <div className="loader"></div>
-        </div>
+        <Loading />
       ) : spaceBlog ? (
-        <>
-          <h2>{spaceBlog.title}</h2>
+        <div className="w-full flex flex-col items-center p-1 space-y-4">
+          <h2 className="text-justify text-[#4E2A9B]">{spaceBlog.title}</h2>
           <img
+            className="lg:w-3/5"
             src={spaceBlog.image_url}
             alt={spaceBlog.title}
             width={500}
             height={600}
           />
-          <p>{fullArticle}</p>
-        </>
+          <p className="w-[90%] text-lg lg:w-4/5 lg:text-xl">{fullArticle}</p>
+        </div>
       ) : (
         <div className="flex flex-col items-center">
           <h2>Blogs</h2>

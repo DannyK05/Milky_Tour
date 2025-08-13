@@ -36,13 +36,13 @@ export const PlanetLayout = (props) => {
   }, []);
 
   return (
-    <main className="planet">
+    <main className="planet text-center">
       <ScrollToTop />
       <Link to="/">
-        <button className="exit_button">Exit Tour</button>
+        <button className="exit_button text-lg">Exit Tour</button>
       </Link>
 
-      <nav className="side-nav fixed flex items-center justify-center py-1 px-2 top-60 rounded-l-md cursor-pointer right-0 bg-[#ad79ec] hover:px-4 active:px-3">
+      <nav className="side-nav z-10 fixed flex items-center justify-center py-1 px-2 top-60 rounded-l-md cursor-pointer right-0 bg-[#ad79ec] hover:px-4 active:px-3">
         <span onClick={toggleVisibility} className="text-white">
           <ion-icon size="large" name="glasses-outline"></ion-icon>
         </span>
@@ -60,7 +60,11 @@ export const PlanetLayout = (props) => {
         />
       )}
 
-      <Visor id={props.id} isVisible={isVisible} />
+      <Visor
+        id={props.id}
+        isVisible={isVisible}
+        toggleVisibility={toggleVisibility}
+      />
     </main>
   );
 };

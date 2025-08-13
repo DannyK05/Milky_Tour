@@ -16,10 +16,10 @@ import Layout from "../components/layouts/Layout";
 const HeroPage = () => {
   return (
     <Layout>
-      <section className="heroSection ">
+      <section className="text-xl heroSection ">
         <img
           src={Astronaut}
-          className="astronaut w-full absolute bottom-[20%] md:left-[22%]m lg:left-[30%]"
+          className="astronaut w-full lg:w-2/5 absolute bottom-[35%] lg:bottom-[20%] md:left-[22%]m lg:left-[30%]"
           alt="an image of Saturn"
         />
         <img

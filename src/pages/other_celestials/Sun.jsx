@@ -11,10 +11,10 @@ import sun from "/assets/images/sun/sun.webp";
 const SunPage = () => {
   return (
     <BeltLayout>
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Prepare yourselves for the most awe-inspiring moment of our Milky Tour
           — we are now approaching the blazing heart of our solar system: the
           mighty Sun. This colossal sphere of plasma is so massive that it

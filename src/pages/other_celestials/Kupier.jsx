@@ -11,9 +11,9 @@ import { KupierBelt } from "../../components/image-exports";
 const KupierPage = () => {
   return (
     <BeltLayout>
-      <section>
+      <section className="text-xl flex items-center space-y-2 flex-col text-center">
         {/* animating elements from the left overflows the website */}
-        <p className="greet animate__animated animate__bounceInLeft">
+        <p className="greet w-full animate__animated animate__bounceInLeft">
           Our next phase of the Milky Tour brings us to the Kuiper Belt — a
           vast, icy frontier beyond Neptune. Here, sunlight is faint, and
           countless frozen worlds drift in slow orbits, unchanged for billions

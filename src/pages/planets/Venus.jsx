@@ -14,7 +14,7 @@ import {
 const VenusPage = () => {
   return (
     <PlanetLayout id="1">
-      <section>
+      <section className="text-xl flex items-center flex-col space-y-2">
         {/* animating elements from the left overflows the website */}
         <p className="animate__animated animate__bounceInLeft">
           Welcome, space travelers! Out your observation windows, you will see a
