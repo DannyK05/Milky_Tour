@@ -121,6 +121,7 @@ const News = () => {
                             width={600}
                             height={500}
                             src={image_url}
+                            alt={`Image of ${title}`}
                           />
                           <h3 className="text-xl font-bold text-[#4E2A9B]">
                             {title}
