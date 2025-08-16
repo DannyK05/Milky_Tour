@@ -43,12 +43,12 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 0.8em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  border: 1px solid whitesmoke;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -80,3 +80,43 @@ button:focus-visible {
     box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
   }
 }
+
+/* Add to your CSS or tailwind.config with @layer */
+@keyframes decrypt-flicker {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-1px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(1px);
+  }
+  40% {
+    opacity: 0.4;
+    transform: translateX(-2px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+  80% {
+    opacity: 0.6;
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.decrypting {
+  animation: decrypt-flicker 0.2s infinite;
+  letter-spacing: 0.05em;
+}
+
+/* @keyframes hologram-spread
+ {
+  0%{
+    
+  }
+} */

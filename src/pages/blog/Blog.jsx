@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-import CrashingUfo from "../../components/icons/CrashingUfo";
 import Loading from "../../components/Loading";
+import Failed from "../../components/Failed";
 
 const Blog = () => {
   const params = useParams();
@@ -104,11 +104,7 @@ const Blog = () => {
           </p>
         </div>
       ) : (
-        <div className="flex flex-col items-center">
-          <h2>Blogs</h2>
-          <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
-          <CrashingUfo />
-        </div>
+        <Failed />
       )}
     </div>
   );

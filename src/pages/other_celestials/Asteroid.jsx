@@ -58,7 +58,7 @@ const AsteroidPage = () => {
 
         <Link to="/jupiter">
           <button className="my-6 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-            Next stop: the mighty gas giant, Jupiter!
+            🌪️ Next up: Jupiter, the Giant!
           </button>
         </Link>
       </section>
