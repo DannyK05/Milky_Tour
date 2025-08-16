@@ -113,10 +113,3 @@ button:focus-visible {
   animation: decrypt-flicker 0.2s infinite;
   letter-spacing: 0.05em;
 }
-
-/* @keyframes hologram-spread
- {
-  0%{
-    
-  }
-} */

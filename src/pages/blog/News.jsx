@@ -95,12 +95,14 @@ const News = () => {
               </div>
             ) : (
               <div className="flex flex-col mt-5 items-center">
-                <h2 className="text-2xl">Picture of the day</h2>
+                <h2 className="text-3xl font-bold text-[#4E2A9B] p-3">
+                  Picture of the day
+                </h2>
                 <Failed />
               </div>
             )}
 
-            <div className="flex items-center flex-col space-y-5">
+            <div className="flex items-center w-full flex-col space-y-5">
               <h2 className="text-3xl font-bold text-[#4E2A9B]">Blogs</h2>
 
               <section className="text-xl w-[90%] lg:w-4/5 p-2 grid grid-cols-1 lg:grid-cols-2 rounded-lg lg:gap-x-4 gap-y-8">
@@ -151,8 +153,7 @@ const News = () => {
                     )
                   )
                 ) : (
-                  <div className="flex flex-col items-center">
-                    <h3 className="text-2xl">Blogs</h3>
+                  <div className="flex w-full col-span-2 items-center">
                     <Failed />
                   </div>
                 )}
