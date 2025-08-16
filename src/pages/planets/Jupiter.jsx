@@ -59,7 +59,7 @@ const JupiterPage = () => {
 
         <Link to="/saturn">
           <button className="my-6 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-            🚀 To Saturn — Rings, Moons & Mysteries Await!
+            🪐 Next Stop: Saturn's Rings!
           </button>
         </Link>
       </section>

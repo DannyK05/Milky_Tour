@@ -64,7 +64,7 @@ const MarsPage = () => {
 
         <Link to="/asteroid">
           <button className="bg-blue-900 my-6 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-            🚀 Into the Asteroid Belt — Dodgeball at Cosmic Speed!
+            🚀 Into the Belt — Dodge Fast!
           </button>
         </Link>
       </section>

@@ -3,8 +3,8 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 import Layout from "../../components/layouts/Layout";
-import CrashingUfo from "../../components/icons/CrashingUfo";
 import Loading from "../../components/Loading";
+import Failed from "../../components/Failed";
 
 const News = () => {
   const [apodData, setApodData] = useState(null);
@@ -35,6 +35,7 @@ const News = () => {
         setIsLoadingApodData(false);
       } catch (error) {
         console.error("Error fetching NASA APOD:", error);
+        setIsLoadingApodData(false);
       }
 
       try {
@@ -93,10 +94,9 @@ const News = () => {
                 </p>
               </div>
             ) : (
-              <div className="flex flex-col items-center">
-                <h2>Picture of the day</h2>
-                <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
-                <CrashingUfo />
+              <div className="flex flex-col mt-5 items-center">
+                <h2 className="text-2xl">Picture of the day</h2>
+                <Failed />
               </div>
             )}
 
@@ -152,9 +152,8 @@ const News = () => {
                   )
                 ) : (
                   <div className="flex flex-col items-center">
-                    <h3>Blogs</h3>
-                    <p>Uh Oh!!, Bzorp didn't deliver the mail today</p>
-                    <CrashingUfo />
+                    <h3 className="text-2xl">Blogs</h3>
+                    <Failed />
                   </div>
                 )}
               </section>

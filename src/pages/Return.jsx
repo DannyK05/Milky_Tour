@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import ScrollToTop from "../utils/ScrollToTop";
 
 const ReturnPage = () => {
   return (
     <section className="text-xl text-center flex flex-col items-center return bg-[#000026] px-2 py-5 h-full text-white">
+      <ScrollToTop />
       <div className="sm:px-24">
         <p>
           Dear fellow cosmic travelers, our Milky Tour has been an extraordinary
