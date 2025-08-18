@@ -1,8 +1,22 @@
 import { useTexture } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import { useRef } from "react";
 
 import * as THREE from "three";
 
 const Earth = () => {
+  const dayRef = useRef();
+  const nightRef = useRef();
+  const cloudsRef = useRef();
+  const rotationSpeed = 0.1;
+
+  useFrame((_, delta) => {
+    if (dayRef.current) dayRef.current.rotation.y += rotationSpeed * delta;
+    if (cloudsRef.current)
+      cloudsRef.current.rotation.y += rotationSpeed * 1.2 * delta;
+    if (nightRef.current) nightRef.current.rotation.y += rotationSpeed * delta;
+  });
+
   const [dayMap, normalMap, specular, cloudsMap, nightMap] = useTexture([
     "/assets/textures/earth/2k_earth_daymap.jpg",
     "/assets/textures/earth/2k_earth_normal_map.webp",
@@ -16,8 +30,8 @@ const Earth = () => {
   nightMap.colorSpace = THREE.SRGBColorSpace;
 
   return (
-    <group>
-      <mesh>
+    <group position={[8, 0, 0]}>
+      <mesh ref={dayRef}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshStandardMaterial
           map={dayMap}
@@ -26,7 +40,8 @@ const Earth = () => {
           metalness={0}
         />
       </mesh>
-      <mesh>
+
+      <mesh ref={nightRef}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshBasicMaterial
           map={nightMap}
@@ -36,7 +51,7 @@ const Earth = () => {
         />
       </mesh>
 
-      <mesh scale={1.02}>
+      <mesh ref={cloudsRef} scale={1.02}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshStandardMaterial
           map={cloudsMap}
@@ -49,7 +64,7 @@ const Earth = () => {
       <mesh scale={1.01}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshBasicMaterial
-          color="#4698ebff"
+          color="#306697"
           transparent
           blending={THREE.AdditiveBlending}
           opacity={0.12}
