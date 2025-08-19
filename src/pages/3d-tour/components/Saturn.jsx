@@ -2,6 +2,7 @@ import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import * as THREE from "three";
+import { celestialBodies } from "../data";
 
 const Saturn = () => {
   const [surfaceMap, ringMap] = useTexture([
@@ -10,14 +11,35 @@ const Saturn = () => {
   ]);
   const surRef = useRef();
   const ringRef = useRef();
+  const saturnRef = useRef();
+  const angleRef = useRef(0);
+
+  const orbitSpeed = celestialBodies.saturn.orbitSpeed;
+  const orbitRadius = celestialBodies.saturn.orbitRadius;
 
   useFrame((state, delta) => {
-    if (surRef.current) surRef.current.rotation.y += delta;
-    if (ringRef.current) ringRef.current.rotation.y += delta;
+    angleRef.current += orbitSpeed * delta;
+    saturnRef.current.position.x = orbitRadius * Math.cos(angleRef.current);
+    saturnRef.current.position.z = orbitRadius * Math.sin(angleRef.current);
+
+    if (surRef.current)
+      surRef.current.rotation.y += celestialBodies.saturn.rotationSpeed * delta;
+    if (ringRef.current)
+      ringRef.current.rotation.y +=
+        celestialBodies.saturn.rotationSpeed * delta;
   });
 
   return (
-    <group position={[14, 0, 0]} rotation={[Math.PI / 2, 0, 0]}>
+    <group
+      ref={saturnRef}
+      position={[
+        celestialBodies.saturn.position.x,
+        celestialBodies.saturn.position.y,
+        0,
+      ]}
+      scale={celestialBodies.saturn.scale}
+      rotation={[Math.PI / 2, 0, 0]}
+    >
       <mesh ref={surRef}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshStandardMaterial map={surfaceMap} />

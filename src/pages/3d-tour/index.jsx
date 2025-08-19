@@ -1,12 +1,12 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import Layout from "../../components/layouts/Layout";
 import Earth from "./components/Earth";
 import Light from "./components/Light";
 import { OrbitControls, Stars } from "@react-three/drei";
 import Planet from "./components/Planet";
-import { useRef } from "react";
 import Venus from "./components/Venus";
 import Saturn from "./components/Saturn";
+import { celestialBodies } from "./data";
 
 const Render = () => {
   return (
@@ -15,20 +15,32 @@ const Render = () => {
         <Canvas
           camera={{ position: [0, 5, 15], fov: 45, near: 0.1, far: 1000 }}
         >
-          <Stars radius={80} depth={60} count={8000} factor={2} fade />
+          <Stars radius={80} depth={300} count={8000} factor={2} fade />
 
           <Planet
             texture="/assets/textures/sun/2k_sun.jpg"
-            size={2}
-            position={[0, 0, 0]}
-            speed={0}
+            size={celestialBodies.sun.scale}
+            position={[
+              celestialBodies.sun.position.x,
+              celestialBodies.sun.position.y,
+              0,
+            ]}
+            speed={celestialBodies.sun.rotationSpeed}
+            orbitSpeed={celestialBodies.sun.orbitSpeed}
+            orbitRadius={celestialBodies.sun.orbitRadius}
           />
 
           <Planet
             texture="/assets/textures/mercury/2k_mercury.jpg"
-            size={0.5}
-            position={[4, 0, 0]}
-            speed={0.0017}
+            size={celestialBodies.mercury.scale}
+            position={[
+              celestialBodies.mercury.position.x,
+              celestialBodies.mercury.position.y,
+              0,
+            ]}
+            speed={celestialBodies.mercury.rotationSpeed}
+            orbitSpeed={celestialBodies.mercury.orbitSpeed}
+            orbitRadius={celestialBodies.mercury.orbitRadius}
           />
 
           <Venus />
@@ -37,38 +49,68 @@ const Render = () => {
 
           <Planet
             texture="/assets/textures/mars/2k_mars.jpg"
-            size={0.5}
-            position={[10, 0, 0]}
-            speed={0.0972}
+            size={celestialBodies.mars.scale}
+            position={[
+              celestialBodies.mars.position.x,
+              celestialBodies.mars.position.y,
+              0,
+            ]}
+            speed={celestialBodies.mars.rotationSpeed}
+            orbitSpeed={celestialBodies.mars.orbitSpeed}
+            orbitRadius={celestialBodies.mars.orbitRadius}
           />
 
           <Planet
             texture="/assets/textures/jupiter/2k_jupiter.jpg"
-            size={0.5}
-            position={[12, 0, 0]}
-            speed={0.02411}
+            size={celestialBodies.jupiter.scale}
+            position={[
+              celestialBodies.jupiter.position.x,
+              celestialBodies.jupiter.position.y,
+              0,
+            ]}
+            speed={celestialBodies.jupiter.rotationSpeed}
+            orbitSpeed={celestialBodies.jupiter.orbitSpeed}
+            orbitRadius={celestialBodies.jupiter.orbitRadius}
           />
 
           <Saturn />
 
           <Planet
             texture="/assets/textures/uranus/2k_uranus.jpg"
-            size={0.5}
-            position={[16, 0, 0]}
-            speed={-0.1388}
+            size={celestialBodies.uranus.scale}
+            position={[
+              celestialBodies.uranus.position.x,
+              celestialBodies.uranus.position.y,
+              0,
+            ]}
+            speed={celestialBodies.uranus.rotationSpeed}
+            orbitSpeed={celestialBodies.uranus.orbitSpeed}
+            orbitRadius={celestialBodies.uranus.orbitRadius}
           />
           <Planet
             texture="/assets/textures/neptune/2k_neptune.jpg"
-            size={0.5}
-            position={[18, 0, 0]}
-            speed={0.1486}
+            size={celestialBodies.neptune.scale}
+            position={[
+              celestialBodies.neptune.position.x,
+              celestialBodies.neptune.position.y,
+              0,
+            ]}
+            speed={celestialBodies.neptune.rotationSpeed}
+            orbitSpeed={celestialBodies.neptune.orbitSpeed}
+            orbitRadius={celestialBodies.neptune.orbitRadius}
           />
 
           <Planet
             texture="/assets/textures/pluto/RS3_Pluto.webp"
-            size={0.5}
-            position={[20, 0, 0]}
-            speed={-0.0156}
+            size={celestialBodies.pluto.scale}
+            position={[
+              celestialBodies.pluto.position.x,
+              celestialBodies.pluto.position.y,
+              0,
+            ]}
+            speed={celestialBodies.pluto.rotationSpeed}
+            orbitSpeed={celestialBodies.pluto.orbitSpeed}
+            orbitRadius={celestialBodies.pluto.orbitRadius}
           />
 
           <Light />

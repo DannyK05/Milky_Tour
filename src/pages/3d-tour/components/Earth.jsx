@@ -3,14 +3,24 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 import * as THREE from "three";
+import { celestialBodies } from "../data";
 
 const Earth = () => {
   const dayRef = useRef();
   const nightRef = useRef();
   const cloudsRef = useRef();
-  const rotationSpeed = 0.1;
+  const earthRef = useRef();
+  const angleRef = useRef(0);
+
+  const rotationSpeed = celestialBodies.earth.rotationSpeed;
+  const orbitSpeed = celestialBodies.earth.orbitSpeed;
+  const orbitRadius = celestialBodies.earth.orbitRadius;
 
   useFrame((_, delta) => {
+    angleRef.current += orbitSpeed * delta;
+    earthRef.current.position.x = orbitRadius * Math.cos(angleRef.current);
+    earthRef.current.position.z = orbitRadius * Math.sin(angleRef.current);
+
     if (dayRef.current) dayRef.current.rotation.y += rotationSpeed * delta;
     if (cloudsRef.current)
       cloudsRef.current.rotation.y += rotationSpeed * 1.2 * delta;
@@ -30,7 +40,15 @@ const Earth = () => {
   nightMap.colorSpace = THREE.SRGBColorSpace;
 
   return (
-    <group position={[8, 0, 0]}>
+    <group
+      position={[
+        celestialBodies.earth.position.x,
+        celestialBodies.earth.position.y,
+        0,
+      ]}
+      scale={celestialBodies.earth.scale}
+      ref={earthRef}
+    >
       <mesh ref={dayRef}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshStandardMaterial
