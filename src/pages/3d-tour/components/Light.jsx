@@ -1,9 +1,9 @@
 const Light = () => {
   return (
     <>
-      <directionalLight position={[0, 0, 0]} intensity={2.2} castShadow />
+      <directionalLight position={[0, 0, 0]} intensity={2.5} castShadow />
       {/* Fill light */}
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={1} />
     </>
   );
 };
