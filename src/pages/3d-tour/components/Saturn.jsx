@@ -17,6 +17,9 @@ const Saturn = () => {
   const orbitSpeed = celestialBodies.saturn.orbitSpeed;
   const orbitRadius = celestialBodies.saturn.orbitRadius;
 
+  surfaceMap.colorSpace = THREE.SRGBColorSpace;
+  ringMap.colorSpace = THREE.SRGBColorSpace;
+
   useFrame((state, delta) => {
     angleRef.current += orbitSpeed * delta;
     saturnRef.current.position.x = orbitRadius * Math.cos(angleRef.current);

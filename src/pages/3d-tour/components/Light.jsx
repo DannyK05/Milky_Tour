@@ -3,7 +3,7 @@ const Light = () => {
     <>
       <directionalLight position={[0, 0, 0]} intensity={2.5} castShadow />
       {/* Fill light */}
-      <ambientLight intensity={1} />
+      <ambientLight intensity={0.7} />
     </>
   );
 };

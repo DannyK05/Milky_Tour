@@ -10,6 +10,7 @@ const Earth = () => {
   const nightRef = useRef();
   const cloudsRef = useRef();
   const earthRef = useRef();
+  const moonRef = useRef();
   const angleRef = useRef(0);
 
   const rotationSpeed = celestialBodies.earth.rotationSpeed;
@@ -25,30 +26,45 @@ const Earth = () => {
     if (cloudsRef.current)
       cloudsRef.current.rotation.y += rotationSpeed * 1.2 * delta;
     if (nightRef.current) nightRef.current.rotation.y += rotationSpeed * delta;
+
+    const moonOrbitRadius = celestialBodies.moon.orbitRadius;
+    const moonOrbitSpeed = celestialBodies.moon.orbitSpeed;
+    moonRef.current.position.x =
+      moonOrbitRadius * Math.cos(delta * moonOrbitSpeed);
+    moonRef.current.position.z =
+      moonOrbitRadius * Math.sin(delta * moonOrbitSpeed);
   });
 
-  const [dayMap, normalMap, specular, cloudsMap, nightMap] = useTexture([
-    "/assets/textures/earth/2k_earth_daymap.jpg",
-    "/assets/textures/earth/2k_earth_normal_map.webp",
-    "/assets/textures/earth/2k_earth_specular_map.webp",
-    "/assets/textures/earth/2k_earth_clouds.jpg",
-    "/assets/textures/earth/2k_earth_nightmap.jpg",
-  ]);
+  const [dayMap, normalMap, specular, cloudsMap, nightMap, moonMap] =
+    useTexture([
+      "/assets/textures/earth/2k_earth_daymap.jpg",
+      "/assets/textures/earth/2k_earth_normal_map.webp",
+      "/assets/textures/earth/2k_earth_specular_map.webp",
+      "/assets/textures/earth/2k_earth_clouds.jpg",
+      "/assets/textures/earth/2k_earth_nightmap.jpg",
+      "/assets/textures/earth/moon/RS3_Moon.webp",
+    ]);
 
   dayMap.colorSpace = THREE.SRGBColorSpace;
   cloudsMap.colorSpace = THREE.SRGBColorSpace;
   nightMap.colorSpace = THREE.SRGBColorSpace;
+  moonMap.colorSpace = THREE.SRGBColorSpace;
 
   return (
     <group
+      ref={earthRef}
       position={[
         celestialBodies.earth.position.x,
         celestialBodies.earth.position.y,
         0,
       ]}
       scale={celestialBodies.earth.scale}
-      ref={earthRef}
     >
+      <mesh scale={celestialBodies.moon.scale} ref={moonRef}>
+        <icosahedronGeometry args={[1, 16]} />{" "}
+        <meshStandardMaterial map={moonMap} />
+      </mesh>
+
       <mesh ref={dayRef}>
         <icosahedronGeometry args={[1, 16]} />{" "}
         <meshStandardMaterial

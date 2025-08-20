@@ -1,6 +1,7 @@
 import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
+import * as THREE from "three";
 
 const Planet = ({
   texture,
@@ -22,6 +23,7 @@ const Planet = ({
     // Rotation on axis
     meshRef.current.rotation.y += rotationSpeed;
   });
+  map.colorSpace = THREE.SRGBColorSpace;
 
   return (
     <mesh ref={meshRef} scale={size}>

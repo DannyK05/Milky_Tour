@@ -18,6 +18,9 @@ const Venus = () => {
   const orbitSpeed = celestialBodies.venus.orbitSpeed;
   const orbitRadius = celestialBodies.venus.orbitRadius;
 
+  surfaceMap.colorSpace = THREE.SRGBColorSpace;
+  atmosphereMap.colorSpace = THREE.SRGBColorSpace;
+
   useFrame((state, delta) => {
     angleRef.current += orbitSpeed * delta;
     venusRef.current.position.x = orbitRadius * Math.cos(angleRef.current);

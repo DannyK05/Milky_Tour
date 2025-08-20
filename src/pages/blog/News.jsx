@@ -74,6 +74,7 @@ const News = () => {
                 </h2>
                 <div className="relative border-2 p-3 border-[#4E2A9B]">
                   <img
+                    className="w-[400px] h-[300px] lg:w-[800px] lg:h-[500px]"
                     src={apodData.hdurl}
                     alt={`Image of ${apodData.title}`}
                     width={800}

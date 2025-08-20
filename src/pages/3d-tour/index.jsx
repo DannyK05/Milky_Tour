@@ -19,7 +19,7 @@ const Render = () => {
 
   const zoomIn = () => setY(y - 1);
   const zoomOut = () => setY(y + 1);
-  console.log(y);
+
   return (
     <Layout>
       <div className="pt-10 w-full  h-[100vh] text-center bg-black">
@@ -41,7 +41,7 @@ const Render = () => {
             orbitRadius={celestialBodies.sun.orbitRadius}
           />
           <Planet
-            texture="/assets/textures/mercury/2k_mercury.jpg"
+            texture="/assets/textures/mercury/2k_mercury.webp"
             size={celestialBodies.mercury.scale}
             position={[
               celestialBodies.mercury.position.x,
