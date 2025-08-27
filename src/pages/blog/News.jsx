@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
+import ScrollUp from "../../hooks/ScrollUp";
+
 import Layout from "../../components/layouts/Layout";
 import Loading from "../../components/Loading";
 import Failed from "../../components/Failed";
@@ -74,6 +76,7 @@ const News = () => {
                 </h2>
                 <div className="relative border-2 p-3 border-[#4E2A9B]">
                   <img
+                    className="w-[400px] h-[300px] lg:w-[800px] lg:h-[500px]"
                     src={apodData.hdurl}
                     alt={`Image of ${apodData.title}`}
                     width={800}
@@ -120,7 +123,7 @@ const News = () => {
                       <Link key={id} to={`/blogs/${id}`}>
                         <div className="border-2 h-full border-[#4E2A9B] px-1 py-2 rounded-lg shadow-md flex flex-col items-center active:shadow-smx space-y-1">
                           <img
-                            className="w-full"
+                            className="w-[510px] h-[340px]"
                             width={600}
                             height={500}
                             src={image_url}
@@ -157,6 +160,12 @@ const News = () => {
                     <Failed />
                   </div>
                 )}
+                <span
+                  className="text-sm cursor-pointer text-[#4E2A9A] font-bold vipna w-full text-center w-full col-span-2 py-4 hover:underline"
+                  onClick={ScrollUp}
+                >
+                  Go to Top
+                </span>
               </section>
             </div>
           </>

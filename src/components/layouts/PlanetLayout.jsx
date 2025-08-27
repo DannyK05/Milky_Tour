@@ -52,6 +52,7 @@ export const PlanetLayout = (props) => {
 
       {displayAlien && (
         <AlienPop
+          onClick={() => setDisplayAlien(false)}
           className={`animate__animated ${
             alienAnimation === "appear"
               ? "animate__fadeInLeftBig"

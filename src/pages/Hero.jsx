@@ -65,7 +65,7 @@ const HeroPage = () => {
 
         <div className=" content text-white">
           <h1 className=""> Transition through Planets</h1>
-          <p> Journey into the Universe: Epic planetary awaits your Journey</p>
+          <p> Journey into the Universe: Epic planetary awaits you</p>
           <Link to="/explore">
             <button className="bg-blue-900 m-10 text-white">
               Start Exploring 🚀
