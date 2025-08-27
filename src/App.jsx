@@ -21,7 +21,7 @@ import SaturnPage from "./pages/planets/Saturn";
 import KupierPage from "./pages/other_celestials/Kupier";
 import AsteroidPage from "./pages/other_celestials/Asteroid";
 import SunPage from "./pages/other_celestials/Sun";
-import Render from "./pages/Render";
+import Render from "./pages/3d-tour";
 import News from "./pages/blog/News";
 import Blog from "./pages/blog/Blog";
 
