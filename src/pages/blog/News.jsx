@@ -7,6 +7,7 @@ import ScrollUp from "../../hooks/ScrollUp";
 import Layout from "../../components/layouts/Layout";
 import Loading from "../../components/Loading";
 import Failed from "../../components/Failed";
+import TruncateText from "../../utils/TruncateText";
 
 const News = () => {
   const [apodData, setApodData] = useState(null);
@@ -108,7 +109,7 @@ const News = () => {
             <div className="flex items-center w-full flex-col space-y-5">
               <h2 className="text-3xl font-bold text-[#4E2A9B]">Blogs</h2>
 
-              <section className="text-xl w-[90%] lg:w-4/5 p-2 grid grid-cols-1 lg:grid-cols-2 rounded-lg lg:gap-x-4 gap-y-8">
+              <section className="mx-auto w-[90%] lg:w-4/5 p-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {spaceBlog ? (
                   spaceBlog.map(
                     ({
@@ -120,35 +121,45 @@ const News = () => {
                       published_at,
                       image_url,
                     }) => (
-                      <Link key={id} to={`/blogs/${id}`}>
-                        <div className="border-2 h-full border-[#4E2A9B] px-1 py-2 rounded-lg shadow-md flex flex-col items-center active:shadow-smx space-y-1">
+                      <Link
+                        key={id}
+                        to={`/blogs/${id}`}
+                        className="block min-w-0"
+                      >
+                        <div className="border-2 border-[#4E2A9B] rounded-lg h-full shadow-md overflow-hidden flex flex-col gap-2 p-2 bg-white/5">
                           <img
-                            className="w-[510px] h-[340px]"
-                            width={600}
-                            height={500}
+                            className="w-full aspect-[16/9] object-cover"
                             src={image_url}
                             alt={`Image of ${title}`}
+                            loading="lazy"
                           />
-                          <h3 className="text-xl font-bold text-[#4E2A9B]">
+                          <h3 className="text-lg sm:text-xl font-bold text-[#4E2A9B] ">
                             {title}
                           </h3>
-                          <p className="text-sm">
-                            Published on :{" "}
+
+                          <p className="text-xs opacity-80">
+                            Published on:{" "}
                             {new Date(published_at).toLocaleDateString(
-                              ("en-US",
+                              "en-US",
                               {
                                 year: "numeric",
                                 month: "long",
                                 day: "numeric",
-                              })
+                              }
                             )}
                           </p>
-                          <p className="text-lg">{summary}</p>
-                          <p className="w-auto font-semibold text-[#4E2A9B] hover:underline">
+
+                          <div className="text-sm sm:text-base break-words">
+                            <TruncateText text={summary} />
+                          </div>
+
+                          <p className="text-sm font-semibold text-[#4E2A9B] hover:underline break-words">
                             <a href={url}>
                               {authors.length > 1
-                                ? `Authors : ${authors.map(({ name }) => name)}`
-                                : `Author : ${authors.map(({ name }) => name)}`}
+                                ? `Authors: ${authors
+                                    .map(({ name }) => name)
+                                    .join(", ")}`
+                                : `Author: ${authors.map(({ name }) => name)}`}
                             </a>
                           </p>
                         </div>
@@ -160,8 +171,9 @@ const News = () => {
                     <Failed />
                   </div>
                 )}
+
                 <span
-                  className="text-sm cursor-pointer text-[#4E2A9A] font-bold vipna w-full text-center w-full col-span-2 py-4 hover:underline"
+                  className="text-sm cursor-pointer text-[#4E2A9A] font-bold w-full text-center col-span-full py-4 hover:underline"
                   onClick={ScrollUp}
                 >
                   Go to Top
