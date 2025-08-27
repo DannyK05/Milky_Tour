@@ -2,6 +2,7 @@ import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import * as THREE from "three";
+
 import { celestialBodies } from "../data";
 
 const Venus = () => {

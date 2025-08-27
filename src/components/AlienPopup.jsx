@@ -1,13 +1,14 @@
 import FlyingUfo from "./icons/FlyingUfo";
 import { alienFacts } from "../data/alien-facts";
 
-const AlienPop = ({ className }) => {
+const AlienPop = ({ className, ...props }) => {
   const chosenId = Math.round(Math.random() * 21);
 
   const chosenFact = alienFacts[chosenId];
 
   return (
     <div
+      {...props}
       className={`${className} alien-popup fixed top-20 lg:top-40 flex flex-col items-center w-4/5 lg:max-w-3/4 space-y-4`}
     >
       <div className="px-4 py-6 flex flex-col items-center text-center space-y-3 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
+import ScrollUp from "../../hooks/ScrollUp";
+
 import Layout from "../../components/layouts/Layout";
 import Loading from "../../components/Loading";
 import Failed from "../../components/Failed";
@@ -158,6 +160,12 @@ const News = () => {
                     <Failed />
                   </div>
                 )}
+                <span
+                  className="text-sm cursor-pointer text-[#4E2A9A] font-bold vipna w-full text-center w-full col-span-2 py-4 hover:underline"
+                  onClick={ScrollUp}
+                >
+                  Go to Top
+                </span>
               </section>
             </div>
           </>
