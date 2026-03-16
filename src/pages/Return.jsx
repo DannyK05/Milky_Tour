@@ -11,7 +11,7 @@ const ReturnPage = () => {
           odyssey — a journey across light-years of wonder, through the heart of
           our solar system and out into its frozen frontiers. We have sailed on
           beams of sunlight, danced with planetary giants, and stood at the edge
-          of the Sun's reach, where the warmth fades into eternal night.
+          of the Sun&apos; reach, where the warmth fades into eternal night.
         </p>
       </div>
 
@@ -59,9 +59,10 @@ const ReturnPage = () => {
         <p className="md:w-[70ch] m-auto">
           As we gently descend toward Earth, the blue marble comes back into
           view — fragile, beautiful, and full of promise. This voyage has been
-          more than sightseeing; it's been a reminder that exploration is woven
-          into the very fabric of who we are. Every crater, every ring, every
-          icy cliff we've visited holds a lesson about our place in the cosmos.
+          more than sightseeing; it&apos; been a reminder that exploration is
+          woven into the very fabric of who we are. Every crater, every ring,
+          every icy cliff we've visited holds a lesson about our place in the
+          cosmos.
         </p>
       </div>
 

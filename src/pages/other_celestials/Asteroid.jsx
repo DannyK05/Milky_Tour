@@ -39,7 +39,7 @@ const AsteroidPage = () => {
 
         <FactLayout
           image={Ceres}
-          content="There's Ceres, the largest object in the belt and officially a dwarf planet. Spanning about 940 km (584 miles) across, it's big enough to hold water ice beneath its surface — a shimmering treasure in the midst of a dusty wasteland."
+          content="There' Ceres, the largest object in the belt and officially a dwarf planet. Spanning about 940 km (584 miles) across, it' big enough to hold water ice beneath its surface — a shimmering treasure in the midst of a dusty wasteland."
         />
 
         <FactLayout
@@ -49,9 +49,9 @@ const AsteroidPage = () => {
 
         <p className="greet">
           Steering through the belt requires the precision of a master pilot.
-          Fortunately, Orion 3's navigation systems are charting a safe, elegant
-          path — weaving between tumbling boulders and silent monoliths. The
-          ride is smooth, but keep your cameras ready: you never know when a
+          Fortunately, Orion 3&apos; navigation systems are charting a safe,
+          elegant path — weaving between tumbling boulders and silent monoliths.
+          The ride is smooth, but keep your cameras ready: you never know when a
           tumbling asteroid might glide past, silhouetted against the distant
           Sun.
         </p>
