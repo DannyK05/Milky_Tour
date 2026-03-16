@@ -34,9 +34,9 @@ const VenusPage = () => {
         </div>
 
         <p className="special">
-          Venus is sometimes called Earth's twin because of its similar size and
-          rocky composition, but do not let that nickname fool you — she is far
-          more temperamental. Wrapped in thick clouds of sulfuric acid and a
+          Venus is sometimes called Earth&apos; twin because of its similar size
+          and rocky composition, but do not let that nickname fool you — she is
+          far more temperamental. Wrapped in thick clouds of sulfuric acid and a
           dense carbon dioxide atmosphere, Venus experiences a runaway
           greenhouse effect that traps heat with ruthless efficiency. The
           surface temperature stays around 465°C (869°F) — hot enough to melt
@@ -54,12 +54,12 @@ const VenusPage = () => {
 
         <FactLayout
           image={VenusSpin}
-          content="Venus's retrograde rotation means it spins backward compared to most planets — if you stood on the surface (and somehow survived), you would see the Sun rise in the west and set in the east. Scientists believe this unusual spin may have been caused by a massive collision early in the planet's history, or long-term tidal effects from the Sun's gravitational pull."
+          content="Venus' retrograde rotation means it spins backward compared to most planets — if you stood on the surface (and somehow survived), you would see the Sun rise in the west and set in the east. Scientists believe this unusual spin may have been caused by a massive collision early in the planet' history, or long-term tidal effects from the Sun' gravitational pull."
         />
 
         <FactLayout
           image={VenusVolcanoes}
-          content="Beneath Venus's thick clouds are more than 1,600 major volcanoes — more than on any other planet in our solar system. While many are likely dormant, radar mapping from missions like Magellan shows evidence of relatively young lava flows, suggesting that Venus might still be geologically active today."
+          content="Beneath Venus' thick clouds are more than 1,600 major volcanoes — more than on any other planet in our solar system. While many are likely dormant, radar mapping from missions like Magellan shows evidence of relatively young lava flows, suggesting that Venus might still be geologically active today."
         />
 
         <p className="special">
@@ -76,8 +76,8 @@ const VenusPage = () => {
           But for us, today, Venus is not a place to land — it is a cosmic ally.
           We are using her immense gravitational pull for a slingshot maneuver,
           gaining speed without burning extra fuel. It is like surfing the curve
-          of spacetime itself, letting the planet's momentum propel us deeper
-          into the solar system.
+          of spacetime itself, letting the planet&apos; momentum propel us
+          deeper into the solar system.
         </p>
 
         <p className="special">

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-import ScrollUp from "../../hooks/ScrollUp";
+import ScrollUp from "../../utils/ScrollUp";
 
 import Loading from "../../components/Loading";
 import Failed from "../../components/Failed";
@@ -38,15 +38,16 @@ const Blog = () => {
           const encodedUrl = encodeURIComponent(data.url);
 
           const htmlRes = await fetch(
-            `https://api.allorigins.win/get?url=${encodedUrl}`
+            `https://corsproxy.io/?${encodedUrl}`,
           );
           if (!htmlRes.ok) {
             throw new Error(`Failed to fetch full article`);
           }
 
-          const htmlData = await htmlRes.json();
+          const htmlData = await htmlRes.text();
+        
           const parser = new DOMParser();
-          const doc = parser.parseFromString(htmlData.contents, "text/html");
+          const doc = parser.parseFromString(htmlData, "text/html");
           const paragraphs = doc.querySelectorAll("p");
           const textContent = Array.from(paragraphs)
             .map((p) => p.textContent.trim())
@@ -83,7 +84,7 @@ const Blog = () => {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
-              })
+              }),
             )}
           </p>
           <img
@@ -97,11 +98,11 @@ const Blog = () => {
           <p className="w-[90%] text-lg text-start lg:w-4/5">
             <a
               href={spaceBlog.url}
-              rel="nopener"
+              rel="noopener noreferrer"
               target="_blank"
               className="text-[#4E2A9B] active:underline lg:hover:underline"
             >
-              Source: NASA's Blog
+              Source: NASA&apos;s Blog
             </a>
           </p>
 

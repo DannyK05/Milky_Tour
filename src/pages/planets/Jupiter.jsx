@@ -37,7 +37,7 @@ const JupiterPage = () => {
 
         <FactLayout
           image={RedSpot}
-          content="There it is — the Great Red Spot, a legendary storm that has been raging for at least 350 years, possibly much longer. It's so vast that Earth could fit inside it… twice. Winds whip through this swirling vortex at speeds up to 680 km/h (425 mph), and though it has slowly been shrinking in modern times, its crimson eye still stares defiantly across the planet's face — a monument to nature's fury on a truly planetary scale."
+          content="There it is — the Great Red Spot, a legendary storm that has been raging for at least 350 years, possibly much longer. It' so vast that Earth could fit inside it… twice. Winds whip through this swirling vortex at speeds up to 680 km/h (425 mph), and though it has slowly been shrinking in modern times, its crimson eye still stares defiantly across the planet' face — a monument to nature' fury on a truly planetary scale."
         />
 
         <FactLayout
@@ -47,19 +47,20 @@ const JupiterPage = () => {
 
         <FactLayout
           image={JovainAtmosphere}
-          content="Jupiter's atmosphere is a masterpiece of motion — thick belts of ammonia clouds, hydrogen, and helium, carved into bands by relentless jet streams. Some stretch for thousands of kilometers, hosting storms so large they could engulf continents. Here, there is no calm day; only an endless churn of energy, color, and chaos."
+          content="Jupiter' atmosphere is a masterpiece of motion — thick belts of ammonia clouds, hydrogen, and helium, carved into bands by relentless jet streams. Some stretch for thousands of kilometers, hosting storms so large they could engulf continents. Here, there is no calm day; only an endless churn of energy, color, and chaos."
         />
 
         <p className="greet">
-          Our navigators have locked in a gravity-assist maneuver — Jupiter's
-          immense pull will sling us toward the next destination at breathtaking
-          speed. Hold on as we leave the roaring heart of the gas giant and set
-          our sights on the shimmering jewel of the solar system: Saturn.
+          Our navigators have locked in a gravity-assist maneuver —
+          Jupiter&apos; immense pull will sling us toward the next destination
+          at breathtaking speed. Hold on as we leave the roaring heart of the
+          gas giant and set our sights on the shimmering jewel of the solar
+          system: Saturn.
         </p>
 
         <Link to="/saturn">
           <button className="my-6 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-            🪐 Next Stop: Saturn's Rings!
+            🪐 Next Stop: Saturn&apos; Rings!
           </button>
         </Link>
       </section>

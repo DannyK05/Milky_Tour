@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-import ScrollUp from "../../hooks/ScrollUp";
+import ScrollUp from "../../utils/ScrollUp";
 
 import Layout from "../../components/layouts/Layout";
 import Loading from "../../components/Loading";
@@ -71,7 +71,7 @@ const News = () => {
               <div className="flex flex-col items-center space-y-3 mt-4">
                 <h2 className="text-2xl text-center">
                   <span className="text-xl grotesk font-bold">
-                    👽Bzorp's Picture of the day:
+                    👽Bzorp&apos; Picture of the day:
                   </span>{" "}
                   <br /> {apodData.title}
                 </h2>
@@ -89,11 +89,11 @@ const News = () => {
                   <br />
                   <a
                     href="https://apod.nasa.gov/apod/astropix.html"
-                    rel="nopener"
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="text-[#4E2A9B] active:underline lg:hover:underline"
                   >
-                    Source: NASA's APOD API
+                    Source: NASA&apos;s APOD API
                   </a>
                 </p>
               </div>
@@ -145,7 +145,7 @@ const News = () => {
                                 year: "numeric",
                                 month: "long",
                                 day: "numeric",
-                              }
+                              },
                             )}
                           </p>
 
@@ -164,7 +164,7 @@ const News = () => {
                           </p>
                         </div>
                       </Link>
-                    )
+                    ),
                   )
                 ) : (
                   <div className="flex w-full col-span-2 items-center">
