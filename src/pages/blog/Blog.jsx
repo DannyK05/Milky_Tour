@@ -14,7 +14,7 @@ const Blog = () => {
   const [isLoadingBlogData, setIsLoadingBlogData] = useState(false);
 
   useEffect(() => {
-    const fetchBlogApi = async () => {
+    const fetchBlogApi = async (attempt = 0) => {
       const spaceFlightUrl = import.meta.env.VITE_BLOG_LINK;
 
       if (!spaceFlightUrl || !params.blogId) {
@@ -38,16 +38,18 @@ const Blog = () => {
           const encodedUrl = encodeURIComponent(data.url);
 
           const htmlRes = await fetch(
-            `https://corsproxy.io/?${encodedUrl}`,
+            `https://api.allorigins.win/get?url=${encodedUrl}`,
           );
           if (!htmlRes.ok) {
             throw new Error(`Failed to fetch full article`);
           }
 
-          const htmlData = await htmlRes.text();
-        
+          const htmlData = await htmlRes.json();
+
+          console.log(htmlData);
+
           const parser = new DOMParser();
-          const doc = parser.parseFromString(htmlData, "text/html");
+          const doc = parser.parseFromString(htmlData.contents, "text/html");
           const paragraphs = doc.querySelectorAll("p");
           const textContent = Array.from(paragraphs)
             .map((p) => p.textContent.trim())
@@ -59,10 +61,13 @@ const Blog = () => {
         setIsLoadingBlogData(false);
       } catch (error) {
         console.error("Error fetching NASA Blog:", error);
+        if (attempt < 1) {
+          setTimeout(() => fetchBlogApi(attempt++), 2000); 
+        }
+
         setIsLoadingBlogData(false);
       }
     };
-
     fetchBlogApi();
   }, [params.blogId]);
 
